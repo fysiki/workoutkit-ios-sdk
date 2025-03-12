@@ -21,3 +21,12 @@ dependencies: [
 ### Manually
 
 If you prefer not to use SPM, you can integrate WorkoutKit into your project manually by copying the XCFramework folder.
+
+## Documentation
+WorkoutKit documentation is provided in an archive you can open within Xcode.
+
+You will find the archive in the [FZWorkoutKit.doccarchive.zip](FZWorkoutKit.doccarchive.zip) file. Just unzip it and open with Xcode.
+
+The archive includes:
+- A start guide to help you dive in WorkoutKit.
+- Detailed information about each public things you can use (basic information is provided live in the code with headers documentation).
