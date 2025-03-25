@@ -25,7 +25,7 @@ If you prefer not to use SPM, you can integrate WorkoutKit into your project man
 ## Documentation
 WorkoutKit documentation is provided in an archive you can open within Xcode.
 
-You will find the archive in the [FZWorkoutKit.doccarchive.zip](FZWorkoutKit.doccarchive.zip) file. Just unzip it and open with Xcode.
+You will find the archive in the [FZWorkoutKit.doccarchive.zip](documentation/FZWorkoutKit.doccarchive.zip) file. Just unzip it and open with Xcode.
 
 The archive includes:
 - A start guide to help you dive in WorkoutKit.
