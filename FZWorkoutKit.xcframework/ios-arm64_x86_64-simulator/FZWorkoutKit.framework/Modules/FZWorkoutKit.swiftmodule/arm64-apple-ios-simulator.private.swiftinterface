@@ -1,0 +1,280 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FZWorkoutKit
+import AVFAudio
+import AVFoundation
+import AVKit
+import Combine
+import CommonCrypto
+import CoreHaptics
+import CoreMedia
+import Foundation
+import HealthKit
+import MediaPlayer
+import OSLog
+import Swift
+import UIKit
+import WatchConnectivity
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+extension FZWorkoutKit.GoModeController : UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_: UIKit.UICollectionView, numberOfItemsInSection _: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+}
+extension FZWorkoutKit.GoModeController : UIKit.UICollectionViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt _: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt _: Foundation.IndexPath)
+}
+extension FZWorkoutKit.GoVideoController : AVKit.AVPictureInPictureControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func pictureInPictureControllerWillStopPictureInPicture(_: AVKit.AVPictureInPictureController)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class AudioSettingsController : UIKit.UIViewController {
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_Concurrency.MainActor @preconcurrency open class GoModeController : UIKit.UIViewController, FZWorkoutKit.WorkoutKitInterface, FZWorkoutKit.WorkoutKitLogInterface {
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, token: Swift.String, configuration configData: [Swift.String : Any] = [:]) async throws
+  @objc deinit
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillLayoutSubviews()
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency open func shouldDisplayCloseButton() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open func saveSession(state: FZWorkoutKit.SaveWorkoutState)
+  @_Concurrency.MainActor @preconcurrency open func quitWorkout()
+  @_Concurrency.MainActor @preconcurrency open func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor @preconcurrency open func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]? = nil)
+  @_Concurrency.MainActor @preconcurrency open func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]? = nil)
+  @available(*, unavailable)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
+}
+@objc @_Concurrency.MainActor @preconcurrency open class GoVideoController : UIKit.UIViewController, FZWorkoutKit.WorkoutKitInterface, FZWorkoutKit.WorkoutKitLogInterface {
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var prefersHomeIndicatorAutoHidden: Swift.Bool {
+    @objc get
+  }
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, token: Swift.String) async throws
+  @available(*, unavailable)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLayoutSubviews()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency open func saveSession(state: FZWorkoutKit.SaveWorkoutState)
+  @objc @_Concurrency.MainActor @preconcurrency open func quitWorkout()
+  @_Concurrency.MainActor @preconcurrency open func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor @preconcurrency open func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]? = nil)
+  @_Concurrency.MainActor @preconcurrency open func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]? = nil)
+}
+public struct BlockExercise {
+  public let identifier: Swift.String
+  public let effortType: FZWorkoutKit.ExerciseType
+  public let value: Swift.Int
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.BlockExercise : Swift.Equatable {
+  public static func == (a: FZWorkoutKit.BlockExercise, b: FZWorkoutKit.BlockExercise) -> Swift.Bool
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.BlockExercise : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SaveWorkoutState : Swift.Equatable, Swift.Codable {
+  public var duration: Swift.Double
+  public var startDate: Swift.Double
+  public var blocks: [Swift.String : FZWorkoutKit.ChronoState]
+  public var exercises: [Swift.String : [FZWorkoutKit.BlockExercise]]
+  public var calories: [Swift.String : Swift.Double]
+  public var names: [Swift.String : Swift.String]
+  public var difficultyChanges: [Swift.String : Swift.String]
+  public var weightDifficulties: [Swift.String : [Swift.Int]]
+  public var filteredBlocks: [Swift.String : FZWorkoutKit.ChronoState] {
+    get
+  }
+  public static func == (a: FZWorkoutKit.SaveWorkoutState, b: FZWorkoutKit.SaveWorkoutState) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum Tracking {
+  @frozen public enum Event : Swift.String, Swift.CustomStringConvertible {
+    case launched
+    case started
+    case sectionDisplayed
+    case sectionStarted
+    case sectionSkipped
+    case exerciseListDisplayed
+    case exerciseDetailDisplayed
+    case next
+    case promptDisplayed
+    case promptAnswered
+    case quit
+    case googleCastActivated
+    case googleCastDeactivated
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @frozen public enum Property : Swift.String, Swift.CustomStringConvertible {
+    case sectionType
+    case sectionName
+    case sectionBlockId
+    case exerciseId
+    case promptType
+    case promptAnswerIdQuartile
+    case promptAnswerIdWeight
+    case promptAnswerIdExtra
+    case promptAnswerIdSection
+    case promptAnswerIdRecoList
+    case promptAnswerIdMax
+    case nextAction
+    case restSection
+    case exerciseName
+    case startAction
+    case quitReason
+    case musicTypes
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+@objc @_inheritsConvenienceInitializers public class WorkoutKitConfig : ObjectiveC.NSObject {
+  @frozen public enum Setting : ObjectiveC.NSInteger, Swift.CaseIterable {
+    @_documentation(visibility: internal) case unknown
+    case audioDuckOthers
+    case voiceIdentifier
+    case externalSoundPack
+    case vibrate
+    case audioCoachInstructions
+    case audioCoachMotivation
+    case audioCoachAdvices
+    case subtitles
+    case musicStyleElectronica
+    case musicStyleHipHopRap
+    case musicStylePop
+    case musicStyleRock
+    public init?(rawValue: ObjectiveC.NSInteger)
+    public typealias AllCases = [FZWorkoutKit.WorkoutKitConfig.Setting]
+    public typealias RawValue = ObjectiveC.NSInteger
+    nonisolated public static var allCases: [FZWorkoutKit.WorkoutKitConfig.Setting] {
+      get
+    }
+    public var rawValue: ObjectiveC.NSInteger {
+      get
+    }
+  }
+  public class func set(_ value: Any?, forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting)
+  public class func set(_ value: Swift.Int, forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting)
+  public class func set(_ value: Swift.Bool, forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting)
+  public class func object(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Any?
+  public class func string(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.String?
+  public class func float(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.Float
+  public class func double(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.Double
+  public class func integer(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.Int
+  public class func bool(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.Bool
+  public class func reset()
+  public static func deviceId() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol WorkoutKitInterface : AnyObject {
+  func saveSession(state: FZWorkoutKit.SaveWorkoutState)
+  func quitWorkout()
+  @discardableResult
+  func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
+}
+public protocol WorkoutKitLogInterface : AnyObject {
+  func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]?)
+  func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]?)
+}
+extension Swift.Int {
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
+}
+extension Swift.Double {
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute], attributes: [Foundation.NSAttributedString.Key : Any]? = nil, unitAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSAttributedString
+}
+public enum ExerciseType : Swift.Equatable, Swift.RawRepresentable {
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.String
+  case calibration(_: FZWorkoutKit.CalibrationType)
+  case duration
+  case repetition
+}
+extension FZWorkoutKit.ExerciseType : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@frozen public enum CalibrationType : Swift.String, Swift.Codable {
+  case start
+  case end
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ChronoState {
+  public var value: Swift.Double
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Equatable {
+  public static func == (a: FZWorkoutKit.ChronoState, b: FZWorkoutKit.ChronoState) -> Swift.Bool
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension HealthKit.HKWorkoutActivityType : Swift.Codable {
+}
+extension FZWorkoutKit.Tracking.Event : Swift.Equatable {}
+extension FZWorkoutKit.Tracking.Event : Swift.Hashable {}
+extension FZWorkoutKit.Tracking.Event : Swift.RawRepresentable {}
+extension FZWorkoutKit.Tracking.Event : Swift.Sendable {}
+extension FZWorkoutKit.Tracking.Event : Swift.BitwiseCopyable {}
+extension FZWorkoutKit.Tracking.Property : Swift.Equatable {}
+extension FZWorkoutKit.Tracking.Property : Swift.Hashable {}
+extension FZWorkoutKit.Tracking.Property : Swift.RawRepresentable {}
+extension FZWorkoutKit.Tracking.Property : Swift.Sendable {}
+extension FZWorkoutKit.Tracking.Property : Swift.BitwiseCopyable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Equatable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Hashable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.RawRepresentable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Sendable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.BitwiseCopyable {}
+extension FZWorkoutKit.CalibrationType : Swift.Equatable {}
+extension FZWorkoutKit.CalibrationType : Swift.Hashable {}
+extension FZWorkoutKit.CalibrationType : Swift.RawRepresentable {}
+extension FZWorkoutKit.CalibrationType : Swift.Sendable {}
+extension FZWorkoutKit.CalibrationType : Swift.BitwiseCopyable {}
