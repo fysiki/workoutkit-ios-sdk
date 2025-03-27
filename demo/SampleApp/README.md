@@ -6,9 +6,9 @@ This demo app demonstrates how to retrieve a list of workout sessions and run it
 ## Getting started guide
 The getting started guide is available as part of the WorkoutKit documentation. More info [here](../../README.md).
 
-## GraphQL Client Generation
+## GraphQL Client Generation (DemoCloud package)
 
-We use ApolloGraphQL library to generate a local package with items described in .graphql files.
+We use ApolloGraphQL library to generate **DemoCloud** package with items described in .graphql files.
 
 ### Install CLI
 - Open the sample app in Xcode.
