@@ -73,7 +73,7 @@ extension FZWorkoutKit.GoVideoController : AVKit.AVPictureInPictureControllerDel
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
     @objc get
   }
-  @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, token: Swift.String) async throws
+  @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, token: Swift.String, configuration configData: [Swift.String : Any] = [:]) async throws
   @available(*, unavailable)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
