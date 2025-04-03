@@ -6,8 +6,8 @@
 import AVFAudio
 import Combine
 import FZWorkoutKit
-import UIKit
 import LocalizedDeviceModel
+import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!

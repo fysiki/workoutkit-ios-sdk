@@ -3,8 +3,8 @@
 //  SampleApp
 //
 
-import DemoCloud
 import Apollo
+import DemoCloud
 import Foundation
 import UIKit
 

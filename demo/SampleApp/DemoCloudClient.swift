@@ -3,7 +3,6 @@
 //  SampleApp
 //
 
-
 // MARK: - Cloud client
 
 import Apollo
