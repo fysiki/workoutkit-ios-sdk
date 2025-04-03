@@ -42,7 +42,7 @@ class ListViewController: UIViewController {
                 }
 
             case let .success(response):
-                let items = response.data?.publicWorkoutSessions.edges.compactMap(\.node.fragments.workoutPreviewItem)
+                let items = response.data?.publicWorkouts.edges.compactMap(\.node.fragments.workoutPreviewItem)
                 if let items, items.isEmpty == false {
                     var snapshot = NSDiffableDataSourceSnapshot<Section, WorkoutPreviewItem>()
                     snapshot.appendSections([.playlist])
@@ -57,7 +57,6 @@ class ListViewController: UIViewController {
                         self?.present(alert, animated: true)
                     }
                 }
-
             }
         }
     }
@@ -99,10 +98,54 @@ extension ListViewController {
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        fetchWorkoutSession(at: indexPath)
+    }
 
+    private func fetchWorkoutSession(at indexPath: IndexPath) {
         guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
-        print("Selected \(item.name). Fetching workout...")
+        print("Selected \(item.name). Fetching workout preview...")
+
         DemoCloudClient.shared.fetch(query: GetSessionQuery(id: item.id), cachePolicy: .fetchIgnoringCacheData) { [weak self] result in
+            switch result {
+            case let .failure(error):
+                let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
+                DispatchQueue.main.async { [weak self] in
+                    self?.present(alert, animated: true)
+                }
+
+            case let .success(response):
+                if let preview = response.data?.publicWorkout.fragments.workoutPreviewItem {
+                    let alert = UIAlertController(title: preview.name,
+                                                  message: String(format: NSLocalizedString("common_workout_fetch_info", comment: ""), item.id),
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_cancel", comment: ""), style: .cancel, handler: nil))
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_continue", comment: ""), style: .default, handler: { [weak self] _ in
+                        self?.fetchWorkoutContents(at: indexPath)
+                    }))
+
+                    DispatchQueue.main.async { [weak self] in
+                        self?.present(alert, animated: true)
+                    }
+
+                } else {
+                    let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""),
+                                                  message: String(format: NSLocalizedString("error_cannot_fetch_info", comment: ""), item.id),
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
+                    DispatchQueue.main.async { [weak self] in
+                        self?.present(alert, animated: true)
+                    }
+                }
+            }
+        }
+    }
+
+    private func fetchWorkoutContents(at indexPath: IndexPath) {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
+        print("Selected \(item.name). Fetching workout contents...")
+
+        DemoCloudClient.shared.fetch(query: GetSessionContentQuery(id: item.id), cachePolicy: .fetchIgnoringCacheData) { [weak self] result in
             switch result {
             case let .failure(error):
                 let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
