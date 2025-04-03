@@ -26,6 +26,24 @@ class ListViewController: UIViewController {
         return formatter
     }
 
+    var loader: UIView = {
+        var loader = UIView()
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.color = .systemPink
+        indicator.startAnimating()
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+
+        loader.addSubview(indicator)
+        NSLayoutConstraint.activate([
+            indicator.centerXAnchor.constraint(equalTo: loader.centerXAnchor),
+            indicator.centerYAnchor.constraint(equalTo: loader.centerYAnchor),
+        ])
+
+        loader.backgroundColor = .label.withAlphaComponent(0.3)
+
+        return loader
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = NSLocalizedString("list_title", comment: "")
@@ -33,6 +51,8 @@ class ListViewController: UIViewController {
         configureDataSource()
 
         DemoCloudClient.shared.fetch(query: GetSessionsQuery(), cachePolicy: .returnCacheDataAndFetch) { [weak self] result in
+            self?.loader.isHidden = true
+
             switch result {
             case let .failure(error):
                 let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
@@ -76,6 +96,16 @@ extension ListViewController {
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(collectionView)
         collectionView.delegate = self
+
+        loader.translatesAutoresizingMaskIntoConstraints = false
+
+        view.addSubview(loader)
+        NSLayoutConstraint.activate([
+            loader.topAnchor.constraint(equalTo: view.topAnchor),
+            loader.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            loader.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            loader.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        ])
     }
 
     private func configureDataSource() {
@@ -104,10 +134,13 @@ extension ListViewController: UICollectionViewDelegate {
     private func fetchWorkoutSession(at indexPath: IndexPath) {
         guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
         print("Selected \(item.name). Fetching workout preview...")
+        loader.isHidden = false
 
         DemoCloudClient.shared.fetch(query: GetSessionQuery(id: item.id), cachePolicy: .fetchIgnoringCacheData) { [weak self] result in
             switch result {
             case let .failure(error):
+                self?.loader.isHidden = true
+
                 let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
                 DispatchQueue.main.async { [weak self] in
@@ -119,7 +152,10 @@ extension ListViewController: UICollectionViewDelegate {
                     let alert = UIAlertController(title: preview.name,
                                                   message: String(format: NSLocalizedString("common_workout_fetch_info", comment: ""), item.id),
                                                   preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_cancel", comment: ""), style: .cancel, handler: nil))
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_cancel", comment: ""), style: .cancel, handler: { [weak self] _ in
+                        self?.loader.isHidden = true
+                    }))
+
                     alert.addAction(UIAlertAction(title: NSLocalizedString("common_continue", comment: ""), style: .default, handler: { [weak self] _ in
                         self?.fetchWorkoutContents(at: indexPath)
                     }))
@@ -146,6 +182,8 @@ extension ListViewController: UICollectionViewDelegate {
         print("Selected \(item.name). Fetching workout contents...")
 
         DemoCloudClient.shared.fetch(query: GetSessionContentQuery(id: item.id), cachePolicy: .fetchIgnoringCacheData) { [weak self] result in
+            self?.loader.isHidden = true
+
             switch result {
             case let .failure(error):
                 let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
