@@ -30,3 +30,8 @@ You will find the archive in the [FZWorkoutKit.doccarchive.zip](documentation/FZ
 The archive includes:
 - A start guide to help you dive in WorkoutKit.
 - Detailed information about each public things you can use (basic information is provided live in the code with headers documentation).
+
+___
+
+FizzUp WorkoutKit is a complete workout module that can be inserted into your Health App.\
+To subscribe to FizzUp WorkoutKit contact business@fizzup.com.
