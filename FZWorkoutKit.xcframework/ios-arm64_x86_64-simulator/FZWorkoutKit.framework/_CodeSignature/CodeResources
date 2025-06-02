@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		T3D2C+LqIdzD8nh63qpjHWOejmI=
+		</data>
 		<key>BebasNeue.otf</key>
 		<data>
 		DQ4/vfzSOgR64n05EBmf7v/kH2U=
@@ -26,47 +30,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Apk1/h/dRJMITTy+Rkicg6XKXN8=
+		o4KXqkGqvZgsn3ZKE+hHPhdw6cQ=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JeSGmkTn4fqZqIBbsASYzItEiGU=
+		3eUQu6xpfDgBgjWEnVO1vWwoZA8=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gn797+OU8Efd2OjHPH68rVcIrHs=
+		uvP11+nFcZK0wevcz+gC4XO/KxI=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WwqWnY2jst19junrk81v1mVP7R0=
+		ITZzbJ9v5dbUdo0AvaBxnSq6KmQ=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gn797+OU8Efd2OjHPH68rVcIrHs=
+		uvP11+nFcZK0wevcz+gC4XO/KxI=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jHRHaomfz1YDArs/3MjpFBW01nY=
+		051h4ZbmiZuw2HhcsSmkrtMVNx8=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JeSGmkTn4fqZqIBbsASYzItEiGU=
+		3eUQu6xpfDgBgjWEnVO1vWwoZA8=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bjcrAmWYXiq+4ggRZKOZhXbL8Js=
+		JBOhPpeXvJK+x+BjTM+OBDzFQXw=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		c5EbQ23Y6zATNJn+XjU4kLSm4+w=
+		u0fdEf4QaPIfZOPACRBXtfjZJjA=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bjcrAmWYXiq+4ggRZKOZhXbL8Js=
+		JBOhPpeXvJK+x+BjTM+OBDzFQXw=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vP31dL4wwMTBGPlNvxDJXFRyIhM=
+		iCB6sdIR4oSQaCQI1hhdyHPjswk=
 		</data>
 		<key>SlideAnimationAE.json</key>
 		<data>
@@ -89,7 +93,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h3dhaZbbPmybzS+/k6b5YCZw46M=
+			VUDxlVMyCnad2v0yX0EO2y2+/Bc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,7 +129,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tZ7OF65HDNips4eGhCOyDcFp7kc=
+			5wfjLYt7hCl8YZ2I+waTu7xL5IE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -161,7 +165,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/tJzXAnYhQqARe0zhpxPykLjxd8=
+			FRqRzny9X6k8UKrRmBsJ08RbX5s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -197,7 +201,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7LpPvLhOy16Pz3dRDA0FswXBf6U=
+			lOjzpQSN5pvFru4fQt1UQrgESYc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -224,7 +228,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0oiUBsMqPQxaMYpn6HokSNjbaC4=
+			Kxs9EcjRWrRWsnv+CbM+IWSa72M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -251,7 +255,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DiUUq9n0yZcbfl4+6fpeeYAkKvk=
+			iJbxZxr7nR79VVmiPcbrO32Z15w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -322,7 +326,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pRB4BkjiImy2dRsyWYmrhmqx0Uk=
+			7hMhKjNyPqmu/pA9oPoPdoTsxrY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -349,7 +353,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+MjQ8+MGiy91CrCBS6fsxjQ9tIQ=
+			4cVlGyTuLZCIJspt+ckkkPYUkr0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -366,6 +370,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DwzlhyvT03Rr6/TImgzpY4OqLGx02w2yiSsHynXlCzE=
+			</data>
+		</dict>
 		<key>BebasNeue.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -405,70 +416,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YBAsE7Y0t9wYk3yMUcwfg9xFSWTJiBzgi10h0GL8JMs=
+			XuD2WYUaHv5b8uh15wtn9D9pWTe7dOZ+O/V13o5cMDE=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EeIkFCV3GYc/Z5NUNDVEOvw8uqKmkRlx2/iTxBNx3yc=
+			hWwK4qhBERbygWkpao4lQoQ0M7YD5LCGCoah+g3Y46k=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6vtmV4qZqkWpK0xGU3P059RyOsIF0tLVtzA28mRxoZM=
+			kPOW1GGuibV0d9xDYdBdytK8z/MlNVH3+WzBw2Hjp5g=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EeIkFCV3GYc/Z5NUNDVEOvw8uqKmkRlx2/iTxBNx3yc=
+			hWwK4qhBERbygWkpao4lQoQ0M7YD5LCGCoah+g3Y46k=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XG0BxiSWE4ezS3w0oBnURo0V3z8dmSaOjZ8qr8QlrNY=
+			YVgNFwcE+A20SG7oYS3fziwYT0qmqQ2u7TFTEtSOGXg=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YBAsE7Y0t9wYk3yMUcwfg9xFSWTJiBzgi10h0GL8JMs=
+			XuD2WYUaHv5b8uh15wtn9D9pWTe7dOZ+O/V13o5cMDE=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			If+Rsr2zBNA8ZAAa327be1/wttRQhp2OPc8wsPedqh0=
+			jbjOFZIq4H5HyBcMdM13ebbg5VdWlOvdLmKZsdqrdUc=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OoG2ospVVz0CUidWLbmUvTb8DUe8yZDHSP8dypzVank=
+			TsMK2I5pjGh7+OvUK+B864xO7+PHjYVBnoiT/xjIrIY=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			If+Rsr2zBNA8ZAAa327be1/wttRQhp2OPc8wsPedqh0=
+			jbjOFZIq4H5HyBcMdM13ebbg5VdWlOvdLmKZsdqrdUc=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ruRioAgVqiHrmg2uAxfx7nZFguzUR9uUC4ZcyETWTDQ=
+			jKN4Ocy4HwQ37AXOZW43/kMU6DBVmoAZwyDz0DzsF8Q=
 			</data>
 		</dict>
 		<key>SlideAnimationAE.json</key>
@@ -498,7 +509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bhWUmLGvHW7HU/sm9XOe5ka02iMPX8HtXsuicH0UuYs=
+			oDNlL338y4s7Y9ueXDo7zVqOzn3LQTCq/samDvzWzU8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -534,7 +545,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8nFbE35YcxOZ721ETjPsXTMaotny8aLxflX4T3dejOo=
+			hLu7mhBFZK7kn6rP8ESksjMQaHCcv12r/dx9ZmRl+ac=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -570,7 +581,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uMlJ1zdaXFcuIlzp5W0M0IovA5ccWrklGKMB9ppqfG0=
+			ZWG4K6t7o5s0zChiJKWdUgSUMekhpV249CVDaIWhS/Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -606,7 +617,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KZNv8+MpQp9/jnmgjrEu3r/8MUHSkjopYUrOd1dS7SI=
+			r+KpAZP68RDwuC7+sBMpfE8vtvpqqkfIFOaiEr5Tt3w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -633,7 +644,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Z0/X1CX4AAqxUjy3rP3lm4xWOe2YX3v2NoioygbTiU=
+			YF5NeJR6QFjHRnVn5KRxwJQPW7/QM1yqK4b4Ova8iOY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -660,7 +671,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cq0JcszfGosN1cjNkfXNQHeZRLCCoL5PDUn7jrvm4os=
+			wmrqAkrEnUJBa2wJT/C7nvykjWLPyAuPFcmxIHWlomo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -764,7 +775,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oseuubxoRtH2ggcGU/IYKJ6erLR95i6LNXHSua6AJSU=
+			jsjeJuPr0znmJUhDb/aJeIFM/UAiZY4gIPh7joagtd0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -791,7 +802,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uv0ZMmTKlV3f4vC8QcTGpJzppQdvTkNRxxqu49QcDwo=
+			jFcIbw5lEUAsXhxPG9GEK79F4rxHZF0Q2jZQzFmU/8Q=
 			</data>
 			<key>optional</key>
 			<true/>
