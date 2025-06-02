@@ -21,11 +21,6 @@ class ViewController: UIViewController {
 
         WorkoutKitConfig.reset()
 
-        let config: [String: Any] = [
-            "addVocalTrainerPrompts": true,
-            "isHumanAudioCoachAvailable": true,
-        ]
-
         let listButton = UIButton(primaryAction: UIAction(title: NSLocalizedString("home_list_cta", comment: ""), image: UIImage(systemName: "list.bullet.rectangle.portrait"), handler: { [weak self] _ in
 
             self?.navigationController?.pushViewController(ListViewController(), animated: true)

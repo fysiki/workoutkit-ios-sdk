@@ -1,0 +1,42 @@
+{
+  "originHash" : "9cc6c3be4c7f812323205da14cf7ebcf98fa11b4dd023e59c9581f89e2c89882",
+  "pins" : [
+    {
+      "identity" : "apollo-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apollographql/apollo-ios",
+      "state" : {
+        "revision" : "9aa748d6f0526a744d49d59a2383dc7fdf9d645b",
+        "version" : "1.18.0"
+      }
+    },
+    {
+      "identity" : "bdlocalizeddevicesmodels",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bixcorp/BDLocalizedDevicesModels",
+      "state" : {
+        "revision" : "13fb16b6b97e1370c92510e860569a8b410fd7da",
+        "version" : "3.8.0"
+      }
+    },
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift.git",
+      "state" : {
+        "revision" : "a95fc6df17d108bd99210db5e8a9bac90fe984b8",
+        "version" : "0.15.3"
+      }
+    },
+    {
+      "identity" : "workoutkit-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fysiki/workoutkit-ios-sdk",
+      "state" : {
+        "revision" : "ad82a43e26b34563bc71c0bb2a8230ead0653494",
+        "version" : "1.5.0"
+      }
+    }
+  ],
+  "version" : 3
+}

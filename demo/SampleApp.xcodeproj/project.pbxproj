@@ -10,6 +10,12 @@
 		14005CB725237524006A911E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14005CB625237524006A911E /* AppDelegate.swift */; };
 		140848542D662E8700B65F3F /* MonGoModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140848532D662E8700B65F3F /* MonGoModeController.swift */; };
 		140848562D662EAD00B65F3F /* MonVideoGoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140848552D662EAD00B65F3F /* MonVideoGoController.swift */; };
+		141D790D2DE0586C009B3CBE /* GoogleCastSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 141D790C2DE0586C009B3CBE /* GoogleCastSPM */; };
+		141D790F2DE05898009B3CBE /* GoogleCastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D790E2DE05898009B3CBE /* GoogleCastManager.swift */; };
+		141D79162DE05AB5009B3CBE /* GoogleCastManager+SessionManagerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D79152DE05AB1009B3CBE /* GoogleCastManager+SessionManagerListener.swift */; };
+		141D79182DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Resources */ = {isa = PBXBuildFile; fileRef = 141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */; };
+		141D79192DE05EE8009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */; };
+		141D791D2DE06337009B3CBE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D791C2DE06337009B3CBE /* Utils.swift */; };
 		142F137B2D8AB06300CA1C26 /* LocalizedDeviceModel in Frameworks */ = {isa = PBXBuildFile; productRef = 142F137A2D8AB06300CA1C26 /* LocalizedDeviceModel */; };
 		142F137D2D8AB11A00CA1C26 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 142F137C2D8AB11A00CA1C26 /* Localizable.xcstrings */; };
 		14466DCF2D71F14400AB8D90 /* DemoCloudClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14466DCE2D71F14400AB8D90 /* DemoCloudClient.swift */; };
@@ -19,6 +25,7 @@
 		149F58292D66346500CAE524 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 149F58282D66346500CAE524 /* README.md */; };
 		149F582C2D66352100CAE524 /* DemoCloud in Frameworks */ = {isa = PBXBuildFile; productRef = 149F582B2D66352100CAE524 /* DemoCloud */; };
 		149F582E2D66354C00CAE524 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F582D2D66354C00CAE524 /* ListViewController.swift */; };
+		14A27CC62DE08E33008B6D9A /* GoogleCastPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A27CC52DE08E33008B6D9A /* GoogleCastPayload.swift */; };
 		14C0D9012D881F6F00689A4E /* WorkoutKit in Frameworks */ = {isa = PBXBuildFile; productRef = 14C0D9002D881F6F00689A4E /* WorkoutKit */; };
 		14F7EE952523717A005D7C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EE942523717A005D7C21 /* Assets.xcassets */; };
 		14F7EE9825237194005D7C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7EE9725237194005D7C21 /* ViewController.swift */; };
@@ -44,12 +51,17 @@
 		14005CB625237524006A911E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		140848532D662E8700B65F3F /* MonGoModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonGoModeController.swift; sourceTree = "<group>"; };
 		140848552D662EAD00B65F3F /* MonVideoGoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonVideoGoController.swift; sourceTree = "<group>"; };
+		141D790E2DE05898009B3CBE /* GoogleCastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCastManager.swift; sourceTree = "<group>"; };
+		141D79152DE05AB1009B3CBE /* GoogleCastManager+SessionManagerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoogleCastManager+SessionManagerListener.swift"; sourceTree = "<group>"; };
+		141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoogleCastManager+RemoteMediaClientListener.swift"; sourceTree = "<group>"; };
+		141D791C2DE06337009B3CBE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		142F137C2D8AB11A00CA1C26 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		14466DCE2D71F14400AB8D90 /* DemoCloudClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCloudClient.swift; sourceTree = "<group>"; };
 		149F58252D66331000CAE524 /* Workout.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Workout.graphql; sourceTree = "<group>"; };
 		149F58272D66338800CAE524 /* apollo-codegen-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = "<group>"; };
 		149F58282D66346500CAE524 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		149F582D2D66354C00CAE524 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		14A27CC52DE08E33008B6D9A /* GoogleCastPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCastPayload.swift; sourceTree = "<group>"; };
 		14F7EE7A2523712B005D7C21 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F7EE942523717A005D7C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F7EE9725237194005D7C21 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +80,7 @@
 				149F582C2D66352100CAE524 /* DemoCloud in Frameworks */,
 				142F137B2D8AB06300CA1C26 /* LocalizedDeviceModel in Frameworks */,
 				14C0D9012D881F6F00689A4E /* WorkoutKit in Frameworks */,
+				141D790D2DE0586C009B3CBE /* GoogleCastSPM in Frameworks */,
 				149F58222D6632A300CAE524 /* Apollo in Frameworks */,
 				149F58242D6632A300CAE524 /* ApolloSQLite in Frameworks */,
 			);
@@ -94,6 +107,17 @@
 			name = Packages;
 			sourceTree = "<group>";
 		};
+		141D790A2DE0580F009B3CBE /* GoogleCast */ = {
+			isa = PBXGroup;
+			children = (
+				14A27CC52DE08E33008B6D9A /* GoogleCastPayload.swift */,
+				141D790E2DE05898009B3CBE /* GoogleCastManager.swift */,
+				141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */,
+				141D79152DE05AB1009B3CBE /* GoogleCastManager+SessionManagerListener.swift */,
+			);
+			path = GoogleCast;
+			sourceTree = "<group>";
+		};
 		14F7EE712523712B005D7C21 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +142,9 @@
 				142F137C2D8AB11A00CA1C26 /* Localizable.xcstrings */,
 				14005CB625237524006A911E /* AppDelegate.swift */,
 				14466DCE2D71F14400AB8D90 /* DemoCloudClient.swift */,
+				141D791C2DE06337009B3CBE /* Utils.swift */,
 				140848572D662ED700B65F3F /* Controllers */,
+				141D790A2DE0580F009B3CBE /* GoogleCast */,
 				149F58272D66338800CAE524 /* apollo-codegen-config.json */,
 				149F58252D66331000CAE524 /* Workout.graphql */,
 				14F7EEC9252371DC005D7C21 /* InfoPlist.strings */,
@@ -161,6 +187,7 @@
 				149F582B2D66352100CAE524 /* DemoCloud */,
 				14C0D9002D881F6F00689A4E /* WorkoutKit */,
 				142F137A2D8AB06300CA1C26 /* LocalizedDeviceModel */,
+				141D790C2DE0586C009B3CBE /* GoogleCastSPM */,
 			);
 			productName = SampleApp;
 			productReference = 14F7EE7A2523712B005D7C21 /* SampleApp.app */;
@@ -196,6 +223,7 @@
 				149F582A2D66352100CAE524 /* XCLocalSwiftPackageReference "DemoCloud" */,
 				14C0D8FF2D881EEC00689A4E /* XCRemoteSwiftPackageReference "workoutkit-ios-sdk" */,
 				142F13792D8AB06300CA1C26 /* XCRemoteSwiftPackageReference "BDLocalizedDevicesModels" */,
+				141D790B2DE0586C009B3CBE /* XCLocalSwiftPackageReference "GoogleCastSPM" */,
 			);
 			productRefGroup = 14F7EE7B2523712B005D7C21 /* Products */;
 			projectDirPath = "";
@@ -217,6 +245,7 @@
 				14F7EECD252371DC005D7C21 /* InfoPlist.strings in Resources */,
 				149F58292D66346500CAE524 /* README.md in Resources */,
 				149F58262D66331000CAE524 /* Workout.graphql in Resources */,
+				141D79182DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Resources */,
 				142F137D2D8AB11A00CA1C26 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,9 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A27CC62DE08E33008B6D9A /* GoogleCastPayload.swift in Sources */,
+				141D79192DE05EE8009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Sources */,
 				140848562D662EAD00B65F3F /* MonVideoGoController.swift in Sources */,
+				141D790F2DE05898009B3CBE /* GoogleCastManager.swift in Sources */,
 				14466DCF2D71F14400AB8D90 /* DemoCloudClient.swift in Sources */,
 				140848542D662E8700B65F3F /* MonGoModeController.swift in Sources */,
+				141D791D2DE06337009B3CBE /* Utils.swift in Sources */,
+				141D79162DE05AB5009B3CBE /* GoogleCastManager+SessionManagerListener.swift in Sources */,
 				14005CB725237524006A911E /* AppDelegate.swift in Sources */,
 				149F582E2D66354C00CAE524 /* ListViewController.swift in Sources */,
 				14F7EE9825237194005D7C21 /* ViewController.swift in Sources */,
@@ -477,6 +511,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		141D790B2DE0586C009B3CBE /* XCLocalSwiftPackageReference "GoogleCastSPM" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = GoogleCastSPM;
+		};
 		149F582A2D66352100CAE524 /* XCLocalSwiftPackageReference "DemoCloud" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = DemoCloud;
@@ -511,6 +549,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		141D790C2DE0586C009B3CBE /* GoogleCastSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoogleCastSPM;
+		};
 		142F137A2D8AB06300CA1C26 /* LocalizedDeviceModel */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 142F13792D8AB06300CA1C26 /* XCRemoteSwiftPackageReference "BDLocalizedDevicesModels" */;

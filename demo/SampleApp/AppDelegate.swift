@@ -4,6 +4,7 @@
 //
 
 import FZWorkoutKit
+import GoogleCast
 import UIKit
 
 @main
@@ -12,6 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        true
+
+        let options = GCKCastOptions(discoveryCriteria: GCKDiscoveryCriteria(applicationID: "ABCDEF123"))
+        options.physicalVolumeButtonsWillControlDeviceVolume = true
+        options.disableDiscoveryAutostart = false // Do not disable discovery.
+
+        let launchOptions = GCKLaunchOptions()
+        launchOptions.androidReceiverCompatible = true
+        options.launchOptions = launchOptions
+
+        GCKCastContext.setSharedInstanceWith(options)
+        GCKCastContext.sharedInstance().useDefaultExpandedMediaControls = false
+
+        return true
     }
 }
