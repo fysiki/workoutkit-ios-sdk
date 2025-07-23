@@ -1,0 +1,158 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target armv7k-apple-watchos8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FZWorkoutKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AVFoundation
+import ClockKit
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import HealthKit
+import OSLog
+import Swift
+import SwiftUI
+import UIKit
+import WatchConnectivity
+import WatchKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+extension Swift.Double {
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute], attributes: [Foundation.NSAttributedString.Key : Any]? = nil, unitAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSAttributedString
+}
+extension Swift.Int {
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
+}
+
+extension HealthKit.HKWorkoutActivityType : Swift.Codable {
+}
+public enum WorkoutStateMode : Swift.Int, Swift.Codable {
+  case launcher
+  case start
+  case ongoing
+  case paused
+  case finished
+  case stopped
+  case notStarted
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func localizedString(_ str: Swift.String, comment: Swift.String = "") -> Swift.String
+@objc public enum RemoteMediaPlayerState : Swift.Int, Swift.CustomStringConvertible {
+  case unknown = 0
+  case idle = 1
+  case playing = 2
+  case paused = 3
+  case buffering = 4
+  case loading = 5
+  @_documentation(visibility: internal) public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum WatchAction {
+}
+@_Concurrency.MainActor @preconcurrency public struct PagingView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init()
+  public typealias Body = @_opaqueReturnTypeOf("$s12FZWorkoutKit10PagingViewV4bodyQrvp", 0) __
+}
+
+@objc @_inheritsConvenienceInitializers public class SessionDelegater : ObjectiveC.NSObject, WatchConnectivity.WCSessionDelegate {
+  @objc public func session(_: WatchConnectivity.WCSession, activationDidCompleteWith state: WatchConnectivity.WCSessionActivationState, error: (any Swift.Error)?)
+  @objc public func sessionReachabilityDidChange(_: WatchConnectivity.WCSession)
+  @objc public func session(_: WatchConnectivity.WCSession, didReceiveApplicationContext applicationContext: [Swift.String : Any])
+  @objc public func session(_: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
+  @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  @objc public func session(_: WatchConnectivity.WCSession, didReceiveMessageData _: Foundation.Data)
+  @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data, replyHandler: @escaping (Foundation.Data) -> Swift.Void)
+  @objc public func session(_: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
+  @objc public func session(_: WatchConnectivity.WCSession, didFinish userInfoTransfer: WatchConnectivity.WCSessionUserInfoTransfer, error: (any Swift.Error)?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct HeartRate {
+  public var value: Swift.Double?
+}
+public enum ExerciseType : Swift.Equatable, Swift.RawRepresentable {
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.String
+  case calibration(_: FZWorkoutKit.CalibrationType)
+  case duration
+  case repetition
+}
+extension FZWorkoutKit.ExerciseType : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@frozen public enum CalibrationType : Swift.String, Swift.Codable {
+  case start
+  case end
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SessionGateway : ObjectiveC.NSObject, Combine.ObservableObject {
+  public var workoutSession: HealthKit.HKWorkoutSession? {
+    get
+    set
+  }
+  public static let shared: FZWorkoutKit.SessionGateway
+  public func requestHeartRate()
+  public func startHKWorkout(with configuration: HealthKit.HKWorkoutConfiguration)
+  public func restoreHKWorkoutSession()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension FZWorkoutKit.SessionGateway {
+  public func newState(state: Any)
+}
+extension FZWorkoutKit.SessionGateway : HealthKit.HKWorkoutSessionDelegate {
+  @objc dynamic public func workoutSession(_: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date _: Foundation.Date)
+  @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didFailWithError error: any Swift.Error)
+}
+
+
+public struct ChronoState {
+  public var value: Swift.Double
+  public var referenceDate: Swift.Double
+  public static func stopwatch(value: Foundation.TimeInterval = 0, referenceDate: Foundation.TimeInterval = 0) -> FZWorkoutKit.ChronoState
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Equatable {
+  public static func == (a: FZWorkoutKit.ChronoState, b: FZWorkoutKit.ChronoState) -> Swift.Bool
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+
+
+extension FZWorkoutKit.WorkoutStateMode : Swift.Equatable {}
+extension FZWorkoutKit.WorkoutStateMode : Swift.Hashable {}
+extension FZWorkoutKit.WorkoutStateMode : Swift.RawRepresentable {}
+extension FZWorkoutKit.RemoteMediaPlayerState : Swift.Equatable {}
+extension FZWorkoutKit.RemoteMediaPlayerState : Swift.Hashable {}
+extension FZWorkoutKit.RemoteMediaPlayerState : Swift.RawRepresentable {}
+extension FZWorkoutKit.PagingView : Swift.Sendable {}
+extension FZWorkoutKit.CalibrationType : Swift.Equatable {}
+extension FZWorkoutKit.CalibrationType : Swift.Hashable {}
+extension FZWorkoutKit.CalibrationType : Swift.RawRepresentable {}
+extension FZWorkoutKit.CalibrationType : Swift.Sendable {}
+extension FZWorkoutKit.CalibrationType : Swift.BitwiseCopyable {}

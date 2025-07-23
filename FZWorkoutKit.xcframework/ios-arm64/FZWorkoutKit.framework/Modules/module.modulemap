@@ -1,0 +1,4 @@
+framework module FZWorkoutKit {
+  header "FZWorkoutKit-Swift.h"
+  requires objc
+}

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FZWorkoutKit
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FZWorkoutKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AVFAudio
 import AVFoundation
 import AVKit
@@ -22,54 +23,21 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
-@objc @_inheritsConvenienceInitializers open class RemoteManager : ObjectiveC.NSObject {
-  open func startMedia(at _: CoreMedia.CMTime = .zero, with _: FZWorkoutKit.WorkoutStateMode)
-  open func playMedia()
-  open func pauseMedia(promptTitle _: Swift.String? = nil, promptCaption _: Swift.String? = nil)
-  open func seekMedia(to _: CoreMedia.CMTime)
-  open func replaceMedia()
-  open func sendFinishedMessage()
-  open func disconnect()
-  open var currentTime: CoreMedia.CMTime {
-    get
-  }
-  open var playerState: FZWorkoutKit.RemoteMediaPlayerState {
-    get
-  }
-  open var delegate: (any FZWorkoutKit.RemoteManagerDelegate)?
-  @objc override dynamic public init()
-  @objc deinit
+extension HealthKit.HKWorkoutActivityType : Swift.Codable {
 }
-public protocol RemoteManagerDelegate : AnyObject {
-  func remoteSessionDidStart()
-  func remoteSessionDidEnd(at time: CoreMedia.CMTime)
-  func remoteSessionDidResume()
-  func remoteSessionCanStartMedia()
-  func remoteSessionCanResumeMedia(at time: CoreMedia.CMTime)
-  func remoteSessionOtherMediaPlaying()
-  func remoteSessionDidUpdateMediaStatus(time: CoreMedia.CMTime, hasMedia: Swift.Bool, state: FZWorkoutKit.RemoteMediaPlayerState?)
-  func remoteSessionDidUpdateMetadata(coverUrl: Foundation.URL?)
-  func remoteDidTapQuitWorkout()
-}
-@objc public enum RemoteMediaPlayerState : Swift.Int, Swift.CustomStringConvertible {
-  case unknown = 0
-  case idle = 1
-  case playing = 2
-  case paused = 3
-  case buffering = 4
-  case loading = 5
-  @_documentation(visibility: internal) public var description: Swift.String {
-    get
-  }
+public enum WorkoutStateMode : Swift.Int, Swift.Codable {
+  case launcher
+  case start
+  case ongoing
+  case paused
+  case finished
+  case stopped
+  case notStarted
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
-}
-extension FZWorkoutKit.GoModeController : UIKit.UICollectionViewDataSource {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_: UIKit.UICollectionView, numberOfItemsInSection _: Swift.Int) -> Swift.Int
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
 }
 extension FZWorkoutKit.GoModeController : UIKit.UICollectionViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
@@ -78,182 +46,13 @@ extension FZWorkoutKit.GoModeController : UIKit.UICollectionViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt _: Foundation.IndexPath)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt _: Foundation.IndexPath)
 }
-extension FZWorkoutKit.GoVideoController : AVKit.AVPictureInPictureControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func pictureInPictureControllerWillStopPictureInPicture(_: AVKit.AVPictureInPictureController)
+public protocol WorkoutKitLogInterface : AnyObject {
+  func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]?)
+  func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]?)
 }
-extension FZWorkoutKit.GoVideoController : FZWorkoutKit.RemoteManagerDelegate {
-  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidStart()
-  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidEnd(at time: CoreMedia.CMTime)
-  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidUpdateMetadata(coverUrl: Foundation.URL?)
-  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidUpdateMediaStatus(time: CoreMedia.CMTime, hasMedia: Swift.Bool, state: FZWorkoutKit.RemoteMediaPlayerState?)
-  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidResume()
-  @_Concurrency.MainActor @preconcurrency public func remoteSessionCanStartMedia()
-  @_Concurrency.MainActor @preconcurrency public func remoteSessionCanResumeMedia(at _: CoreMedia.CMTime)
-  @_Concurrency.MainActor @preconcurrency public func remoteSessionOtherMediaPlaying()
-  @_Concurrency.MainActor @preconcurrency public func remoteDidTapQuitWorkout()
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class AudioSettingsController : UIKit.UIViewController {
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SessionGateway : ObjectiveC.NSObject {
+  @objc public static let shared: FZWorkoutKit.SessionGateway
   @objc deinit
-}
-@objc @_Concurrency.MainActor @preconcurrency open class GoModeController : UIKit.UIViewController, FZWorkoutKit.WorkoutKitInterface, FZWorkoutKit.WorkoutKitLogInterface {
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
-    @objc get
-  }
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
-  }
-  @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, token: Swift.String, configuration configData: [Swift.String : Any] = [:]) async throws
-  @objc deinit
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillLayoutSubviews()
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
-  @_Concurrency.MainActor @preconcurrency open func shouldDisplayCloseButton() -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency open func saveSession(state: FZWorkoutKit.SaveWorkoutState)
-  @_Concurrency.MainActor @preconcurrency open func quitWorkout()
-  @_Concurrency.MainActor @preconcurrency open func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
-  @_Concurrency.MainActor @preconcurrency open func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]? = nil)
-  @_Concurrency.MainActor @preconcurrency open func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]? = nil)
-  @available(*, unavailable)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
-}
-@objc @_Concurrency.MainActor @preconcurrency open class GoVideoController : UIKit.UIViewController, FZWorkoutKit.WorkoutKitInterface, FZWorkoutKit.WorkoutKitLogInterface {
-  @_Concurrency.MainActor @preconcurrency public var video: FZWorkoutKit.Video {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var metadata: FZWorkoutKit.VideoMetadata {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var remoteManager: FZWorkoutKit.RemoteManager {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency final public let topLeftStack: UIKit.UIStackView
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var prefersStatusBarHidden: Swift.Bool {
-    @objc get
-  }
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var prefersHomeIndicatorAutoHidden: Swift.Bool {
-    @objc get
-  }
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
-    @objc get
-  }
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
-  }
-  @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, token: Swift.String, configuration configData: [Swift.String : Any] = [:]) async throws
-  @available(*, unavailable)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
-  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLayoutSubviews()
-  @objc deinit
-  @_Concurrency.MainActor @preconcurrency open func saveSession(state: FZWorkoutKit.SaveWorkoutState)
-  @objc @_Concurrency.MainActor @preconcurrency open func quitWorkout()
-  @_Concurrency.MainActor @preconcurrency open func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
-  @_Concurrency.MainActor @preconcurrency open func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]? = nil)
-  @_Concurrency.MainActor @preconcurrency open func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]? = nil)
-}
-public struct Video : Swift.Equatable, Swift.Codable {
-  public let url: Foundation.URL
-  public static func == (a: FZWorkoutKit.Video, b: FZWorkoutKit.Video) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct VideoMetadata : Swift.Decodable {
-  public let title: Swift.String?
-  public let subtitle: Swift.String?
-  public var cover: Foundation.URL?
-  public var coverSize: CoreFoundation.CGSize
-  public let timeRange: CoreMedia.CMTimeRange
-  public init(from decoder: any Swift.Decoder) throws
-  public func relativeProgress(from currentTime: Foundation.TimeInterval?) -> Swift.Double
-  public func relativeProgress(from currentTime: CoreMedia.CMTime?) -> Swift.Double
-}
-public struct BlockExercise {
-  public let identifier: Swift.String
-  public let effortType: FZWorkoutKit.ExerciseType
-  public let value: Swift.Int
-}
-@_documentation(visibility: internal) extension FZWorkoutKit.BlockExercise : Swift.Equatable {
-  public static func == (a: FZWorkoutKit.BlockExercise, b: FZWorkoutKit.BlockExercise) -> Swift.Bool
-}
-@_documentation(visibility: internal) extension FZWorkoutKit.BlockExercise : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SaveWorkoutState : Swift.Equatable, Swift.Codable {
-  public var duration: Swift.Double
-  public var startDate: Swift.Double
-  public var blocks: [Swift.String : FZWorkoutKit.ChronoState]
-  public var exercises: [Swift.String : [FZWorkoutKit.BlockExercise]]
-  public var calories: [Swift.String : Swift.Double]
-  public var names: [Swift.String : Swift.String]
-  public var difficultyChanges: [Swift.String : Swift.String]
-  public var weightDifficulties: [Swift.String : [Swift.Int]]
-  public var filteredBlocks: [Swift.String : FZWorkoutKit.ChronoState] {
-    get
-  }
-  public static func == (a: FZWorkoutKit.SaveWorkoutState, b: FZWorkoutKit.SaveWorkoutState) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum Tracking {
-  @frozen public enum Event : Swift.String, Swift.CustomStringConvertible {
-    case launched
-    case started
-    case sectionDisplayed
-    case sectionStarted
-    case sectionSkipped
-    case exerciseListDisplayed
-    case exerciseDetailDisplayed
-    case next
-    case promptDisplayed
-    case promptAnswered
-    case quit
-    case remoteClientActivated
-    case remoteClientDeactivated
-    public var description: Swift.String {
-      get
-    }
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  @frozen public enum Property : Swift.String, Swift.CustomStringConvertible {
-    case sectionType
-    case sectionName
-    case sectionBlockId
-    case exerciseId
-    case promptType
-    case promptAnswerIdQuartile
-    case promptAnswerIdWeight
-    case promptAnswerIdExtra
-    case promptAnswerIdSection
-    case promptAnswerIdRecoList
-    case promptAnswerIdMax
-    case nextAction
-    case restSection
-    case exerciseName
-    case startAction
-    case quitReason
-    case musicTypes
-    public var description: Swift.String {
-      get
-    }
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
 }
 @objc @_inheritsConvenienceInitializers public class WorkoutKitConfig : ObjectiveC.NSObject {
   @frozen public enum Setting : ObjectiveC.NSInteger, Swift.CaseIterable {
@@ -294,22 +93,21 @@ public enum Tracking {
   @objc override dynamic public init()
   @objc deinit
 }
-public protocol WorkoutKitInterface : AnyObject {
-  func saveSession(state: FZWorkoutKit.SaveWorkoutState)
-  func quitWorkout()
-  @discardableResult
-  func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
-}
-public protocol WorkoutKitLogInterface : AnyObject {
-  func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]?)
-  func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]?)
-}
-extension Swift.Int {
-  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
-}
-extension Swift.Double {
-  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
-  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute], attributes: [Foundation.NSAttributedString.Key : Any]? = nil, unitAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSAttributedString
+@objc @_inheritsConvenienceInitializers public class SessionDelegater : ObjectiveC.NSObject, WatchConnectivity.WCSessionDelegate {
+  @objc public func session(_: WatchConnectivity.WCSession, activationDidCompleteWith state: WatchConnectivity.WCSessionActivationState, error: (any Swift.Error)?)
+  @objc public func sessionReachabilityDidChange(_: WatchConnectivity.WCSession)
+  @objc public func session(_: WatchConnectivity.WCSession, didReceiveApplicationContext applicationContext: [Swift.String : Any])
+  @objc public func session(_: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
+  @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  @objc public func session(_: WatchConnectivity.WCSession, didReceiveMessageData _: Foundation.Data)
+  @objc public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data, replyHandler: @escaping (Foundation.Data) -> Swift.Void)
+  @objc public func session(_: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
+  @objc public func session(_: WatchConnectivity.WCSession, didFinish userInfoTransfer: WatchConnectivity.WCSessionUserInfoTransfer, error: (any Swift.Error)?)
+  @objc public func sessionDidBecomeInactive(_ session: WatchConnectivity.WCSession)
+  @objc public func sessionDidDeactivate(_ session: WatchConnectivity.WCSession)
+  @objc public func sessionWatchStateDidChange(_ session: WatchConnectivity.WCSession)
+  @objc override dynamic public init()
+  @objc deinit
 }
 public enum ExerciseType : Swift.Equatable, Swift.RawRepresentable {
   public init?(rawValue: Swift.String)
@@ -334,8 +132,57 @@ extension FZWorkoutKit.ExerciseType : Swift.Codable {
     get
   }
 }
+extension FZWorkoutKit.GoVideoController : AVKit.AVPictureInPictureControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func pictureInPictureControllerWillStopPictureInPicture(_: AVKit.AVPictureInPictureController)
+}
+extension FZWorkoutKit.GoVideoController : FZWorkoutKit.RemoteManagerDelegate {
+  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidStart()
+  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidEnd(at time: CoreMedia.CMTime)
+  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidUpdateMetadata(coverUrl: Foundation.URL?)
+  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidUpdateMediaStatus(time: CoreMedia.CMTime, hasMedia: Swift.Bool, state: FZWorkoutKit.RemoteMediaPlayerState?)
+  @_Concurrency.MainActor @preconcurrency public func remoteSessionDidResume()
+  @_Concurrency.MainActor @preconcurrency public func remoteSessionCanStartMedia()
+  @_Concurrency.MainActor @preconcurrency public func remoteSessionCanResumeMedia(at _: CoreMedia.CMTime)
+  @_Concurrency.MainActor @preconcurrency public func remoteSessionOtherMediaPlaying()
+  @_Concurrency.MainActor @preconcurrency public func remoteDidTapQuitWorkout()
+}
+@objc @_inheritsConvenienceInitializers open class RemoteManager : ObjectiveC.NSObject {
+  open func startMedia(at time: CoreMedia.CMTime = .zero, with mode: FZWorkoutKit.WorkoutStateMode)
+  open func playMedia()
+  open func pauseMedia(promptTitle title: Swift.String? = nil, promptCaption caption: Swift.String? = nil)
+  open func seekMedia(to time: CoreMedia.CMTime)
+  open func replaceMedia()
+  open func sendFinishedMessage()
+  open func disconnect()
+  open var currentTime: CoreMedia.CMTime {
+    get
+  }
+  open var playerState: FZWorkoutKit.RemoteMediaPlayerState {
+    get
+  }
+  open var delegate: (any FZWorkoutKit.RemoteManagerDelegate)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension FZWorkoutKit.GoModeController : UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_: UIKit.UICollectionView, numberOfItemsInSection _: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+}
+public protocol RemoteManagerDelegate : AnyObject {
+  func remoteSessionDidStart()
+  func remoteSessionDidEnd(at time: CoreMedia.CMTime)
+  func remoteSessionDidResume()
+  func remoteSessionCanStartMedia()
+  func remoteSessionCanResumeMedia(at time: CoreMedia.CMTime)
+  func remoteSessionOtherMediaPlaying()
+  func remoteSessionDidUpdateMediaStatus(time: CoreMedia.CMTime, hasMedia: Swift.Bool, state: FZWorkoutKit.RemoteMediaPlayerState?)
+  func remoteSessionDidUpdateMetadata(coverUrl: Foundation.URL?)
+  func remoteDidTapQuitWorkout()
+}
 public struct ChronoState {
   public var value: Swift.Double
+  public var referenceDate: Swift.Double
+  public static func stopwatch(value: Foundation.TimeInterval = 0, referenceDate: Foundation.TimeInterval = 0) -> FZWorkoutKit.ChronoState
 }
 @_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Equatable {
   public static func == (a: FZWorkoutKit.ChronoState, b: FZWorkoutKit.ChronoState) -> Swift.Bool
@@ -344,22 +191,235 @@ public struct ChronoState {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension HealthKit.HKWorkoutActivityType : Swift.Codable {
+@objc @_Concurrency.MainActor @preconcurrency open class GoModeController : UIKit.UIViewController, FZWorkoutKit.WorkoutKitInterface, FZWorkoutKit.WorkoutKitLogInterface {
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, token: Swift.String, configuration configData: [Swift.String : Any] = [:]) async throws
+  @objc deinit
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillLayoutSubviews()
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency open func shouldDisplayCloseButton() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open func saveSession(state: FZWorkoutKit.SaveWorkoutState)
+  @_Concurrency.MainActor @preconcurrency open func quitWorkout()
+  @_Concurrency.MainActor @preconcurrency open func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor @preconcurrency open func getAllRecommendations() -> Combine.AnyPublisher<Foundation.Data, Swift.Never>
+  @_Concurrency.MainActor @preconcurrency open func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]? = nil)
+  @_Concurrency.MainActor @preconcurrency open func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]? = nil)
+  @available(*, unavailable)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
 }
-public enum WorkoutStateMode : Swift.Int, Swift.Codable {
-  case launcher
-  case start
-  case ongoing
-  case paused
-  case finished
-  case stopped
-  case notStarted
+public struct ExerciseEvaluation : Swift.Equatable, Swift.Codable {
+  public let trainingSessionExerciseId: Swift.String
+  public let repetitions: Swift.Int
+  public let duration: Foundation.TimeInterval
+  public let choice: Swift.Int?
+  public static func == (a: FZWorkoutKit.ExerciseEvaluation, b: FZWorkoutKit.ExerciseEvaluation) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BlockExercise {
+  public let identifier: Swift.String
+  public let effortType: FZWorkoutKit.ExerciseType
+  public let value: Swift.Int
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.BlockExercise : Swift.Equatable {
+  public static func == (a: FZWorkoutKit.BlockExercise, b: FZWorkoutKit.BlockExercise) -> Swift.Bool
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.BlockExercise : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SaveWorkoutState : Swift.Equatable, Swift.Codable {
+  public var duration: Swift.Double
+  public var startDate: Swift.Double
+  public var healthEvaluation: Swift.Int
+  public var equipmentWeights: [Swift.String : [Foundation.Measurement<Foundation.UnitMass>]]
+  public var exerciseEvaluations: [FZWorkoutKit.ExerciseEvaluation]
+  public var blocks: [Swift.String : FZWorkoutKit.ChronoState]
+  public var exercises: [Swift.String : [FZWorkoutKit.BlockExercise]]
+  public var calories: [Swift.String : Swift.Double]
+  public var names: [Swift.String : Swift.String]
+  public var difficultyChanges: [Swift.String : Swift.String]
+  public var weightDifficulties: [Swift.String : [Swift.Int]]
+  public var filteredBlocks: [Swift.String : FZWorkoutKit.ChronoState] {
+    get
+  }
+  public static func == (a: FZWorkoutKit.SaveWorkoutState, b: FZWorkoutKit.SaveWorkoutState) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc public enum RemoteMediaPlayerState : Swift.Int, Swift.CustomStringConvertible {
+  case unknown = 0
+  case idle = 1
+  case playing = 2
+  case paused = 3
+  case buffering = 4
+  case loading = 5
+  @_documentation(visibility: internal) public var description: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
+public struct VideoMetadata : Swift.Decodable {
+  public let title: Swift.String?
+  public let subtitle: Swift.String?
+  public var cover: Foundation.URL?
+  public var coverSize: CoreFoundation.CGSize
+  public let timeRange: CoreMedia.CMTimeRange
+  public init(from decoder: any Swift.Decoder) throws
+  public func relativeProgress(from currentTime: Foundation.TimeInterval?) -> Swift.Double
+  public func relativeProgress(from currentTime: CoreMedia.CMTime?) -> Swift.Double
+}
+@objc @_Concurrency.MainActor @preconcurrency open class GoVideoController : UIKit.UIViewController, FZWorkoutKit.WorkoutKitInterface, FZWorkoutKit.WorkoutKitLogInterface {
+  @_Concurrency.MainActor @preconcurrency public var video: FZWorkoutKit.Video {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var metadata: FZWorkoutKit.VideoMetadata {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var remoteManager: FZWorkoutKit.RemoteManager {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public let topLeftStack: UIKit.UIStackView
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var prefersHomeIndicatorAutoHidden: Swift.Bool {
+    @objc get
+  }
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
+    @objc get
+  }
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, token: Swift.String, configuration configData: [Swift.String : Any] = [:]) async throws
+  @available(*, unavailable)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLayoutSubviews()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency open func saveSession(state: FZWorkoutKit.SaveWorkoutState)
+  @objc @_Concurrency.MainActor @preconcurrency open func quitWorkout()
+  @_Concurrency.MainActor @preconcurrency open func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
+  @_Concurrency.MainActor @preconcurrency open func getAllRecommendations() -> Combine.AnyPublisher<Foundation.Data, Swift.Never>
+  @_Concurrency.MainActor @preconcurrency open func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]? = nil)
+  @_Concurrency.MainActor @preconcurrency open func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]? = nil)
+}
+public protocol WorkoutKitInterface : AnyObject {
+  func getAllRecommendations() -> Combine.AnyPublisher<Foundation.Data, Swift.Never>
+  func saveSession(state: FZWorkoutKit.SaveWorkoutState)
+  func quitWorkout()
+  @discardableResult
+  func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
+}
+extension Swift.Double {
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute], attributes: [Foundation.NSAttributedString.Key : Any]? = nil, unitAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSAttributedString
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class AudioSettingsController : UIKit.UIViewController {
+  @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct Video : Swift.Equatable, Swift.Codable {
+  public let url: Foundation.URL
+  public static func == (a: FZWorkoutKit.Video, b: FZWorkoutKit.Video) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class HostSessionDelegater : FZWorkoutKit.SessionDelegater {
+  @objc override public func session(_: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any], replyHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum Tracking {
+  @frozen public enum Event : Swift.String, Swift.CustomStringConvertible {
+    case launched
+    case started
+    case sectionDisplayed
+    case sectionStarted
+    case sectionSkipped
+    case exerciseListDisplayed
+    case exerciseDetailDisplayed
+    case next
+    case promptDisplayed
+    case promptAnswered
+    case quit
+    case sent
+    case musicActivated
+    case musicDeactivated
+    case remoteClientActivated
+    case remoteClientDeactivated
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @frozen public enum Property : Swift.String, Swift.CustomStringConvertible {
+    case sectionType
+    case sectionName
+    case sectionBlockId
+    case exerciseId
+    case promptType
+    case promptAnswerIdQuartile
+    case promptAnswerIdWeight
+    case promptAnswerIdExtra
+    case promptAnswerIdSection
+    case promptAnswerIdRecoList
+    case promptAnswerIdMax
+    case nextAction
+    case restSection
+    case exerciseName
+    case startAction
+    case quitReason
+    case musicTypes
+    public var description: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension Swift.Int {
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
+}
+extension FZWorkoutKit.WorkoutStateMode : Swift.Equatable {}
+extension FZWorkoutKit.WorkoutStateMode : Swift.Hashable {}
+extension FZWorkoutKit.WorkoutStateMode : Swift.RawRepresentable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Equatable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Hashable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.RawRepresentable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Sendable {}
+extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.BitwiseCopyable {}
+extension FZWorkoutKit.CalibrationType : Swift.Equatable {}
+extension FZWorkoutKit.CalibrationType : Swift.Hashable {}
+extension FZWorkoutKit.CalibrationType : Swift.RawRepresentable {}
+extension FZWorkoutKit.CalibrationType : Swift.Sendable {}
+extension FZWorkoutKit.CalibrationType : Swift.BitwiseCopyable {}
 extension FZWorkoutKit.RemoteMediaPlayerState : Swift.Equatable {}
 extension FZWorkoutKit.RemoteMediaPlayerState : Swift.Hashable {}
 extension FZWorkoutKit.RemoteMediaPlayerState : Swift.RawRepresentable {}
@@ -373,16 +433,3 @@ extension FZWorkoutKit.Tracking.Property : Swift.Hashable {}
 extension FZWorkoutKit.Tracking.Property : Swift.RawRepresentable {}
 extension FZWorkoutKit.Tracking.Property : Swift.Sendable {}
 extension FZWorkoutKit.Tracking.Property : Swift.BitwiseCopyable {}
-extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Equatable {}
-extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Hashable {}
-extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.RawRepresentable {}
-extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.Sendable {}
-extension FZWorkoutKit.WorkoutKitConfig.Setting : Swift.BitwiseCopyable {}
-extension FZWorkoutKit.CalibrationType : Swift.Equatable {}
-extension FZWorkoutKit.CalibrationType : Swift.Hashable {}
-extension FZWorkoutKit.CalibrationType : Swift.RawRepresentable {}
-extension FZWorkoutKit.CalibrationType : Swift.Sendable {}
-extension FZWorkoutKit.CalibrationType : Swift.BitwiseCopyable {}
-extension FZWorkoutKit.WorkoutStateMode : Swift.Equatable {}
-extension FZWorkoutKit.WorkoutStateMode : Swift.Hashable {}
-extension FZWorkoutKit.WorkoutStateMode : Swift.RawRepresentable {}
