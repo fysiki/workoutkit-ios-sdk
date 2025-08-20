@@ -307,28 +307,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-/// Struct that holds different states for a remote media player.
-typedef SWIFT_ENUM(NSInteger, RemoteMediaPlayerState, open) {
-/// Constant indicating unknown player state.
-  RemoteMediaPlayerStateUnknown = 0,
-/// Constant indicating that the media player is idle.
-  RemoteMediaPlayerStateIdle = 1,
-/// Constant indicating that the media player is playing.
-  RemoteMediaPlayerStatePlaying = 2,
-/// Constant indicating that the media player is paused.
-  RemoteMediaPlayerStatePaused = 3,
-/// Constant indicating that the media player is buffering.
-  RemoteMediaPlayerStateBuffering = 4,
-/// Constant indicating that the media player is loading media.
-  RemoteMediaPlayerStateLoading = 5,
-};
+/// This object used to communicate between a WatchKit extension and the companion iOS app.
+/// It processes messages to be used by WorkoutKit.
+SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface SessionDelegater : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class WCSession;
 @class NSString;
 @class NSData;
 @class WCSessionUserInfoTransfer;
-SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater")
-@interface SessionDelegater : NSObject <WCSessionDelegate>
+@interface SessionDelegater (SWIFT_EXTENSION(FZWorkoutKit)) <WCSessionDelegate>
 - (void)session:(WCSession * _Nonnull)_ activationDidCompleteWithState:(WCSessionActivationState)state error:(NSError * _Nullable)error;
 - (void)sessionReachabilityDidChange:(WCSession * _Nonnull)_;
 - (void)session:(WCSession * _Nonnull)_ didReceiveApplicationContext:(NSDictionary<NSString *, id> * _Nonnull)applicationContext;
@@ -338,11 +328,10 @@ SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater")
 - (void)session:(WCSession * _Nonnull)session didReceiveMessageData:(NSData * _Nonnull)messageData replyHandler:(void (^ _Nonnull)(NSData * _Nonnull))replyHandler;
 - (void)session:(WCSession * _Nonnull)_ didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)_ didFinishUserInfoTransfer:(WCSessionUserInfoTransfer * _Nonnull)userInfoTransfer error:(NSError * _Nullable)error;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-/// Used to send states to the phone and handle received messages from the phone.
-SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway")
+/// Used to send states to the companion app and handle received messages from the companion app.
+SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway") SWIFT_AVAILABILITY(watchos,introduced=8.0)
 @interface SessionGateway : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -672,28 +661,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-/// Struct that holds different states for a remote media player.
-typedef SWIFT_ENUM(NSInteger, RemoteMediaPlayerState, open) {
-/// Constant indicating unknown player state.
-  RemoteMediaPlayerStateUnknown = 0,
-/// Constant indicating that the media player is idle.
-  RemoteMediaPlayerStateIdle = 1,
-/// Constant indicating that the media player is playing.
-  RemoteMediaPlayerStatePlaying = 2,
-/// Constant indicating that the media player is paused.
-  RemoteMediaPlayerStatePaused = 3,
-/// Constant indicating that the media player is buffering.
-  RemoteMediaPlayerStateBuffering = 4,
-/// Constant indicating that the media player is loading media.
-  RemoteMediaPlayerStateLoading = 5,
-};
+/// This object used to communicate between a WatchKit extension and the companion iOS app.
+/// It processes messages to be used by WorkoutKit.
+SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface SessionDelegater : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class WCSession;
 @class NSString;
 @class NSData;
 @class WCSessionUserInfoTransfer;
-SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater")
-@interface SessionDelegater : NSObject <WCSessionDelegate>
+@interface SessionDelegater (SWIFT_EXTENSION(FZWorkoutKit)) <WCSessionDelegate>
 - (void)session:(WCSession * _Nonnull)_ activationDidCompleteWithState:(WCSessionActivationState)state error:(NSError * _Nullable)error;
 - (void)sessionReachabilityDidChange:(WCSession * _Nonnull)_;
 - (void)session:(WCSession * _Nonnull)_ didReceiveApplicationContext:(NSDictionary<NSString *, id> * _Nonnull)applicationContext;
@@ -703,11 +682,10 @@ SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater")
 - (void)session:(WCSession * _Nonnull)session didReceiveMessageData:(NSData * _Nonnull)messageData replyHandler:(void (^ _Nonnull)(NSData * _Nonnull))replyHandler;
 - (void)session:(WCSession * _Nonnull)_ didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)_ didFinishUserInfoTransfer:(WCSessionUserInfoTransfer * _Nonnull)userInfoTransfer error:(NSError * _Nullable)error;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-/// Used to send states to the phone and handle received messages from the phone.
-SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway")
+/// Used to send states to the companion app and handle received messages from the companion app.
+SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway") SWIFT_AVAILABILITY(watchos,introduced=8.0)
 @interface SessionGateway : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1037,28 +1015,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-/// Struct that holds different states for a remote media player.
-typedef SWIFT_ENUM(NSInteger, RemoteMediaPlayerState, open) {
-/// Constant indicating unknown player state.
-  RemoteMediaPlayerStateUnknown = 0,
-/// Constant indicating that the media player is idle.
-  RemoteMediaPlayerStateIdle = 1,
-/// Constant indicating that the media player is playing.
-  RemoteMediaPlayerStatePlaying = 2,
-/// Constant indicating that the media player is paused.
-  RemoteMediaPlayerStatePaused = 3,
-/// Constant indicating that the media player is buffering.
-  RemoteMediaPlayerStateBuffering = 4,
-/// Constant indicating that the media player is loading media.
-  RemoteMediaPlayerStateLoading = 5,
-};
+/// This object used to communicate between a WatchKit extension and the companion iOS app.
+/// It processes messages to be used by WorkoutKit.
+SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface SessionDelegater : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class WCSession;
 @class NSString;
 @class NSData;
 @class WCSessionUserInfoTransfer;
-SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater")
-@interface SessionDelegater : NSObject <WCSessionDelegate>
+@interface SessionDelegater (SWIFT_EXTENSION(FZWorkoutKit)) <WCSessionDelegate>
 - (void)session:(WCSession * _Nonnull)_ activationDidCompleteWithState:(WCSessionActivationState)state error:(NSError * _Nullable)error;
 - (void)sessionReachabilityDidChange:(WCSession * _Nonnull)_;
 - (void)session:(WCSession * _Nonnull)_ didReceiveApplicationContext:(NSDictionary<NSString *, id> * _Nonnull)applicationContext;
@@ -1068,11 +1036,10 @@ SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater")
 - (void)session:(WCSession * _Nonnull)session didReceiveMessageData:(NSData * _Nonnull)messageData replyHandler:(void (^ _Nonnull)(NSData * _Nonnull))replyHandler;
 - (void)session:(WCSession * _Nonnull)_ didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)session:(WCSession * _Nonnull)_ didFinishUserInfoTransfer:(WCSessionUserInfoTransfer * _Nonnull)userInfoTransfer error:(NSError * _Nullable)error;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-/// Used to send states to the phone and handle received messages from the phone.
-SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway")
+/// Used to send states to the companion app and handle received messages from the companion app.
+SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway") SWIFT_AVAILABILITY(watchos,introduced=8.0)
 @interface SessionGateway : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

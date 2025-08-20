@@ -281,8 +281,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVFoundation;
 @import AVKit;
 @import CoreFoundation;
+@import CoreMedia;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -315,7 +317,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Controller that presents and manages all audio options available in WorkoutKit.
 /// <code>AudioSettingsController</code> is displayed during a workout to allow the user to customize the audio experience.
 /// This controller can be safely presented outside a workout session (ie. in your app settings).
-SWIFT_CLASS("_TtC12FZWorkoutKit23AudioSettingsController")
+SWIFT_CLASS("_TtC12FZWorkoutKit23AudioSettingsController") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface AudioSettingsController : UIViewController
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -325,7 +327,7 @@ SWIFT_CLASS("_TtC12FZWorkoutKit23AudioSettingsController")
 
 @protocol UIViewControllerTransitionCoordinator;
 /// An object that manages a workout session for your UIKit app.
-SWIFT_CLASS("_TtC12FZWorkoutKit16GoModeController")
+SWIFT_CLASS("_TtC12FZWorkoutKit16GoModeController") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface GoModeController : UIViewController
 /// The preferred status bar style for the view controller.
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
@@ -367,13 +369,13 @@ SWIFT_CLASS("_TtC12FZWorkoutKit16GoModeController")
 ///
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView * _Nonnull)scrollView;
 /// Tells the delegate that the specified cell is about to be displayed in the collection view.
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)_;
+- (void)collectionView:(UICollectionView * _Nonnull)_ willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)_;
 /// Tells the delegate that the specified cell was removed from the collection view.
 - (void)collectionView:(UICollectionView * _Nonnull)_ didEndDisplayingCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)_;
 @end
 
 /// An object that manages a video workout session for your UIKit app.
-SWIFT_CLASS("_TtC12FZWorkoutKit17GoVideoController")
+SWIFT_CLASS("_TtC12FZWorkoutKit17GoVideoController") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface GoVideoController : UIViewController
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 @property (nonatomic, readonly) BOOL prefersHomeIndicatorAutoHidden;
@@ -395,34 +397,24 @@ SWIFT_CLASS("_TtC12FZWorkoutKit17GoVideoController")
 - (void)pictureInPictureControllerWillStopPictureInPicture:(AVPictureInPictureController * _Nonnull)_;
 @end
 
-@class WCSession;
-@class NSData;
-@class WCSessionUserInfoTransfer;
-SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater")
-@interface SessionDelegater : NSObject <WCSessionDelegate>
-- (void)session:(WCSession * _Nonnull)_ activationDidCompleteWithState:(WCSessionActivationState)state error:(NSError * _Nullable)error;
-- (void)sessionReachabilityDidChange:(WCSession * _Nonnull)_;
-- (void)session:(WCSession * _Nonnull)_ didReceiveApplicationContext:(NSDictionary<NSString *, id> * _Nonnull)applicationContext;
-- (void)session:(WCSession * _Nonnull)_ didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message;
-- (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
-- (void)session:(WCSession * _Nonnull)_ didReceiveMessageData:(NSData * _Nonnull)_;
-- (void)session:(WCSession * _Nonnull)session didReceiveMessageData:(NSData * _Nonnull)messageData replyHandler:(void (^ _Nonnull)(NSData * _Nonnull))replyHandler;
-- (void)session:(WCSession * _Nonnull)_ didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
-- (void)session:(WCSession * _Nonnull)_ didFinishUserInfoTransfer:(WCSessionUserInfoTransfer * _Nonnull)userInfoTransfer error:(NSError * _Nullable)error;
-- (void)sessionDidBecomeInactive:(WCSession * _Nonnull)session;
-- (void)sessionDidDeactivate:(WCSession * _Nonnull)session;
-- (void)sessionWatchStateDidChange:(WCSession * _Nonnull)session;
+/// This object used to communicate between a WatchKit extension and the companion iOS app.
+/// It processes messages to be used by WorkoutKit.
+SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface SessionDelegater : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC12FZWorkoutKit20HostSessionDelegater")
+@class WCSession;
+/// Implementation override of <code>SessionDelegater</code> that manages WatchKit extension messages reception and forward it to the companion iOS app.
+SWIFT_CLASS("_TtC12FZWorkoutKit20HostSessionDelegater") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface HostSessionDelegater : SessionDelegater
 - (void)session:(WCSession * _Nonnull)_ didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 /// Object that defines all requirements used by the workout controller to send commands to the remote media client.
-SWIFT_CLASS("_TtC12FZWorkoutKit13RemoteManager")
+/// RemoteManager can be used only with streaming workout controller.
+SWIFT_CLASS("_TtC12FZWorkoutKit13RemoteManager") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface RemoteManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -443,19 +435,63 @@ typedef SWIFT_ENUM(NSInteger, RemoteMediaPlayerState, open) {
   RemoteMediaPlayerStateLoading = 5,
 };
 
-/// Used to send states to the watch and handle received messages from the watch.
-SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway")
+@class NSData;
+@class WCSessionUserInfoTransfer;
+@interface SessionDelegater (SWIFT_EXTENSION(FZWorkoutKit)) <WCSessionDelegate>
+- (void)session:(WCSession * _Nonnull)_ activationDidCompleteWithState:(WCSessionActivationState)state error:(NSError * _Nullable)error;
+- (void)sessionReachabilityDidChange:(WCSession * _Nonnull)_;
+- (void)session:(WCSession * _Nonnull)_ didReceiveApplicationContext:(NSDictionary<NSString *, id> * _Nonnull)applicationContext;
+- (void)session:(WCSession * _Nonnull)_ didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message;
+- (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
+- (void)session:(WCSession * _Nonnull)_ didReceiveMessageData:(NSData * _Nonnull)_;
+- (void)session:(WCSession * _Nonnull)session didReceiveMessageData:(NSData * _Nonnull)messageData replyHandler:(void (^ _Nonnull)(NSData * _Nonnull))replyHandler;
+- (void)session:(WCSession * _Nonnull)_ didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
+- (void)session:(WCSession * _Nonnull)_ didFinishUserInfoTransfer:(WCSessionUserInfoTransfer * _Nonnull)userInfoTransfer error:(NSError * _Nullable)error;
+- (void)sessionDidBecomeInactive:(WCSession * _Nonnull)session;
+- (void)sessionDidDeactivate:(WCSession * _Nonnull)session;
+- (void)sessionWatchStateDidChange:(WCSession * _Nonnull)session;
+@end
+
+/// Object used to send workout data to the WatchKit extension and handles received messages from the WatchKit extension.
+SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface SessionGateway : NSObject
 /// The shared instance of the session gateway.
-/// You cannot create instances of the immediate scheduler yourself. Use only the shared instance.
+/// You cannot create instances yourself. Use only the shared instance.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) SessionGateway * _Nonnull shared;)
 + (SessionGateway * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Object that expose some functionalities to manage streaming workout assets.
+SWIFT_CLASS("_TtC12FZWorkoutKit13StreamManager") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface StreamManager : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURLSession;
+@class NSURLSessionTask;
+@class AVAggregateAssetDownloadTask;
+@class NSURL;
+@class NSValue;
+@class AVMediaSelection;
+@class AVAssetDownloadTask;
+@interface StreamManager (SWIFT_EXTENSION(FZWorkoutKit)) <AVAssetDownloadDelegate>
+/// Tells the delegate that the task finished transferring data.
+- (void)URLSession:(NSURLSession * _Nonnull)_ task:(NSURLSessionTask * _Nonnull)task didCompleteWithError:(NSError * _Nullable)error;
+/// Tells the delegate when a download task determines its download location.
+- (void)URLSession:(NSURLSession * _Nonnull)_ aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask * _Nonnull)aggregateAssetDownloadTask willDownloadToURL:(NSURL * _Nonnull)location;
+/// Tells the delegate that the aggregate download task loaded a new time range.
+- (void)URLSession:(NSURLSession * _Nonnull)_ aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask * _Nonnull)aggregateAssetDownloadTask didLoadTimeRange:(CMTimeRange)_ totalTimeRangesLoaded:(NSArray<NSValue *> * _Nonnull)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad forMediaSelection:(AVMediaSelection * _Nonnull)mediaSelection;
+/// Tells the delegate that a download task finished downloading the requested asset.
+- (void)URLSession:(NSURLSession * _Nonnull)_ assetDownloadTask:(AVAssetDownloadTask * _Nonnull)assetDownloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
+/// Tells the delegate that a download task loaded a new time range.
+- (void)URLSession:(NSURLSession * _Nonnull)_ assetDownloadTask:(AVAssetDownloadTask * _Nonnull)assetDownloadTask didLoadTimeRange:(CMTimeRange)_ totalTimeRangesLoaded:(NSArray<NSValue *> * _Nonnull)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad;
+@end
+
 /// An interface to WorkoutKit defaults database, where you store key-value pairs persistently across launches of your app.
-SWIFT_CLASS("_TtC12FZWorkoutKit16WorkoutKitConfig")
+SWIFT_CLASS("_TtC12FZWorkoutKit16WorkoutKitConfig") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface WorkoutKitConfig : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -751,8 +787,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVFoundation;
 @import AVKit;
 @import CoreFoundation;
+@import CoreMedia;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -785,7 +823,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Controller that presents and manages all audio options available in WorkoutKit.
 /// <code>AudioSettingsController</code> is displayed during a workout to allow the user to customize the audio experience.
 /// This controller can be safely presented outside a workout session (ie. in your app settings).
-SWIFT_CLASS("_TtC12FZWorkoutKit23AudioSettingsController")
+SWIFT_CLASS("_TtC12FZWorkoutKit23AudioSettingsController") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface AudioSettingsController : UIViewController
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -795,7 +833,7 @@ SWIFT_CLASS("_TtC12FZWorkoutKit23AudioSettingsController")
 
 @protocol UIViewControllerTransitionCoordinator;
 /// An object that manages a workout session for your UIKit app.
-SWIFT_CLASS("_TtC12FZWorkoutKit16GoModeController")
+SWIFT_CLASS("_TtC12FZWorkoutKit16GoModeController") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface GoModeController : UIViewController
 /// The preferred status bar style for the view controller.
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
@@ -837,13 +875,13 @@ SWIFT_CLASS("_TtC12FZWorkoutKit16GoModeController")
 ///
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView * _Nonnull)scrollView;
 /// Tells the delegate that the specified cell is about to be displayed in the collection view.
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)_;
+- (void)collectionView:(UICollectionView * _Nonnull)_ willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)_;
 /// Tells the delegate that the specified cell was removed from the collection view.
 - (void)collectionView:(UICollectionView * _Nonnull)_ didEndDisplayingCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)_;
 @end
 
 /// An object that manages a video workout session for your UIKit app.
-SWIFT_CLASS("_TtC12FZWorkoutKit17GoVideoController")
+SWIFT_CLASS("_TtC12FZWorkoutKit17GoVideoController") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface GoVideoController : UIViewController
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 @property (nonatomic, readonly) BOOL prefersHomeIndicatorAutoHidden;
@@ -865,34 +903,24 @@ SWIFT_CLASS("_TtC12FZWorkoutKit17GoVideoController")
 - (void)pictureInPictureControllerWillStopPictureInPicture:(AVPictureInPictureController * _Nonnull)_;
 @end
 
-@class WCSession;
-@class NSData;
-@class WCSessionUserInfoTransfer;
-SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater")
-@interface SessionDelegater : NSObject <WCSessionDelegate>
-- (void)session:(WCSession * _Nonnull)_ activationDidCompleteWithState:(WCSessionActivationState)state error:(NSError * _Nullable)error;
-- (void)sessionReachabilityDidChange:(WCSession * _Nonnull)_;
-- (void)session:(WCSession * _Nonnull)_ didReceiveApplicationContext:(NSDictionary<NSString *, id> * _Nonnull)applicationContext;
-- (void)session:(WCSession * _Nonnull)_ didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message;
-- (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
-- (void)session:(WCSession * _Nonnull)_ didReceiveMessageData:(NSData * _Nonnull)_;
-- (void)session:(WCSession * _Nonnull)session didReceiveMessageData:(NSData * _Nonnull)messageData replyHandler:(void (^ _Nonnull)(NSData * _Nonnull))replyHandler;
-- (void)session:(WCSession * _Nonnull)_ didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
-- (void)session:(WCSession * _Nonnull)_ didFinishUserInfoTransfer:(WCSessionUserInfoTransfer * _Nonnull)userInfoTransfer error:(NSError * _Nullable)error;
-- (void)sessionDidBecomeInactive:(WCSession * _Nonnull)session;
-- (void)sessionDidDeactivate:(WCSession * _Nonnull)session;
-- (void)sessionWatchStateDidChange:(WCSession * _Nonnull)session;
+/// This object used to communicate between a WatchKit extension and the companion iOS app.
+/// It processes messages to be used by WorkoutKit.
+SWIFT_CLASS("_TtC12FZWorkoutKit16SessionDelegater") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface SessionDelegater : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC12FZWorkoutKit20HostSessionDelegater")
+@class WCSession;
+/// Implementation override of <code>SessionDelegater</code> that manages WatchKit extension messages reception and forward it to the companion iOS app.
+SWIFT_CLASS("_TtC12FZWorkoutKit20HostSessionDelegater") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface HostSessionDelegater : SessionDelegater
 - (void)session:(WCSession * _Nonnull)_ didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 /// Object that defines all requirements used by the workout controller to send commands to the remote media client.
-SWIFT_CLASS("_TtC12FZWorkoutKit13RemoteManager")
+/// RemoteManager can be used only with streaming workout controller.
+SWIFT_CLASS("_TtC12FZWorkoutKit13RemoteManager") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface RemoteManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -913,19 +941,63 @@ typedef SWIFT_ENUM(NSInteger, RemoteMediaPlayerState, open) {
   RemoteMediaPlayerStateLoading = 5,
 };
 
-/// Used to send states to the watch and handle received messages from the watch.
-SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway")
+@class NSData;
+@class WCSessionUserInfoTransfer;
+@interface SessionDelegater (SWIFT_EXTENSION(FZWorkoutKit)) <WCSessionDelegate>
+- (void)session:(WCSession * _Nonnull)_ activationDidCompleteWithState:(WCSessionActivationState)state error:(NSError * _Nullable)error;
+- (void)sessionReachabilityDidChange:(WCSession * _Nonnull)_;
+- (void)session:(WCSession * _Nonnull)_ didReceiveApplicationContext:(NSDictionary<NSString *, id> * _Nonnull)applicationContext;
+- (void)session:(WCSession * _Nonnull)_ didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message;
+- (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
+- (void)session:(WCSession * _Nonnull)_ didReceiveMessageData:(NSData * _Nonnull)_;
+- (void)session:(WCSession * _Nonnull)session didReceiveMessageData:(NSData * _Nonnull)messageData replyHandler:(void (^ _Nonnull)(NSData * _Nonnull))replyHandler;
+- (void)session:(WCSession * _Nonnull)_ didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
+- (void)session:(WCSession * _Nonnull)_ didFinishUserInfoTransfer:(WCSessionUserInfoTransfer * _Nonnull)userInfoTransfer error:(NSError * _Nullable)error;
+- (void)sessionDidBecomeInactive:(WCSession * _Nonnull)session;
+- (void)sessionDidDeactivate:(WCSession * _Nonnull)session;
+- (void)sessionWatchStateDidChange:(WCSession * _Nonnull)session;
+@end
+
+/// Object used to send workout data to the WatchKit extension and handles received messages from the WatchKit extension.
+SWIFT_CLASS("_TtC12FZWorkoutKit14SessionGateway") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface SessionGateway : NSObject
 /// The shared instance of the session gateway.
-/// You cannot create instances of the immediate scheduler yourself. Use only the shared instance.
+/// You cannot create instances yourself. Use only the shared instance.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) SessionGateway * _Nonnull shared;)
 + (SessionGateway * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Object that expose some functionalities to manage streaming workout assets.
+SWIFT_CLASS("_TtC12FZWorkoutKit13StreamManager") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface StreamManager : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURLSession;
+@class NSURLSessionTask;
+@class AVAggregateAssetDownloadTask;
+@class NSURL;
+@class NSValue;
+@class AVMediaSelection;
+@class AVAssetDownloadTask;
+@interface StreamManager (SWIFT_EXTENSION(FZWorkoutKit)) <AVAssetDownloadDelegate>
+/// Tells the delegate that the task finished transferring data.
+- (void)URLSession:(NSURLSession * _Nonnull)_ task:(NSURLSessionTask * _Nonnull)task didCompleteWithError:(NSError * _Nullable)error;
+/// Tells the delegate when a download task determines its download location.
+- (void)URLSession:(NSURLSession * _Nonnull)_ aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask * _Nonnull)aggregateAssetDownloadTask willDownloadToURL:(NSURL * _Nonnull)location;
+/// Tells the delegate that the aggregate download task loaded a new time range.
+- (void)URLSession:(NSURLSession * _Nonnull)_ aggregateAssetDownloadTask:(AVAggregateAssetDownloadTask * _Nonnull)aggregateAssetDownloadTask didLoadTimeRange:(CMTimeRange)_ totalTimeRangesLoaded:(NSArray<NSValue *> * _Nonnull)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad forMediaSelection:(AVMediaSelection * _Nonnull)mediaSelection;
+/// Tells the delegate that a download task finished downloading the requested asset.
+- (void)URLSession:(NSURLSession * _Nonnull)_ assetDownloadTask:(AVAssetDownloadTask * _Nonnull)assetDownloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
+/// Tells the delegate that a download task loaded a new time range.
+- (void)URLSession:(NSURLSession * _Nonnull)_ assetDownloadTask:(AVAssetDownloadTask * _Nonnull)assetDownloadTask didLoadTimeRange:(CMTimeRange)_ totalTimeRangesLoaded:(NSArray<NSValue *> * _Nonnull)loadedTimeRanges timeRangeExpectedToLoad:(CMTimeRange)timeRangeExpectedToLoad;
+@end
+
 /// An interface to WorkoutKit defaults database, where you store key-value pairs persistently across launches of your app.
-SWIFT_CLASS("_TtC12FZWorkoutKit16WorkoutKitConfig")
+SWIFT_CLASS("_TtC12FZWorkoutKit16WorkoutKitConfig") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface WorkoutKitConfig : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

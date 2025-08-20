@@ -6,70 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "WatchConnectivity",
-        "printedName": "WatchConnectivity",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -111,6 +47,785 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "localizedString",
+        "printedName": "localizedString(_:comment:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:12FZWorkoutKit15localizedString_7commentS2S_SStF",
+        "mangledName": "$s12FZWorkoutKit15localizedString_7commentS2S_SStF",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChronoState",
+        "printedName": "ChronoState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12FZWorkoutKit11ChronoStateV5valueSdvp",
+            "mangledName": "$s12FZWorkoutKit11ChronoStateV5valueSdvp",
+            "moduleName": "FZWorkoutKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FZWorkoutKit11ChronoStateV5valueSdvg",
+                "mangledName": "$s12FZWorkoutKit11ChronoStateV5valueSdvg",
+                "moduleName": "FZWorkoutKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FZWorkoutKit11ChronoStateV5valueSdvs",
+                "mangledName": "$s12FZWorkoutKit11ChronoStateV5valueSdvs",
+                "moduleName": "FZWorkoutKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FZWorkoutKit11ChronoStateV5valueSdvM",
+                "mangledName": "$s12FZWorkoutKit11ChronoStateV5valueSdvM",
+                "moduleName": "FZWorkoutKit",
+                "implicit": true,
+                "intro_iOS": "15.0",
+                "intro_watchOS": "8.0",
+                "declAttributes": [
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "referenceDate",
+            "printedName": "referenceDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12FZWorkoutKit11ChronoStateV13referenceDateSdvp",
+            "mangledName": "$s12FZWorkoutKit11ChronoStateV13referenceDateSdvp",
+            "moduleName": "FZWorkoutKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FZWorkoutKit11ChronoStateV13referenceDateSdvg",
+                "mangledName": "$s12FZWorkoutKit11ChronoStateV13referenceDateSdvg",
+                "moduleName": "FZWorkoutKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FZWorkoutKit11ChronoStateV13referenceDateSdvs",
+                "mangledName": "$s12FZWorkoutKit11ChronoStateV13referenceDateSdvs",
+                "moduleName": "FZWorkoutKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FZWorkoutKit11ChronoStateV13referenceDateSdvM",
+                "mangledName": "$s12FZWorkoutKit11ChronoStateV13referenceDateSdvM",
+                "moduleName": "FZWorkoutKit",
+                "implicit": true,
+                "intro_iOS": "15.0",
+                "intro_watchOS": "8.0",
+                "declAttributes": [
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "stopwatch",
+            "printedName": "stopwatch(value:referenceDate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChronoState",
+                "printedName": "FZWorkoutKit.ChronoState",
+                "usr": "s:12FZWorkoutKit11ChronoStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FZWorkoutKit11ChronoStateV9stopwatch5value13referenceDateACSd_SdtFZ",
+            "mangledName": "$s12FZWorkoutKit11ChronoStateV9stopwatch5value13referenceDateACSd_SdtFZ",
+            "moduleName": "FZWorkoutKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChronoState",
+                "printedName": "FZWorkoutKit.ChronoState",
+                "usr": "s:12FZWorkoutKit11ChronoStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChronoState",
+                "printedName": "FZWorkoutKit.ChronoState",
+                "usr": "s:12FZWorkoutKit11ChronoStateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FZWorkoutKit11ChronoStateV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12FZWorkoutKit11ChronoStateV2eeoiySbAC_ACtFZ",
+            "moduleName": "FZWorkoutKit",
+            "static": true,
+            "implicit": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChronoState",
+                "printedName": "FZWorkoutKit.ChronoState",
+                "usr": "s:12FZWorkoutKit11ChronoStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12FZWorkoutKit11ChronoStateV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s12FZWorkoutKit11ChronoStateV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FZWorkoutKit",
+            "implicit": true,
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FZWorkoutKit11ChronoStateV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s12FZWorkoutKit11ChronoStateV6encode2toys7Encoder_p_tKF",
+            "moduleName": "FZWorkoutKit",
+            "implicit": true,
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12FZWorkoutKit11ChronoStateV",
+        "mangledName": "$s12FZWorkoutKit11ChronoStateV",
+        "moduleName": "FZWorkoutKit",
+        "intro_iOS": "15.0",
+        "intro_watchOS": "8.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "Available",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PagingView",
+        "printedName": "PagingView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12FZWorkoutKit10PagingViewV4bodyQrvp",
+            "mangledName": "$s12FZWorkoutKit10PagingViewV4bodyQrvp",
+            "moduleName": "FZWorkoutKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FZWorkoutKit10PagingViewV4bodyQrvg",
+                "mangledName": "$s12FZWorkoutKit10PagingViewV4bodyQrvg",
+                "moduleName": "FZWorkoutKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PagingView",
+                "printedName": "FZWorkoutKit.PagingView",
+                "usr": "s:12FZWorkoutKit10PagingViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12FZWorkoutKit10PagingViewVACycfc",
+            "mangledName": "$s12FZWorkoutKit10PagingViewVACycfc",
+            "moduleName": "FZWorkoutKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12FZWorkoutKit10PagingViewV",
+        "mangledName": "$s12FZWorkoutKit10PagingViewV",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -491,8 +1206,12 @@
         "usr": "s:12FZWorkoutKit16WorkoutStateModeO",
         "mangledName": "$s12FZWorkoutKit16WorkoutStateModeO",
         "moduleName": "FZWorkoutKit",
+        "intro_iOS": "15.0",
+        "intro_watchOS": "8.0",
         "declAttributes": [
           "AccessControl",
+          "Available",
+          "Available",
           "RawDocComment"
         ],
         "enumRawTypeName": "Int",
@@ -565,580 +1284,6 @@
       },
       {
         "kind": "Import",
-        "name": "WatchConnectivity",
-        "printedName": "WatchConnectivity",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "os",
-        "printedName": "os",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "localizedString",
-        "printedName": "localizedString(_:comment:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "usr": "s:SS"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "usr": "s:SS"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "hasDefaultArg": true,
-            "usr": "s:SS"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:12FZWorkoutKit15localizedString_7commentS2S_SStF",
-        "mangledName": "$s12FZWorkoutKit15localizedString_7commentS2S_SStF",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RemoteMediaPlayerState",
-        "printedName": "RemoteMediaPlayerState",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "unknown",
-            "printedName": "unknown",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(FZWorkoutKit.RemoteMediaPlayerState.Type) -> FZWorkoutKit.RemoteMediaPlayerState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RemoteMediaPlayerState",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                    "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RemoteMediaPlayerState",
-                        "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                        "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState@RemoteMediaPlayerStateUnknown",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO7unknownyA2CmF",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "idle",
-            "printedName": "idle",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(FZWorkoutKit.RemoteMediaPlayerState.Type) -> FZWorkoutKit.RemoteMediaPlayerState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RemoteMediaPlayerState",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                    "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RemoteMediaPlayerState",
-                        "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                        "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState@RemoteMediaPlayerStateIdle",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO4idleyA2CmF",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "playing",
-            "printedName": "playing",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(FZWorkoutKit.RemoteMediaPlayerState.Type) -> FZWorkoutKit.RemoteMediaPlayerState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RemoteMediaPlayerState",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                    "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RemoteMediaPlayerState",
-                        "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                        "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState@RemoteMediaPlayerStatePlaying",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO7playingyA2CmF",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
-            "name": "paused",
-            "printedName": "paused",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(FZWorkoutKit.RemoteMediaPlayerState.Type) -> FZWorkoutKit.RemoteMediaPlayerState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RemoteMediaPlayerState",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                    "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RemoteMediaPlayerState",
-                        "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                        "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState@RemoteMediaPlayerStatePaused",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO6pausedyA2CmF",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 3
-          },
-          {
-            "kind": "Var",
-            "name": "buffering",
-            "printedName": "buffering",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(FZWorkoutKit.RemoteMediaPlayerState.Type) -> FZWorkoutKit.RemoteMediaPlayerState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RemoteMediaPlayerState",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                    "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RemoteMediaPlayerState",
-                        "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                        "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState@RemoteMediaPlayerStateBuffering",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO9bufferingyA2CmF",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 4
-          },
-          {
-            "kind": "Var",
-            "name": "loading",
-            "printedName": "loading",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(FZWorkoutKit.RemoteMediaPlayerState.Type) -> FZWorkoutKit.RemoteMediaPlayerState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RemoteMediaPlayerState",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                    "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RemoteMediaPlayerState",
-                        "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                        "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState@RemoteMediaPlayerStateLoading",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO7loadingyA2CmF",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 5
-          },
-          {
-            "kind": "Var",
-            "name": "description",
-            "printedName": "description",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12FZWorkoutKit22RemoteMediaPlayerStateO11descriptionSSvp",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO11descriptionSSvp",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "AccessControl",
-              "Documentation"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit22RemoteMediaPlayerStateO11descriptionSSvg",
-                "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO11descriptionSSvg",
-                "moduleName": "FZWorkoutKit",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "FZWorkoutKit.RemoteMediaPlayerState?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RemoteMediaPlayerState",
-                    "printedName": "FZWorkoutKit.RemoteMediaPlayerState",
-                    "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12FZWorkoutKit22RemoteMediaPlayerStateO8rawValueACSgSi_tcfc",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO8rawValueACSgSi_tcfc",
-            "moduleName": "FZWorkoutKit",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12FZWorkoutKit22RemoteMediaPlayerStateO8rawValueSivp",
-            "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO8rawValueSivp",
-            "moduleName": "FZWorkoutKit",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit22RemoteMediaPlayerStateO8rawValueSivg",
-                "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO8rawValueSivg",
-                "moduleName": "FZWorkoutKit",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@FZWorkoutKit@E@RemoteMediaPlayerState",
-        "mangledName": "$s12FZWorkoutKit22RemoteMediaPlayerStateO",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1178,13 +1323,27 @@
       },
       {
         "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
         "declKind": "Import",
         "moduleName": "FZWorkoutKit",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
       },
       {
         "kind": "Import",
@@ -1204,154 +1363,6 @@
         "moduleName": "FZWorkoutKit"
       },
       {
-        "kind": "TypeDecl",
-        "name": "PagingView",
-        "printedName": "PagingView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12FZWorkoutKit10PagingViewV4bodyQrvp",
-            "mangledName": "$s12FZWorkoutKit10PagingViewV4bodyQrvp",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit10PagingViewV4bodyQrvg",
-                "mangledName": "$s12FZWorkoutKit10PagingViewV4bodyQrvg",
-                "moduleName": "FZWorkoutKit",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PagingView",
-                "printedName": "FZWorkoutKit.PagingView",
-                "usr": "s:12FZWorkoutKit10PagingViewV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12FZWorkoutKit10PagingViewVACycfc",
-            "mangledName": "$s12FZWorkoutKit10PagingViewVACycfc",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12FZWorkoutKit10PagingViewV",
-        "mangledName": "$s12FZWorkoutKit10PagingViewV",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1363,593 +1374,25 @@
       },
       {
         "kind": "Import",
-        "name": "WatchConnectivity",
-        "printedName": "WatchConnectivity",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "FZWorkoutKit"
       },
       {
         "kind": "Import",
-        "name": "ClockKit",
-        "printedName": "ClockKit",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SessionDelegater",
-        "printedName": "SessionDelegater",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "session",
-            "printedName": "session(_:activationDidCompleteWith:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSessionActivationState",
-                "printedName": "WatchConnectivity.WCSessionActivationState",
-                "usr": "c:@E@WCSessionActivationState"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)session:activationDidCompleteWithState:error:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_25activationDidCompleteWith5errorySo9WCSessionC_So0K15ActivationStateVs5Error_pSgtF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "session:activationDidCompleteWithState:error:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sessionReachabilityDidChange",
-            "printedName": "sessionReachabilityDidChange(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)sessionReachabilityDidChange:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC28sessionReachabilityDidChangeyySo9WCSessionCF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "sessionReachabilityDidChange:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "session",
-            "printedName": "session(_:didReceiveApplicationContext:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveApplicationContext:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_28didReceiveApplicationContextySo9WCSessionC_SDySSypGtF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "session:didReceiveApplicationContext:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "session",
-            "printedName": "session(_:didReceiveMessage:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveMessage:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_17didReceiveMessageySo9WCSessionC_SDySSypGtF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "session:didReceiveMessage:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "session",
-            "printedName": "session(_:didReceiveMessage:replyHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "([Swift.String : Any]) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveMessage:replyHandler:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_17didReceiveMessage12replyHandlerySo9WCSessionC_SDySSypGyAIctF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "session:didReceiveMessage:replyHandler:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "session",
-            "printedName": "session(_:didReceiveMessageData:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveMessageData:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_21didReceiveMessageDataySo9WCSessionC_10Foundation0I0VtF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "session:didReceiveMessageData:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "session",
-            "printedName": "session(_:didReceiveMessageData:replyHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Data",
-                "printedName": "Foundation.Data",
-                "usr": "s:10Foundation4DataV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Foundation.Data) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveMessageData:replyHandler:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_21didReceiveMessageData12replyHandlerySo9WCSessionC_10Foundation0I0VyAKctF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "session:didReceiveMessageData:replyHandler:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "session",
-            "printedName": "session(_:didReceiveUserInfo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveUserInfo:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_18didReceiveUserInfoySo9WCSessionC_SDySSypGtF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "session:didReceiveUserInfo:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "session",
-            "printedName": "session(_:didFinish:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSession",
-                "printedName": "WatchConnectivity.WCSession",
-                "usr": "c:objc(cs)WCSession"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WCSessionUserInfoTransfer",
-                "printedName": "WatchConnectivity.WCSessionUserInfoTransfer",
-                "usr": "c:objc(cs)WCSessionUserInfoTransfer"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didFinishUserInfoTransfer:error:",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_9didFinish5errorySo9WCSessionC_So0I16UserInfoTransferCs5Error_pSgtF",
-            "moduleName": "FZWorkoutKit",
-            "objc_name": "session:didFinishUserInfoTransfer:error:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SessionDelegater",
-                "printedName": "FZWorkoutKit.SessionDelegater",
-                "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)init",
-            "mangledName": "$s12FZWorkoutKit16SessionDelegaterCACycfc",
-            "moduleName": "FZWorkoutKit",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater",
-        "mangledName": "$s12FZWorkoutKit16SessionDelegaterC",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "FZWorkoutKit",
         "declAttributes": [
@@ -2104,6 +1547,685 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "ClockKit",
+        "printedName": "ClockKit",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionDelegater",
+        "printedName": "SessionDelegater",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SessionDelegater",
+                "printedName": "FZWorkoutKit.SessionDelegater",
+                "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater(im)init",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterCACycfc",
+            "moduleName": "FZWorkoutKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:activationDidCompleteWith:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSessionActivationState",
+                "printedName": "WatchConnectivity.WCSessionActivationState",
+                "usr": "c:@E@WCSessionActivationState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)session:activationDidCompleteWithState:error:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_25activationDidCompleteWith5errorySo9WCSessionC_So0K15ActivationStateVs5Error_pSgtF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "session:activationDidCompleteWithState:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionReachabilityDidChange",
+            "printedName": "sessionReachabilityDidChange(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)sessionReachabilityDidChange:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC28sessionReachabilityDidChangeyySo9WCSessionCF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "sessionReachabilityDidChange:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveApplicationContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveApplicationContext:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_28didReceiveApplicationContextySo9WCSessionC_SDySSypGtF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "session:didReceiveApplicationContext:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveMessage:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_17didReceiveMessageySo9WCSessionC_SDySSypGtF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "session:didReceiveMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveMessage:replyHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveMessage:replyHandler:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_17didReceiveMessage12replyHandlerySo9WCSessionC_SDySSypGyAIctF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "session:didReceiveMessage:replyHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveMessageData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveMessageData:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_21didReceiveMessageDataySo9WCSessionC_10Foundation0I0VtF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "session:didReceiveMessageData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveMessageData:replyHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveMessageData:replyHandler:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_21didReceiveMessageData12replyHandlerySo9WCSessionC_10Foundation0I0VyAKctF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "session:didReceiveMessageData:replyHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didReceiveUserInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didReceiveUserInfo:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_18didReceiveUserInfoySo9WCSessionC_SDySSypGtF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "session:didReceiveUserInfo:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "session",
+            "printedName": "session(_:didFinish:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSession",
+                "printedName": "WatchConnectivity.WCSession",
+                "usr": "c:objc(cs)WCSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WCSessionUserInfoTransfer",
+                "printedName": "WatchConnectivity.WCSessionUserInfoTransfer",
+                "usr": "c:objc(cs)WCSessionUserInfoTransfer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@FZWorkoutKit@objc(cs)SessionDelegater(im)session:didFinishUserInfoTransfer:error:",
+            "mangledName": "$s12FZWorkoutKit16SessionDelegaterC7session_9didFinish5errorySo9WCSessionC_So0I16UserInfoTransferCs5Error_pSgtF",
+            "moduleName": "FZWorkoutKit",
+            "objc_name": "session:didFinishUserInfoTransfer:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FZWorkoutKit@objc(cs)SessionDelegater",
+        "mangledName": "$s12FZWorkoutKit16SessionDelegaterC",
+        "moduleName": "FZWorkoutKit",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -2394,8 +2516,12 @@
         "usr": "s:12FZWorkoutKit12ExerciseTypeO",
         "mangledName": "$s12FZWorkoutKit12ExerciseTypeO",
         "moduleName": "FZWorkoutKit",
+        "intro_iOS": "15.0",
+        "intro_watchOS": "8.0",
         "declAttributes": [
           "AccessControl",
+          "Available",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -2622,8 +2748,12 @@
         "usr": "s:12FZWorkoutKit15CalibrationTypeO",
         "mangledName": "$s12FZWorkoutKit15CalibrationTypeO",
         "moduleName": "FZWorkoutKit",
+        "intro_iOS": "15.0",
+        "intro_watchOS": "8.0",
         "declAttributes": [
           "AccessControl",
+          "Available",
+          "Available",
           "Frozen",
           "RawDocComment"
         ],
@@ -2712,46 +2842,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -2769,35 +2859,8 @@
       },
       {
         "kind": "Import",
-        "name": "WatchConnectivity",
-        "printedName": "WatchConnectivity",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "FZWorkoutKit",
         "declAttributes": [
@@ -2830,6 +2893,26 @@
         "printedName": "WatchKit",
         "declKind": "Import",
         "moduleName": "FZWorkoutKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -2978,6 +3061,10 @@
                 "mangledName": "$s12FZWorkoutKit14SessionGatewayC07workoutC0So09HKWorkoutC0CSgvM",
                 "moduleName": "FZWorkoutKit",
                 "implicit": true,
+                "intro_watchOS": "8.0",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -3219,8 +3306,10 @@
         "usr": "c:@M@FZWorkoutKit@objc(cs)SessionGateway",
         "mangledName": "$s12FZWorkoutKit14SessionGatewayC",
         "moduleName": "FZWorkoutKit",
+        "intro_watchOS": "8.0",
         "declAttributes": [
           "AccessControl",
+          "Available",
           "RawDocComment",
           "ObjC"
         ],
@@ -3317,492 +3406,6 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "os",
-        "printedName": "os",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ChronoState",
-        "printedName": "ChronoState",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "value",
-            "printedName": "value",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12FZWorkoutKit11ChronoStateV5valueSdvp",
-            "mangledName": "$s12FZWorkoutKit11ChronoStateV5valueSdvp",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit11ChronoStateV5valueSdvg",
-                "mangledName": "$s12FZWorkoutKit11ChronoStateV5valueSdvg",
-                "moduleName": "FZWorkoutKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit11ChronoStateV5valueSdvs",
-                "mangledName": "$s12FZWorkoutKit11ChronoStateV5valueSdvs",
-                "moduleName": "FZWorkoutKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit11ChronoStateV5valueSdvM",
-                "mangledName": "$s12FZWorkoutKit11ChronoStateV5valueSdvM",
-                "moduleName": "FZWorkoutKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "referenceDate",
-            "printedName": "referenceDate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12FZWorkoutKit11ChronoStateV13referenceDateSdvp",
-            "mangledName": "$s12FZWorkoutKit11ChronoStateV13referenceDateSdvp",
-            "moduleName": "FZWorkoutKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit11ChronoStateV13referenceDateSdvg",
-                "mangledName": "$s12FZWorkoutKit11ChronoStateV13referenceDateSdvg",
-                "moduleName": "FZWorkoutKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit11ChronoStateV13referenceDateSdvs",
-                "mangledName": "$s12FZWorkoutKit11ChronoStateV13referenceDateSdvs",
-                "moduleName": "FZWorkoutKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12FZWorkoutKit11ChronoStateV13referenceDateSdvM",
-                "mangledName": "$s12FZWorkoutKit11ChronoStateV13referenceDateSdvM",
-                "moduleName": "FZWorkoutKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "stopwatch",
-            "printedName": "stopwatch(value:referenceDate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ChronoState",
-                "printedName": "FZWorkoutKit.ChronoState",
-                "usr": "s:12FZWorkoutKit11ChronoStateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "hasDefaultArg": true,
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "hasDefaultArg": true,
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FZWorkoutKit11ChronoStateV9stopwatch5value13referenceDateACSd_SdtFZ",
-            "mangledName": "$s12FZWorkoutKit11ChronoStateV9stopwatch5value13referenceDateACSd_SdtFZ",
-            "moduleName": "FZWorkoutKit",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ChronoState",
-                "printedName": "FZWorkoutKit.ChronoState",
-                "usr": "s:12FZWorkoutKit11ChronoStateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ChronoState",
-                "printedName": "FZWorkoutKit.ChronoState",
-                "usr": "s:12FZWorkoutKit11ChronoStateV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FZWorkoutKit11ChronoStateV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s12FZWorkoutKit11ChronoStateV2eeoiySbAC_ACtFZ",
-            "moduleName": "FZWorkoutKit",
-            "static": true,
-            "implicit": true,
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ChronoState",
-                "printedName": "FZWorkoutKit.ChronoState",
-                "usr": "s:12FZWorkoutKit11ChronoStateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12FZWorkoutKit11ChronoStateV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s12FZWorkoutKit11ChronoStateV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "FZWorkoutKit",
-            "implicit": true,
-            "isFromExtension": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FZWorkoutKit11ChronoStateV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s12FZWorkoutKit11ChronoStateV6encode2toys7Encoder_p_tKF",
-            "moduleName": "FZWorkoutKit",
-            "implicit": true,
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12FZWorkoutKit11ChronoStateV",
-        "mangledName": "$s12FZWorkoutKit11ChronoStateV",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
       },
       {
         "kind": "Import",
@@ -5161,6 +4764,269 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Name",
+        "printedName": "Name",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "startBuyingContent",
+            "printedName": "startBuyingContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea12FZWorkoutKitE18startBuyingContentABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea12FZWorkoutKitE18startBuyingContentABvpZ",
+            "moduleName": "FZWorkoutKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea12FZWorkoutKitE18startBuyingContentABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea12FZWorkoutKitE18startBuyingContentABvgZ",
+                "moduleName": "FZWorkoutKit",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancelBuyingContent",
+            "printedName": "cancelBuyingContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea12FZWorkoutKitE19cancelBuyingContentABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea12FZWorkoutKitE19cancelBuyingContentABvpZ",
+            "moduleName": "FZWorkoutKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea12FZWorkoutKitE19cancelBuyingContentABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea12FZWorkoutKitE19cancelBuyingContentABvgZ",
+                "moduleName": "FZWorkoutKit",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userStatusChanged",
+            "printedName": "userStatusChanged",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea12FZWorkoutKitE17userStatusChangedABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea12FZWorkoutKitE17userStatusChangedABvpZ",
+            "moduleName": "FZWorkoutKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea12FZWorkoutKitE17userStatusChangedABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea12FZWorkoutKitE17userStatusChangedABvgZ",
+                "moduleName": "FZWorkoutKit",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "c:@T@NSNotificationName",
+        "moduleName": "Foundation",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "Sendable"
+        ],
+        "isFromExtension": true,
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_SwiftNewtypeWrapper",
+            "printedName": "_SwiftNewtypeWrapper",
+            "usr": "s:s20_SwiftNewtypeWrapperP",
+            "mangledName": "$ss20_SwiftNewtypeWrapperP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "AnyHashable",
         "printedName": "AnyHashable",
         "declKind": "Struct",
@@ -5478,6 +5344,209 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/WatchChoice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 625,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/WatchChoice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 647,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/HeartView.swift",
+      "kind": "StringLiteral",
+      "offset": 343,
+      "length": 24,
+      "value": "\"heart.text.square.fill\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 339,
+      "length": 12,
+      "value": "\"storeQueue\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 427,
+      "length": 28,
+      "value": "\"com.fizzup.WorkoutKitWatch\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 917,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 340,
+      "length": 9,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 728,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 971,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1044,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1143,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1176,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1196,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1394,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1427,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 565,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 2919,
+      "length": 8,
+      "value": "\"29 min\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 2952,
+      "length": 11,
+      "value": "\"Full Body\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 2995,
+      "length": 4,
+      "value": "\"42\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 3025,
+      "length": 13,
+      "value": "\"Curl biceps\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 3064,
+      "length": 38,
+      "value": "\"1 répétition = 1 droite + 1 gauche\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 3172,
+      "length": 5,
+      "value": "\"9×\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3207,
+      "length": 2,
+      "value": "45"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3256,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3308,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "StringLiteral",
+      "offset": 3448,
+      "length": 9,
+      "value": "\"Bonjour\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3469,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3485,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3517,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/CommandStatus.swift",
       "kind": "StringLiteral",
       "offset": 339,
@@ -5597,11 +5666,32 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/HeartView.swift",
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PauseView.swift",
       "kind": "StringLiteral",
-      "offset": 343,
-      "length": 24,
-      "value": "\"heart.text.square.fill\""
+      "offset": 316,
+      "length": 19,
+      "value": "\"pause.circle.fill\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PauseView.swift",
+      "kind": "StringLiteral",
+      "offset": 422,
+      "length": 17,
+      "value": "\"wkw_button_quit\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PauseView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 479,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PauseView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 524,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
@@ -5655,56 +5745,56 @@
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2383,
+      "offset": 2420,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2426,
+      "offset": 2463,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2510,
+      "offset": 2547,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2571,
+      "offset": 2608,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2633,
+      "offset": 2670,
       "length": 7,
       "value": "5"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2748,
+      "offset": 2785,
       "length": 10,
       "value": "6"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2887,
+      "offset": 2924,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2904,
+      "offset": 2941,
       "length": 6,
       "value": "2"
     },
@@ -5714,426 +5804,6 @@
       "offset": 371,
       "length": 17,
       "value": "\"SessionCommands\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 339,
-      "length": 12,
-      "value": "\"storeQueue\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 427,
-      "length": 28,
-      "value": "\"com.fizzup.WorkoutKitWatch\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 917,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Actions\/GoAction+Countdown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1164,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/AppStateStore.swift",
-      "kind": "StringLiteral",
-      "offset": 983,
-      "length": 23,
-      "value": "\"com.app.redux.hdredux\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/AppStateStore.swift",
-      "kind": "Array",
-      "offset": 1093,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/AppStateStore.swift",
-      "kind": "Array",
-      "offset": 1208,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/AppStateStore.swift",
-      "kind": "Array",
-      "offset": 1374,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Communication\/StreamingRemote\/RemoteMediaPlayerState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 334,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Communication\/StreamingRemote\/RemoteMediaPlayerState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 411,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Communication\/StreamingRemote\/RemoteMediaPlayerState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 494,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Communication\/StreamingRemote\/RemoteMediaPlayerState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 575,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Communication\/StreamingRemote\/RemoteMediaPlayerState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 662,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Communication\/StreamingRemote\/RemoteMediaPlayerState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 751,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 647,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
-      "kind": "FloatLiteral",
-      "offset": 1010,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1022,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
-      "kind": "FloatLiteral",
-      "offset": 1154,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1166,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Logger+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 394,
-      "length": 10,
-      "value": "\"Tracking\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Logger+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 507,
-      "length": 7,
-      "value": "\"Debug\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Logger+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 624,
-      "length": 9,
-      "value": "\"Workout\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 565,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "StringLiteral",
-      "offset": 2919,
-      "length": 8,
-      "value": "\"29 min\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "StringLiteral",
-      "offset": 2952,
-      "length": 11,
-      "value": "\"Full Body\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "StringLiteral",
-      "offset": 2995,
-      "length": 4,
-      "value": "\"42\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "StringLiteral",
-      "offset": 3025,
-      "length": 13,
-      "value": "\"Curl biceps\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "StringLiteral",
-      "offset": 3064,
-      "length": 38,
-      "value": "\"1 répétition = 1 droite + 1 gauche\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "StringLiteral",
-      "offset": 3172,
-      "length": 5,
-      "value": "\"9×\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3207,
-      "length": 2,
-      "value": "45"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3256,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3308,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "StringLiteral",
-      "offset": 3448,
-      "length": 9,
-      "value": "\"Bonjour\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3469,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3485,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PagingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3517,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/SessionDelegater.swift",
-      "kind": "Dictionary",
-      "offset": 2612,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Models\/HeartRate.swift",
-      "kind": "IntegerLiteral",
-      "offset": 156,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
-      "kind": "Array",
-      "offset": 224,
-      "length": 60,
-      "value": "[1140, 1024, 960, 720, 640, 512, 300, 228, 138, 114, 50, 35]"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
-      "kind": "Array",
-      "offset": 416,
-      "length": 43,
-      "value": "[2000, 1440, 1280, 960, 768, 640, 540, 230]"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 866,
-      "length": 5,
-      "value": "\"q80\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 889,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 913,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 258,
-      "length": 39,
-      "value": "\"WorkoutKit.ThemeDidChangeNotification\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 561,
-      "length": 13,
-      "value": "\"DataDidFlow\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 633,
-      "length": 23,
-      "value": "\"ActivationDidComplete\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 715,
-      "length": 23,
-      "value": "\"ReachabilityDidChange\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PauseView.swift",
-      "kind": "StringLiteral",
-      "offset": 316,
-      "length": 19,
-      "value": "\"pause.circle.fill\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PauseView.swift",
-      "kind": "StringLiteral",
-      "offset": 422,
-      "length": 17,
-      "value": "\"wkw_button_quit\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PauseView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 479,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PauseView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 524,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
-      "kind": "StringLiteral",
-      "offset": 238,
-      "length": 22,
-      "value": "\"GoFinishedController\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
-      "kind": "StringLiteral",
-      "offset": 279,
-      "length": 18,
-      "value": "\"GoModeController\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
-      "kind": "StringLiteral",
-      "offset": 319,
-      "length": 21,
-      "value": "\"HeartRateController\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
-      "kind": "StringLiteral",
-      "offset": 358,
-      "length": 17,
-      "value": "\"PauseController\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
-      "kind": "StringLiteral",
-      "offset": 395,
-      "length": 19,
-      "value": "\"WelcomeController\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/WatchChoice.swift",
-      "kind": "BooleanLiteral",
-      "offset": 625,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/WatchChoice.swift",
-      "kind": "BooleanLiteral",
-      "offset": 647,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Communication\/SessionGateway.swift",
-      "kind": "StringLiteral",
-      "offset": 285,
-      "length": 16,
-      "value": "\"SessionGateway\""
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Communication\/SessionGateway.swift",
-      "kind": "BooleanLiteral",
-      "offset": 622,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/PromptView.swift",
@@ -6220,67 +5890,109 @@
       "value": "\"martha\""
     },
     {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Actions\/GoAction+Countdown.swift",
       "kind": "IntegerLiteral",
-      "offset": 340,
-      "length": 9,
+      "offset": 1164,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/AppStateStore.swift",
+      "kind": "StringLiteral",
+      "offset": 983,
+      "length": 23,
+      "value": "\"com.app.redux.hdredux\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/AppStateStore.swift",
+      "kind": "Array",
+      "offset": 1093,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/AppStateStore.swift",
+      "kind": "Array",
+      "offset": 1208,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Models\/AppStateStore.swift",
+      "kind": "Array",
+      "offset": 1374,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Models\/HeartRate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 156,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 647,
+      "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1010,
+      "length": 3,
+      "value": "0.9"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 691,
+      "offset": 1022,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1154,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 934,
+      "offset": 1166,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1007,
-      "length": 4,
-      "value": "true"
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Logger+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 394,
+      "length": 10,
+      "value": "\"Tracking\""
     },
     {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1106,
-      "length": 1,
-      "value": "0"
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Logger+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 7,
+      "value": "\"Debug\""
     },
     {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1139,
-      "length": 1,
-      "value": "0"
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Logger+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 624,
+      "length": 9,
+      "value": "\"Workout\""
     },
     {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1159,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1357,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/ChronoState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1390,
-      "length": 1,
-      "value": "0"
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/SessionDelegater.swift",
+      "kind": "Dictionary",
+      "offset": 2666,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/WelcomeView.swift",
@@ -6383,9 +6095,142 @@
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Views\/GoModeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10106,
+      "offset": 10110,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
+      "kind": "Array",
+      "offset": 224,
+      "length": 60,
+      "value": "[1140, 1024, 960, 720, 640, 512, 300, 228, 138, 114, 50, 35]"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
+      "kind": "Array",
+      "offset": 416,
+      "length": 43,
+      "value": "[2000, 1440, 1280, 960, 768, 640, 540, 230]"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 866,
+      "length": 5,
+      "value": "\"q80\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 889,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/URL+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 913,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 31,
+      "value": "\"WK.ThemeDidChangeNotification\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 554,
+      "length": 16,
+      "value": "\"WK.DataDidFlow\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 629,
+      "length": 26,
+      "value": "\"WK.ActivationDidComplete\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 26,
+      "value": "\"WK.ReachabilityDidChange\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 938,
+      "length": 23,
+      "value": "\"WK.StartBuyingContent\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1128,
+      "length": 24,
+      "value": "\"WK.CancelBuyingContent\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Extensions\/Notification.Name+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1398,
+      "length": 22,
+      "value": "\"WK.UserStatusChanged\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Communication\/SessionGateway.swift",
+      "kind": "StringLiteral",
+      "offset": 285,
+      "length": 16,
+      "value": "\"SessionGateway\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitWatch\/WorkoutKitWatch\/Communication\/SessionGateway.swift",
+      "kind": "BooleanLiteral",
+      "offset": 665,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
+      "kind": "StringLiteral",
+      "offset": 238,
+      "length": 22,
+      "value": "\"GoFinishedController\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
+      "kind": "StringLiteral",
+      "offset": 279,
+      "length": 18,
+      "value": "\"GoModeController\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 21,
+      "value": "\"HeartRateController\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
+      "kind": "StringLiteral",
+      "offset": 358,
+      "length": 17,
+      "value": "\"PauseController\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/Communication\/WatchControllerName.swift",
+      "kind": "StringLiteral",
+      "offset": 395,
+      "length": 19,
+      "value": "\"WelcomeController\""
     },
     {
       "filePath": "\/Users\/benoit\/Library\/Developer\/Xcode\/DerivedData\/FZWorkoutKit-faakscvgelwbnratlgcxsrrnavrb\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FZWorkoutKit\/IntermediateBuildFilesPath\/FZWorkoutKit.build\/Release-watchos\/FZWorkoutKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
