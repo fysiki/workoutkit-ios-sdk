@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "WorkoutKit",
+    name: "FizzUpWorkoutKit",
     defaultLocalization: "en",
-    platforms: [.iOS(.v15)],
+    platforms: [.iOS(.v15), .watchOS(.v8)],
     products: [
         .library(
-            name: "WorkoutKit",
-            targets: ["WorkoutKit"]
+            name: "FZWorkoutKit",
+            targets: ["FZWorkoutKit"]
         ),
     ],
 
     targets: [
         .binaryTarget(
-            name: "WorkoutKit",
+            name: "FZWorkoutKit",
             path: "FZWorkoutKit.xcframework"
         )
     ]
