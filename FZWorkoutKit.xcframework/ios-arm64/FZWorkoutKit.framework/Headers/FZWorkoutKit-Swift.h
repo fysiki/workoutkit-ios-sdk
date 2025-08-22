@@ -326,6 +326,42 @@ SWIFT_CLASS("_TtC12FZWorkoutKit23AudioSettingsController") SWIFT_AVAILABILITY(io
 @end
 
 @protocol UIViewControllerTransitionCoordinator;
+/// Controller that displays an exercise (video, execution steps…).
+SWIFT_CLASS("_TtC12FZWorkoutKit18ExerciseController") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface ExerciseController : UIViewController
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)_ OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewDidLayoutSubviews;
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)_;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+@class UIScrollView;
+@interface ExerciseController (SWIFT_EXTENSION(FZWorkoutKit)) <UIScrollViewDelegate>
+- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)_;
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+@end
+
+/// Controller that displays a video (streaming) exercise.
+SWIFT_CLASS("_TtC12FZWorkoutKit23ExerciseVideoController") SWIFT_AVAILABILITY(ios,introduced=15.0)
+@interface ExerciseVideoController : UIViewController
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+@property (nonatomic, readonly) BOOL prefersHomeIndicatorAutoHidden;
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)_ OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewDidLayoutSubviews;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
 /// An object that manages a workout session for your UIKit app.
 SWIFT_CLASS("_TtC12FZWorkoutKit16GoModeController") SWIFT_AVAILABILITY(ios,introduced=15.0)
 @interface GoModeController : UIViewController
@@ -354,7 +390,6 @@ SWIFT_CLASS("_TtC12FZWorkoutKit16GoModeController") SWIFT_AVAILABILITY(ios,intro
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class UIScrollView;
 @interface GoModeController (SWIFT_EXTENSION(FZWorkoutKit)) <UICollectionViewDelegate>
 /// Tells the delegate when the user scrolls the content view within the scroll view.
 /// \param scrollView The scroll-view object in which the scrolling occurred.
