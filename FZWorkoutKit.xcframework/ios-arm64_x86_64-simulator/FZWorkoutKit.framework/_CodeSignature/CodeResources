@@ -38,43 +38,43 @@
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		OaioZJUNjwXC2jd2wEBYGpHpe5g=
+		2OsDkOJTgUM7i3Ygq7gZvKpceoQ=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VWJ0fVOGSKar54VC1oTvYxIFpFI=
+		QPwMlkoyEUnBiWnBzpDHGfDyVMo=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ZPAHnEVdaCGVC3WGDYcMtyg0YBQ=
+		NDHx4aZNDIVXm91/6ihST805P2k=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VWJ0fVOGSKar54VC1oTvYxIFpFI=
+		QPwMlkoyEUnBiWnBzpDHGfDyVMo=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B7Z/AWa31OtYIw5Dvkde4h/GsUg=
+		FSApMnJClAjx4sN05dP/Y4Whpro=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OaioZJUNjwXC2jd2wEBYGpHpe5g=
+		2OsDkOJTgUM7i3Ygq7gZvKpceoQ=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		F1XkH5zkJ97APhMnVORlAsWUv14=
+		N6KMxxRlzNCOYGGB7BsnUC9FFQY=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TOzCThcaoIjXEZABO7GfGgejP/A=
+		idTzQEpmqFvtno86RyhjfYmoJjs=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		F1XkH5zkJ97APhMnVORlAsWUv14=
+		N6KMxxRlzNCOYGGB7BsnUC9FFQY=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dDV070ees4SYZfFy4yJ5p2D4et8=
+		NCkuFKCbT2NfcN14MZU0UgHW9q0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -548,70 +548,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ybjl+VRPiWTcUGV0r1yrfMm66dgiNn90IbQus+vKJic=
+			KvcDORvY7qHInmz7DA/4GpjudIYA/OG7wQl/iwAV5ZU=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+SWIMd8cKePwkI9HRZu8jztz3M1Ji7+VcBCY1NTnv/Y=
+			FLwwXI9hZ6eACMAoKGFOQc2PQWxfc4ezbTsv6+LPe/k=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pTok4KkgOWnq7xnM5Hk7CYc2mgwpO7dUlmkd13R0Gf0=
+			VAmZTK0k9qldPEAh+V0qpwZtA2aXvc0RczstPjAaBiA=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+SWIMd8cKePwkI9HRZu8jztz3M1Ji7+VcBCY1NTnv/Y=
+			FLwwXI9hZ6eACMAoKGFOQc2PQWxfc4ezbTsv6+LPe/k=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V9kWSeAViQIkHmDD9LU0/E7DXjOykok2ed6wdU9eApE=
+			F7SZnXm0GRNaA3PwjraTlU+ThEqiAQpMkh5IRg2x+e0=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ybjl+VRPiWTcUGV0r1yrfMm66dgiNn90IbQus+vKJic=
+			KvcDORvY7qHInmz7DA/4GpjudIYA/OG7wQl/iwAV5ZU=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C/3N4S5JMtQlSUvJH1bZkwrAgmlytiY5F76FcFKoFMs=
+			XPQVZlRN2zj+Q/UujTOItBZI3Jh3rwexafqWKg1ptBo=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HRf/gK4IO2c0rNlihjcrEgv6LwhglGyWpImOyzDMCQg=
+			RaIG/giWpVkEjidg2txZO7t7E7RIgBmINZoYeeq5s9I=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C/3N4S5JMtQlSUvJH1bZkwrAgmlytiY5F76FcFKoFMs=
+			XPQVZlRN2zj+Q/UujTOItBZI3Jh3rwexafqWKg1ptBo=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7iu6npY59tDJ+pm/cIDB6dOd/ZRq13ywDUA0KbGRShk=
+			WXsb7sJdcskAilU9mLDJAJCuD5X89zrR5LWKC5epV94=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
