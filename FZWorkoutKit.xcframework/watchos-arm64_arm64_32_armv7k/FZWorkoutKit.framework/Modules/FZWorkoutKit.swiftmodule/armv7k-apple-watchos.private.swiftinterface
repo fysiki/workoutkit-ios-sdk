@@ -18,6 +18,34 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
+
+
+@available(iOS 15.0, watchOS 8.0, *)
+public struct ChronoState {
+  public var value: Swift.Double
+  public var referenceDate: Swift.Double
+  public static func stopwatch(value: Foundation.TimeInterval = 0, referenceDate: Foundation.TimeInterval = 0) -> FZWorkoutKit.ChronoState
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Equatable {
+  public static func == (a: FZWorkoutKit.ChronoState, b: FZWorkoutKit.ChronoState) -> Swift.Bool
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+
+public func localizedString(_ str: Swift.String, comment: Swift.String = "") -> Swift.String
+@available(iOS 15.0, watchOS 8.0, *)
+extension Swift.Double {
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute], attributes: [Foundation.NSAttributedString.Key : Any]? = nil, unitAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSAttributedString
+}
+public enum WatchAction {
+}
+@available(iOS 15.0, watchOS 8.0, *)
+extension Swift.Int {
+  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
+}
 @_Concurrency.MainActor @preconcurrency public struct PagingView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -26,37 +54,8 @@ import os
   public typealias Body = @_opaqueReturnTypeOf("$s12FZWorkoutKit10PagingViewV4bodyQrvp", 0) __
 }
 
-@available(iOS 15.0, watchOS 8.0, *)
-extension Swift.Double {
-  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
-  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute], attributes: [Foundation.NSAttributedString.Key : Any]? = nil, unitAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSAttributedString
-}
 public struct HeartRate {
   public var value: Swift.Double?
-}
-@available(iOS 15.0, watchOS 8.0, *)
-extension Swift.Int {
-  public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
-}
-extension HealthKit.HKWorkoutActivityType : Swift.Codable {
-}
-@available(iOS 15.0, watchOS 8.0, *)
-public enum WorkoutStateMode : Swift.Int, Swift.Codable {
-  case launcher
-  case start
-  case ongoing
-  case paused
-  case finished
-  case stopped
-  case notStarted
-  public init?(rawValue: Swift.Int)
-  @available(iOS 15.0, watchOS 8.0, *)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum WatchAction {
 }
 
 @objc @_inheritsConvenienceInitializers @available(iOS 15.0, *)
@@ -75,7 +74,6 @@ extension FZWorkoutKit.SessionDelegater : WatchConnectivity.WCSessionDelegate {
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didFinish userInfoTransfer: WatchConnectivity.WCSessionUserInfoTransfer, error: (any Swift.Error)?)
 }
-
 @available(iOS 15.0, watchOS 8.0, *)
 public enum ExerciseType : Swift.Equatable, Swift.RawRepresentable {
   public init?(rawValue: Swift.String)
@@ -102,11 +100,23 @@ extension FZWorkoutKit.ExerciseType : Swift.Codable {
     get
   }
 }
-
-extension Foundation.NSNotification.Name {
-  public static let startBuyingContent: Foundation.NSNotification.Name
-  public static let cancelBuyingContent: Foundation.NSNotification.Name
-  public static let userStatusChanged: Foundation.NSNotification.Name
+extension HealthKit.HKWorkoutActivityType : Swift.Codable {
+}
+@available(iOS 15.0, watchOS 8.0, *)
+public enum WorkoutStateMode : Swift.Int, Swift.Codable {
+  case launcher
+  case start
+  case ongoing
+  case paused
+  case finished
+  case stopped
+  case notStarted
+  public init?(rawValue: Swift.Int)
+  @available(iOS 15.0, watchOS 8.0, *)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(watchOS 8.0, *)
 public class SessionGateway : ObjectiveC.NSObject, Combine.ObservableObject {
@@ -129,30 +139,14 @@ extension FZWorkoutKit.SessionGateway : HealthKit.HKWorkoutSessionDelegate {
   @objc dynamic public func workoutSession(_: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date _: Foundation.Date)
   @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didFailWithError error: any Swift.Error)
 }
-
-
-@available(iOS 15.0, watchOS 8.0, *)
-public struct ChronoState {
-  public var value: Swift.Double
-  public var referenceDate: Swift.Double
-  public static func stopwatch(value: Foundation.TimeInterval = 0, referenceDate: Foundation.TimeInterval = 0) -> FZWorkoutKit.ChronoState
-}
-@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Equatable {
-  public static func == (a: FZWorkoutKit.ChronoState, b: FZWorkoutKit.ChronoState) -> Swift.Bool
-}
-@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+extension Foundation.NSNotification.Name {
+  public static let startBuyingContent: Foundation.NSNotification.Name
+  public static let cancelBuyingContent: Foundation.NSNotification.Name
+  public static let userStatusChanged: Foundation.NSNotification.Name
 }
 
-public func localizedString(_ str: Swift.String, comment: Swift.String = "") -> Swift.String
+
 extension FZWorkoutKit.PagingView : Swift.Sendable {}
-@available(iOS 15.0, watchOS 8.0, *)
-extension FZWorkoutKit.WorkoutStateMode : Swift.Equatable {}
-@available(iOS 15.0, watchOS 8.0, *)
-extension FZWorkoutKit.WorkoutStateMode : Swift.Hashable {}
-@available(iOS 15.0, watchOS 8.0, *)
-extension FZWorkoutKit.WorkoutStateMode : Swift.RawRepresentable {}
 @available(iOS 15.0, watchOS 8.0, *)
 extension FZWorkoutKit.CalibrationType : Swift.Equatable {}
 @available(iOS 15.0, watchOS 8.0, *)
@@ -163,3 +157,9 @@ extension FZWorkoutKit.CalibrationType : Swift.RawRepresentable {}
 extension FZWorkoutKit.CalibrationType : Swift.Sendable {}
 @available(iOS 15.0, watchOS 8.0, *)
 extension FZWorkoutKit.CalibrationType : Swift.BitwiseCopyable {}
+@available(iOS 15.0, watchOS 8.0, *)
+extension FZWorkoutKit.WorkoutStateMode : Swift.Equatable {}
+@available(iOS 15.0, watchOS 8.0, *)
+extension FZWorkoutKit.WorkoutStateMode : Swift.Hashable {}
+@available(iOS 15.0, watchOS 8.0, *)
+extension FZWorkoutKit.WorkoutStateMode : Swift.RawRepresentable {}
