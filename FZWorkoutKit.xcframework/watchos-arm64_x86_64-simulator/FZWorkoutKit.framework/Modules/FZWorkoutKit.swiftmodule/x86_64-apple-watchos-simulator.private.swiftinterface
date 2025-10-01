@@ -18,6 +18,11 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
+extension Foundation.NSNotification.Name {
+  public static let startBuyingContent: Foundation.NSNotification.Name
+  public static let cancelBuyingContent: Foundation.NSNotification.Name
+  public static let userStatusChanged: Foundation.NSNotification.Name
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(watchOS 8.0, *)
 public class SessionGateway : ObjectiveC.NSObject, Combine.ObservableObject {
   public var workoutSession: HealthKit.HKWorkoutSession? {
@@ -41,6 +46,7 @@ extension FZWorkoutKit.SessionGateway : HealthKit.HKWorkoutSessionDelegate {
 }
 
 
+
 @available(iOS 15.0, watchOS 8.0, *)
 public struct ChronoState {
   public var value: Swift.Double
@@ -55,15 +61,8 @@ public struct ChronoState {
   public init(from decoder: any Swift.Decoder) throws
 }
 
-public func localizedString(_ str: Swift.String, comment: Swift.String = "") -> Swift.String
-@_Concurrency.MainActor @preconcurrency public struct PagingView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public init()
-  public typealias Body = @_opaqueReturnTypeOf("$s12FZWorkoutKit10PagingViewV4bodyQrvp", 0) __
-}
 
+public func localizedString(_ str: Swift.String, comment: Swift.String = "") -> Swift.String
 @available(iOS 15.0, watchOS 8.0, *)
 extension Swift.Double {
   public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
@@ -92,6 +91,13 @@ public enum WorkoutStateMode : Swift.Int, Swift.Codable {
   }
 }
 public enum WatchAction {
+}
+@_Concurrency.MainActor @preconcurrency public struct PagingView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init()
+  public typealias Body = @_opaqueReturnTypeOf("$s12FZWorkoutKit10PagingViewV4bodyQrvp", 0) __
 }
 
 public struct HeartRate {
@@ -140,19 +146,13 @@ extension FZWorkoutKit.ExerciseType : Swift.Codable {
     get
   }
 }
-
-extension Foundation.NSNotification.Name {
-  public static let startBuyingContent: Foundation.NSNotification.Name
-  public static let cancelBuyingContent: Foundation.NSNotification.Name
-  public static let userStatusChanged: Foundation.NSNotification.Name
-}
-extension FZWorkoutKit.PagingView : Swift.Sendable {}
 @available(iOS 15.0, watchOS 8.0, *)
 extension FZWorkoutKit.WorkoutStateMode : Swift.Equatable {}
 @available(iOS 15.0, watchOS 8.0, *)
 extension FZWorkoutKit.WorkoutStateMode : Swift.Hashable {}
 @available(iOS 15.0, watchOS 8.0, *)
 extension FZWorkoutKit.WorkoutStateMode : Swift.RawRepresentable {}
+extension FZWorkoutKit.PagingView : Swift.Sendable {}
 @available(iOS 15.0, watchOS 8.0, *)
 extension FZWorkoutKit.CalibrationType : Swift.Equatable {}
 @available(iOS 15.0, watchOS 8.0, *)
