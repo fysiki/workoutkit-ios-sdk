@@ -18,49 +18,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
-extension Foundation.NSNotification.Name {
-  public static let startBuyingContent: Foundation.NSNotification.Name
-  public static let cancelBuyingContent: Foundation.NSNotification.Name
-  public static let userStatusChanged: Foundation.NSNotification.Name
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(watchOS 8.0, *)
-public class SessionGateway : ObjectiveC.NSObject, Combine.ObservableObject {
-  public var workoutSession: HealthKit.HKWorkoutSession? {
-    get
-    set
-  }
-  public static let shared: FZWorkoutKit.SessionGateway
-  public func requestHeartRate()
-  public func startHKWorkout(with configuration: HealthKit.HKWorkoutConfiguration)
-  public func restoreHKWorkoutSession()
-  @available(watchOS 8.0, *)
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
-extension FZWorkoutKit.SessionGateway {
-  public func newState(state: Any)
-}
-extension FZWorkoutKit.SessionGateway : HealthKit.HKWorkoutSessionDelegate {
-  @objc dynamic public func workoutSession(_: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date _: Foundation.Date)
-  @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didFailWithError error: any Swift.Error)
-}
-
-
-
-@available(iOS 15.0, watchOS 8.0, *)
-public struct ChronoState {
-  public var value: Swift.Double
-  public var referenceDate: Swift.Double
-  public static func stopwatch(value: Foundation.TimeInterval = 0, referenceDate: Foundation.TimeInterval = 0) -> FZWorkoutKit.ChronoState
-}
-@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Equatable {
-  public static func == (a: FZWorkoutKit.ChronoState, b: FZWorkoutKit.ChronoState) -> Swift.Bool
-}
-@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-
 
 public func localizedString(_ str: Swift.String, comment: Swift.String = "") -> Swift.String
 @available(iOS 15.0, watchOS 8.0, *)
@@ -146,6 +103,49 @@ extension FZWorkoutKit.ExerciseType : Swift.Codable {
     get
   }
 }
+extension Foundation.NSNotification.Name {
+  public static let startBuyingContent: Foundation.NSNotification.Name
+  public static let cancelBuyingContent: Foundation.NSNotification.Name
+  public static let userStatusChanged: Foundation.NSNotification.Name
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(watchOS 8.0, *)
+public class SessionGateway : ObjectiveC.NSObject, Combine.ObservableObject {
+  public var workoutSession: HealthKit.HKWorkoutSession? {
+    get
+    set
+  }
+  public static let shared: FZWorkoutKit.SessionGateway
+  public func requestHeartRate()
+  public func startHKWorkout(with configuration: HealthKit.HKWorkoutConfiguration)
+  public func restoreHKWorkoutSession()
+  @available(watchOS 8.0, *)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension FZWorkoutKit.SessionGateway {
+  public func newState(state: Any)
+}
+extension FZWorkoutKit.SessionGateway : HealthKit.HKWorkoutSessionDelegate {
+  @objc dynamic public func workoutSession(_: HealthKit.HKWorkoutSession, didChangeTo toState: HealthKit.HKWorkoutSessionState, from fromState: HealthKit.HKWorkoutSessionState, date _: Foundation.Date)
+  @objc dynamic public func workoutSession(_ workoutSession: HealthKit.HKWorkoutSession, didFailWithError error: any Swift.Error)
+}
+
+
+
+@available(iOS 15.0, watchOS 8.0, *)
+public struct ChronoState {
+  public var value: Swift.Double
+  public var referenceDate: Swift.Double
+  public static func stopwatch(value: Foundation.TimeInterval = 0, referenceDate: Foundation.TimeInterval = 0) -> FZWorkoutKit.ChronoState
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Equatable {
+  public static func == (a: FZWorkoutKit.ChronoState, b: FZWorkoutKit.ChronoState) -> Swift.Bool
+}
+@_documentation(visibility: internal) extension FZWorkoutKit.ChronoState : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+
 @available(iOS 15.0, watchOS 8.0, *)
 extension FZWorkoutKit.WorkoutStateMode : Swift.Equatable {}
 @available(iOS 15.0, watchOS 8.0, *)
