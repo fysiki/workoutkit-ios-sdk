@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bixcorp/BDLocalizedDevicesModels",
       "state" : {
-        "revision" : "13fb16b6b97e1370c92510e860569a8b410fd7da",
-        "version" : "3.8.0"
+        "revision" : "47e24d570efa84f4638a69297dda0145741e9cad",
+        "version" : "3.9.0"
       }
     },
     {
@@ -24,8 +24,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stephencelis/SQLite.swift.git",
       "state" : {
-        "revision" : "a95fc6df17d108bd99210db5e8a9bac90fe984b8",
-        "version" : "0.15.3"
+        "revision" : "392dd6058624d9f6c5b4c769d165ddd8c7293394",
+        "version" : "0.15.4"
+      }
+    },
+    {
+      "identity" : "swift-toolchain-sqlite",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-toolchain-sqlite",
+      "state" : {
+        "revision" : "b626d3002773b1a1304166643e7f118f724b2132",
+        "version" : "1.0.4"
       }
     },
     {
@@ -33,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/fysiki/workoutkit-ios-sdk",
       "state" : {
-        "revision" : "ad82a43e26b34563bc71c0bb2a8230ead0653494",
-        "version" : "1.5.0"
+        "revision" : "cc6a533b7458fc3b6311fc0db63a9ade34e1a963",
+        "version" : "1.15.0"
       }
     }
   ],
