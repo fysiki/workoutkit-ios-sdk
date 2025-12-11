@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apollographql/apollo-ios",
       "state" : {
-        "revision" : "9aa748d6f0526a744d49d59a2383dc7fdf9d645b",
-        "version" : "1.18.0"
+        "revision" : "1abd62f6cbc8c1f4405919d7eb6cd8e96967b07c",
+        "version" : "1.25.3"
       }
     },
     {
@@ -20,30 +20,12 @@
       }
     },
     {
-      "identity" : "sqlite.swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/stephencelis/SQLite.swift.git",
-      "state" : {
-        "revision" : "392dd6058624d9f6c5b4c769d165ddd8c7293394",
-        "version" : "0.15.4"
-      }
-    },
-    {
-      "identity" : "swift-toolchain-sqlite",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/swiftlang/swift-toolchain-sqlite",
-      "state" : {
-        "revision" : "b626d3002773b1a1304166643e7f118f724b2132",
-        "version" : "1.0.4"
-      }
-    },
-    {
       "identity" : "workoutkit-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/fysiki/workoutkit-ios-sdk",
       "state" : {
-        "revision" : "cc6a533b7458fc3b6311fc0db63a9ade34e1a963",
-        "version" : "1.15.0"
+        "revision" : "b51aef5d31650b5ef25f4452a3ca7f8774f8e593",
+        "version" : "1.19.0"
       }
     }
   ],
