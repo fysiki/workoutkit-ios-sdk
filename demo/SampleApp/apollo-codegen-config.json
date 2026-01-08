@@ -17,24 +17,11 @@
   },
   "input" : {
     "operationSearchPaths" : [
-      "*.graphql"
+      "**/*.graphql"
     ],
     "schemaSearchPaths" : [
-      "./schema.graphqls"
+      "**/*.graphqls"
     ]
-  },
-  "options": {
-    "apqs": "automaticallyPersist",
-    "warningsOnDeprecatedUsage": "include",
-    "pruneGeneratedFiles": true,
-    "deprecatedEnumCases": "include",
-    "reduceGeneratedSchemaTypes": true,
-    "schemaCustomization": {
-        "customTypeNames": {
-            "Void": "Voidable",
-            "Date": "Datable"
-        }
-    }
   },
   "output" : {
     "testMocks" : {
@@ -44,7 +31,7 @@
     "schemaTypes" : {
       "path" : "./../DemoCloud",
       "moduleType" : {
-        "swiftPackageManager" : {
+        "swiftPackage" : {
         }
       }
     },

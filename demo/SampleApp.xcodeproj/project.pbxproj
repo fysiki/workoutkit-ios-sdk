@@ -535,7 +535,7 @@
 			repositoryURL = "https://github.com/apollographql/apollo-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.18.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 		14C0D8FF2D881EEC00689A4E /* XCRemoteSwiftPackageReference "workoutkit-ios-sdk" */ = {
