@@ -14,56 +14,48 @@ import FZWorkoutKit
 
 enum DemoCloudClient {
     static var shared: ApolloClient = {
-        let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForResource = 10
-
-        let client = URLSessionClient(sessionConfiguration: configuration)
         let cache: NormalizedCache
 
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         let documentsURL = URL(fileURLWithPath: documentsPath)
         let sqliteFileURL = documentsURL.appendingPathComponent("test_apollo_db.sqlite")
-        if let sqliteCache = try? SQLiteNormalizedCache(fileURL: sqliteFileURL) {
-            cache = sqliteCache
-        } else {
+
+        do {
+            cache = try SQLiteNormalizedCache(fileURL: sqliteFileURL)
+        } catch {
             cache = InMemoryNormalizedCache()
         }
 
         let store = ApolloStore(cache: cache)
 
         var url = URL(string: "https://server.com/graphql")!
-        let useAPQ = true
-        let provider = DemoNetworkInterceptorProvider(store: store)
+        let provider = DemoNetworkInterceptorProvider()
+        let urlSession = URLSession.shared
 
-        let transport = RequestChainNetworkTransport(interceptorProvider: provider, endpointURL: url, autoPersistQueries: useAPQ)
-        let apollo = ApolloClient(networkTransport: transport, store: store)
-        return apollo
+        let transport = RequestChainNetworkTransport(urlSession: urlSession, interceptorProvider: provider, store: store, endpointURL: url)
+
+        return ApolloClient(networkTransport: transport, store: store)
     }()
 }
 
 // MARK: - Interceptors
 
-class DemoNetworkInterceptorProvider: DefaultInterceptorProvider {
-    override func interceptors(for operation: some GraphQLOperation) -> [ApolloInterceptor] {
-        var interceptors = super.interceptors(for: operation)
-
-        // Add headers.
-        interceptors.insert(DemoHeadersAddingInterceptor(), at: 0)
-
-        return interceptors
+struct DemoNetworkInterceptorProvider: InterceptorProvider {
+    // Provide HTTP interceptors (URLRequest/HTTPResponse processing)
+    func httpInterceptors(for operation: some GraphQLOperation) -> [any HTTPInterceptor] {
+        DefaultInterceptorProvider.shared.httpInterceptors(for: operation) + [
+            DemoHeadersAddingInterceptor(),
+        ]
     }
 }
 
-class DemoHeadersAddingInterceptor: ApolloInterceptor {
-    var id: String = UUID().uuidString
+final class DemoHeadersAddingInterceptor: HTTPInterceptor {
+    let id: String = UUID().uuidString
 
-    func interceptAsync<Operation: GraphQLOperation>(
-        chain: RequestChain,
-        request: HTTPRequest<Operation>,
-        response: HTTPResponse<Operation>?,
-        completion: @escaping (Swift.Result<GraphQLResult<Operation.Data>, Error>) -> Void
-    ) {
-        request.addHeader(name: "X-WorkoutKit-Device", value: WorkoutKitConfig.deviceId())
-        chain.proceedAsync(request: request, response: response, interceptor: self, completion: completion)
+    func intercept(request: URLRequest, next: @Sendable (URLRequest) async throws -> Apollo.HTTPResponse) async throws -> Apollo.HTTPResponse {
+        var newRequest = request
+        newRequest.addValue(WorkoutKitConfig.deviceId(), forHTTPHeaderField: "X-WorkoutKit-Device")
+
+        return try await next(newRequest)
     }
 }

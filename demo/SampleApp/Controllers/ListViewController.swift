@@ -14,8 +14,8 @@ class ListViewController: UIViewController {
         case main
     }
 
-    var dataSource: UICollectionViewDiffableDataSource<Section, WorkoutPreviewItem>! = nil
-    var collectionView: UICollectionView! = nil
+    var dataSource: UICollectionViewDiffableDataSource<Section, WorkoutPreviewItem>!
+    var collectionView: UICollectionView!
 
     var formatter: DateComponentsFormatter {
         let formatter = DateComponentsFormatter()
@@ -50,47 +50,34 @@ class ListViewController: UIViewController {
         configureHierarchy()
         configureDataSource()
 
-        DemoCloudClient.shared.fetch(query: GetSessionsQuery(), cachePolicy: .returnCacheDataAndFetch) { [weak self] result in
-            self?.loader.isHidden = true
+        Task { [weak self] in
+            do {
+                try await self?.fetchList()
+                self?.loader.isHidden = true
 
-            switch result {
-            case let .failure(error):
-                let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
-                DispatchQueue.main.async { [weak self] in
-                    self?.present(alert, animated: true)
-                }
-
-            case let .success(response):
-                let items = response.data?.publicWorkouts.edges.compactMap(\.node.fragments.workoutPreviewItem)
-                if let items, items.isEmpty == false {
-                    var snapshot = NSDiffableDataSourceSnapshot<Section, WorkoutPreviewItem>()
-                    snapshot.appendSections([.playlist])
-                    snapshot.appendItems(items, toSection: .playlist)
-
-                    self?.dataSource.apply(snapshot, animatingDifferences: false)
-
-                } else {
-                    let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: NSLocalizedString("error_empty_list", comment: ""), preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
-                    DispatchQueue.main.async { [weak self] in
-                        self?.present(alert, animated: true)
-                    }
-                }
+            } catch {
+                self?.handleError(error.localizedDescription)
             }
         }
     }
+
+    func handleError(_ message: String?) {
+        loader.isHidden = true
+
+        let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
+        present(alert, animated: true)
+    }
 }
 
+// MARK: -
+
 extension ListViewController {
-    /// - Tag: List
     private func createLayout() -> UICollectionViewLayout {
         let config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
         return UICollectionViewCompositionalLayout.list(using: config)
     }
-}
 
-extension ListViewController {
     private func configureHierarchy() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -119,137 +106,110 @@ extension ListViewController {
 
         dataSource = UICollectionViewDiffableDataSource<Section, WorkoutPreviewItem>(collectionView: collectionView) {
             (collectionView: UICollectionView, indexPath: IndexPath, identifier: WorkoutPreviewItem) -> UICollectionViewCell? in
-
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
         }
     }
+
+    // MARK: -
+
+    func fetchList() async throws {
+        let request = try DemoCloudClient.shared.fetch(query: GetSessionsQuery(), fetchBehavior: .CacheAndNetwork)
+
+        for try await response in request {
+            let items = response.data?.publicWorkouts.edges.compactMap(\.node.fragments.workoutPreviewItem)
+            if let items, items.isEmpty == false {
+                var snapshot = NSDiffableDataSourceSnapshot<Section, WorkoutPreviewItem>()
+                snapshot.appendSections([.playlist])
+                snapshot.appendItems(items, toSection: .playlist)
+
+                await dataSource.apply(snapshot, animatingDifferences: false)
+
+            } else {
+                handleError(NSLocalizedString("error_empty_list", comment: ""))
+            }
+        }
+    }
 }
+
+// MARK: -
 
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        fetchWorkoutSession(at: indexPath)
-    }
 
-    private func fetchWorkoutSession(at indexPath: IndexPath) {
-        guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
-        print("Selected \(item.name). Fetching workout preview...")
-        loader.isHidden = false
-
-        DemoCloudClient.shared.fetch(query: GetSessionQuery(id: item.id), cachePolicy: .fetchIgnoringCacheData) { [weak self] result in
-            switch result {
-            case let .failure(error):
+        Task { [weak self] in
+            do {
+                try await self?.fetchWorkoutSession(at: indexPath)
                 self?.loader.isHidden = true
 
-                let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
-                DispatchQueue.main.async { [weak self] in
-                    self?.present(alert, animated: true)
-                }
-
-            case let .success(response):
-                if let preview = response.data?.publicWorkout.fragments.workoutPreviewItem {
-                    let alert = UIAlertController(title: preview.name,
-                                                  message: String(format: NSLocalizedString("common_workout_fetch_info", comment: ""), item.id),
-                                                  preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_cancel", comment: ""), style: .cancel, handler: { [weak self] _ in
-                        self?.loader.isHidden = true
-                    }))
-
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_continue", comment: ""), style: .default, handler: { [weak self] _ in
-                        self?.fetchWorkoutContents(at: indexPath)
-                    }))
-
-                    DispatchQueue.main.async { [weak self] in
-                        self?.present(alert, animated: true)
-                    }
-
-                } else {
-                    let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""),
-                                                  message: String(format: NSLocalizedString("error_cannot_fetch_info", comment: ""), item.id),
-                                                  preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
-                    DispatchQueue.main.async { [weak self] in
-                        self?.present(alert, animated: true)
-                    }
-                }
+            } catch {
+                self?.handleError(error.localizedDescription)
             }
         }
     }
 
-    private func fetchWorkoutContents(at indexPath: IndexPath) {
+    private func fetchWorkoutSession(at indexPath: IndexPath) async throws {
         guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
-        print("Selected \(item.name). Fetching workout contents...")
+        print("Selected \"\(item.name)\". Fetching workout preview...")
+        loader.isHidden = false
 
-        DemoCloudClient.shared.fetch(query: GetSessionContentQuery(id: item.id), cachePolicy: .fetchIgnoringCacheData) { [weak self] result in
+        let response = try await DemoCloudClient.shared.fetch(query: GetSessionQuery(id: item.id), cachePolicy: .networkOnly)
+
+        guard let preview = response.data?.publicWorkout.fragments.workoutPreviewItem else {
+            handleError(String(format: NSLocalizedString("error_cannot_fetch_info", comment: ""), item.id))
+            return
+        }
+
+        let alert = UIAlertController(title: preview.name,
+                                      message: String(format: NSLocalizedString("common_workout_fetch_info", comment: ""), item.id),
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("common_cancel", comment: ""), style: .cancel, handler: { [weak self] _ in
             self?.loader.isHidden = true
+        }))
 
-            switch result {
-            case let .failure(error):
-                let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
-                DispatchQueue.main.async { [weak self] in
-                    self?.present(alert, animated: true)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("common_continue", comment: ""), style: .default, handler: { [weak self] _ in
+            Task {
+                do { try await self?.fetchWorkoutContents(at: indexPath) }
+                catch { self?.handleError(error.localizedDescription) }
+            }
+        }))
+
+        present(alert, animated: true)
+    }
+
+    private func fetchWorkoutContents(at indexPath: IndexPath) async throws {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
+        print("Selected \"\(item.name)\". Fetching workout contents...")
+
+        let response = try await DemoCloudClient.shared.fetch(query: GetSessionContentQuery(id: item.id), cachePolicy: .networkOnly)
+
+        // Retrieve token to use fetched data.
+        guard let wk = response.extensions?["workoutkit"] as? [String: String], let token = wk["token"] else { return }
+
+        guard let data = try? response.data?.publicWorkoutSession.asJSONData() else { return }
+
+        Task { [weak self] in
+            do {
+                var controller: UIViewController?
+
+                // Check data type to open the right controller.
+                if response.data?.publicWorkoutSession.asWorkoutBlockSession != nil {
+                    controller = try await MonGoModeController(data: data, token: token)
+                } else if response.data?.publicWorkoutSession.asWorkoutVideoSession != nil {
+                    controller = try await MonVideoGoController(data: data, token: token)
                 }
 
-            case let .success(response):
-                guard let wk = response.extensions?["workoutkit"] as? [String: String], let token = wk["token"] else { return }
-
-                if let session = response.data?.publicWorkoutSession.asWorkoutBlockSession {
-                    guard let data = try? JSONSerialization.data(withJSONObject: convert(value: session.__data)) else { return }
-                    Task {
-                        do {
-                            let controller = try await MonGoModeController(data: data, token: token)
-                            controller.modalPresentationStyle = .fullScreen
-                            self?.present(controller, animated: true)
-                        } catch {
-                            print(error)
-                        }
-                    }
-
-                } else if let session = response.data?.publicWorkoutSession.asWorkoutVideoSession {
-                    guard let data = try? JSONSerialization.data(withJSONObject: convert(value: session.__data)) else { return }
-                    Task {
-                        do {
-                            let controller = try await MonVideoGoController(data: data, token: token)
-                            controller.modalPresentationStyle = .fullScreen
-                            self?.present(controller, animated: true)
-                        } catch {
-                            print(error)
-                        }
-                    }
-
-                } else {
-                    let alert = UIAlertController(title: NSLocalizedString("common_error", comment: ""),
-                                                  message: String(format: NSLocalizedString("error_cannot_open", comment: ""), item.id),
-                                                  preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: NSLocalizedString("common_ok", comment: ""), style: .cancel, handler: nil))
-                    DispatchQueue.main.async { [weak self] in
-                        self?.present(alert, animated: true)
-                    }
+                guard let controller else {
+                    self?.handleError(String(format: NSLocalizedString("error_cannot_open", comment: ""), item.id))
+                    return
                 }
+
+                controller.modalPresentationStyle = .fullScreen
+                self?.present(controller, animated: true)
+
+            } catch {
+                print(error)
             }
         }
-    }
-}
-
-private func convert(value: Any) -> Any {
-    if let value = value as? ApolloAPI.DataDict {
-        return convert(value: value._data)
-    } else if let value = value as? [String: Any] {
-        return value.mapValues(convert)
-    } else if let value = value as? [Any] {
-        return value.map(convert)
-    } else if let value = value as? CustomScalarType {
-        return value._jsonValue
-    }
-    return value
-}
-
-extension GraphQLResult {
-    func asDictionary() -> [String: Any] {
-        var dict: [String: Any] = [:]
-        if let data { dict["data"] = convert(value: data.__data) }
-        return dict
     }
 }
