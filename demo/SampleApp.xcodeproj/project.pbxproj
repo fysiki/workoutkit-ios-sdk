@@ -13,7 +13,6 @@
 		141D790D2DE0586C009B3CBE /* GoogleCastSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 141D790C2DE0586C009B3CBE /* GoogleCastSPM */; };
 		141D790F2DE05898009B3CBE /* GoogleCastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D790E2DE05898009B3CBE /* GoogleCastManager.swift */; };
 		141D79162DE05AB5009B3CBE /* GoogleCastManager+SessionManagerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D79152DE05AB1009B3CBE /* GoogleCastManager+SessionManagerListener.swift */; };
-		141D79182DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Resources */ = {isa = PBXBuildFile; fileRef = 141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */; };
 		141D79192DE05EE8009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */; };
 		141D791D2DE06337009B3CBE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D791C2DE06337009B3CBE /* Utils.swift */; };
 		142F137B2D8AB06300CA1C26 /* LocalizedDeviceModel in Frameworks */ = {isa = PBXBuildFile; productRef = 142F137A2D8AB06300CA1C26 /* LocalizedDeviceModel */; };
@@ -199,8 +198,9 @@
 		14F7EE722523712B005D7C21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					14F7EE792523712B005D7C21 = {
 						CreatedOnToolsVersion = 12.0;
@@ -245,7 +245,6 @@
 				14F7EECD252371DC005D7C21 /* InfoPlist.strings in Resources */,
 				149F58292D66346500CAE524 /* README.md in Resources */,
 				149F58262D66331000CAE524 /* Workout.graphql in Resources */,
-				141D79182DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Resources */,
 				142F137D2D8AB11A00CA1C26 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,12 +258,12 @@
 			files = (
 				14A27CC62DE08E33008B6D9A /* GoogleCastPayload.swift in Sources */,
 				141D79192DE05EE8009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Sources */,
+				141D79162DE05AB5009B3CBE /* GoogleCastManager+SessionManagerListener.swift in Sources */,
 				140848562D662EAD00B65F3F /* MonVideoGoController.swift in Sources */,
 				141D790F2DE05898009B3CBE /* GoogleCastManager.swift in Sources */,
 				14466DCF2D71F14400AB8D90 /* DemoCloudClient.swift in Sources */,
 				140848542D662E8700B65F3F /* MonGoModeController.swift in Sources */,
 				141D791D2DE06337009B3CBE /* Utils.swift in Sources */,
-				141D79162DE05AB5009B3CBE /* GoogleCastManager+SessionManagerListener.swift in Sources */,
 				14005CB725237524006A911E /* AppDelegate.swift in Sources */,
 				149F582E2D66354C00CAE524 /* ListViewController.swift in Sources */,
 				14F7EE9825237194005D7C21 /* ViewController.swift in Sources */,
@@ -338,8 +337,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XY6FC76JV3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -362,6 +363,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 8.7;
 			};
@@ -403,8 +405,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XY6FC76JV3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -420,6 +424,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 8.7;
@@ -433,7 +438,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XY6FC76JV3;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,7 +456,6 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -464,7 +467,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XY6FC76JV3;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,7 +484,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

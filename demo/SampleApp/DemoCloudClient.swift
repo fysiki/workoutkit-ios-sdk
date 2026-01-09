@@ -13,6 +13,7 @@ import Foundation
 import FZWorkoutKit
 
 enum DemoCloudClient {
+    @MainActor
     static var shared: ApolloClient = {
         let cache: NormalizedCache
 

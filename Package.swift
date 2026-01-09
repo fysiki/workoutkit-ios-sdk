@@ -18,6 +18,6 @@ let package = Package(
         .binaryTarget(
             name: "FZWorkoutKit",
             path: "FZWorkoutKit.xcframework"
-        )
+        ),
     ]
 )
