@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  SampleApp
 //
 
@@ -9,7 +9,7 @@ import FZWorkoutKit
 import LocalizedDeviceModel
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet var label: UILabel!
     @IBOutlet var label2: UILabel!
 

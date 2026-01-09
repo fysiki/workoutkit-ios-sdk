@@ -3,17 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		14005CB725237524006A911E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14005CB625237524006A911E /* AppDelegate.swift */; };
-		140848542D662E8700B65F3F /* MonGoModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140848532D662E8700B65F3F /* MonGoModeController.swift */; };
-		140848562D662EAD00B65F3F /* MonVideoGoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140848552D662EAD00B65F3F /* MonVideoGoController.swift */; };
 		141D790D2DE0586C009B3CBE /* GoogleCastSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 141D790C2DE0586C009B3CBE /* GoogleCastSPM */; };
-		141D790F2DE05898009B3CBE /* GoogleCastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D790E2DE05898009B3CBE /* GoogleCastManager.swift */; };
-		141D79162DE05AB5009B3CBE /* GoogleCastManager+SessionManagerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D79152DE05AB1009B3CBE /* GoogleCastManager+SessionManagerListener.swift */; };
-		141D79192DE05EE8009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */; };
 		141D791D2DE06337009B3CBE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141D791C2DE06337009B3CBE /* Utils.swift */; };
 		142F137B2D8AB06300CA1C26 /* LocalizedDeviceModel in Frameworks */ = {isa = PBXBuildFile; productRef = 142F137A2D8AB06300CA1C26 /* LocalizedDeviceModel */; };
 		142F137D2D8AB11A00CA1C26 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 142F137C2D8AB11A00CA1C26 /* Localizable.xcstrings */; };
@@ -23,11 +18,8 @@
 		149F58262D66331000CAE524 /* Workout.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 149F58252D66331000CAE524 /* Workout.graphql */; };
 		149F58292D66346500CAE524 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 149F58282D66346500CAE524 /* README.md */; };
 		149F582C2D66352100CAE524 /* DemoCloud in Frameworks */ = {isa = PBXBuildFile; productRef = 149F582B2D66352100CAE524 /* DemoCloud */; };
-		149F582E2D66354C00CAE524 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F582D2D66354C00CAE524 /* ListViewController.swift */; };
-		14A27CC62DE08E33008B6D9A /* GoogleCastPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A27CC52DE08E33008B6D9A /* GoogleCastPayload.swift */; };
 		14E3A2902E900454009157F1 /* FZWorkoutKit in Frameworks */ = {isa = PBXBuildFile; productRef = 14E3A28F2E900454009157F1 /* FZWorkoutKit */; };
 		14F7EE952523717A005D7C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EE942523717A005D7C21 /* Assets.xcassets */; };
-		14F7EE9825237194005D7C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F7EE9725237194005D7C21 /* ViewController.swift */; };
 		14F7EECB252371DC005D7C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EEC5252371DC005D7C21 /* LaunchScreen.storyboard */; };
 		14F7EECC252371DC005D7C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EEC7252371DC005D7C21 /* Main.storyboard */; };
 		14F7EECD252371DC005D7C21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EEC9252371DC005D7C21 /* InfoPlist.strings */; };
@@ -48,28 +40,25 @@
 
 /* Begin PBXFileReference section */
 		14005CB625237524006A911E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		140848532D662E8700B65F3F /* MonGoModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonGoModeController.swift; sourceTree = "<group>"; };
-		140848552D662EAD00B65F3F /* MonVideoGoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonVideoGoController.swift; sourceTree = "<group>"; };
-		141D790E2DE05898009B3CBE /* GoogleCastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCastManager.swift; sourceTree = "<group>"; };
-		141D79152DE05AB1009B3CBE /* GoogleCastManager+SessionManagerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoogleCastManager+SessionManagerListener.swift"; sourceTree = "<group>"; };
-		141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoogleCastManager+RemoteMediaClientListener.swift"; sourceTree = "<group>"; };
 		141D791C2DE06337009B3CBE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		142F137C2D8AB11A00CA1C26 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		14466DCE2D71F14400AB8D90 /* DemoCloudClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCloudClient.swift; sourceTree = "<group>"; };
 		149F58252D66331000CAE524 /* Workout.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Workout.graphql; sourceTree = "<group>"; };
 		149F58272D66338800CAE524 /* apollo-codegen-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = "<group>"; };
 		149F58282D66346500CAE524 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		149F582D2D66354C00CAE524 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		14A27CC52DE08E33008B6D9A /* GoogleCastPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCastPayload.swift; sourceTree = "<group>"; };
 		14F7EE7A2523712B005D7C21 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F7EE942523717A005D7C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14F7EE9725237194005D7C21 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14F7EE9A2523719F005D7C21 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F7EEC6252371DC005D7C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14F7EEC8252371DC005D7C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14F7EECA252371DC005D7C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14F7EED4252371F0005D7C21 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		141809612F10FFEF00786581 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
+		1418096A2F11000000786581 /* GoogleCast */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = GoogleCast; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		14F7EE772523712B005D7C21 /* Frameworks */ = {
@@ -88,33 +77,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		140848572D662ED700B65F3F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				149F582D2D66354C00CAE524 /* ListViewController.swift */,
-				140848532D662E8700B65F3F /* MonGoModeController.swift */,
-				140848552D662EAD00B65F3F /* MonVideoGoController.swift */,
-				14F7EE9725237194005D7C21 /* ViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		140FC6532825B93800A5F06B /* Packages */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Packages;
-			sourceTree = "<group>";
-		};
-		141D790A2DE0580F009B3CBE /* GoogleCast */ = {
-			isa = PBXGroup;
-			children = (
-				14A27CC52DE08E33008B6D9A /* GoogleCastPayload.swift */,
-				141D790E2DE05898009B3CBE /* GoogleCastManager.swift */,
-				141D79172DE05B12009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift */,
-				141D79152DE05AB1009B3CBE /* GoogleCastManager+SessionManagerListener.swift */,
-			);
-			path = GoogleCast;
 			sourceTree = "<group>";
 		};
 		14F7EE712523712B005D7C21 = {
@@ -138,12 +105,12 @@
 		14F7EE7C2523712B005D7C21 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				1418096A2F11000000786581 /* GoogleCast */,
+				141809612F10FFEF00786581 /* Controllers */,
 				142F137C2D8AB11A00CA1C26 /* Localizable.xcstrings */,
 				14005CB625237524006A911E /* AppDelegate.swift */,
 				14466DCE2D71F14400AB8D90 /* DemoCloudClient.swift */,
 				141D791C2DE06337009B3CBE /* Utils.swift */,
-				140848572D662ED700B65F3F /* Controllers */,
-				141D790A2DE0580F009B3CBE /* GoogleCast */,
 				149F58272D66338800CAE524 /* apollo-codegen-config.json */,
 				149F58252D66331000CAE524 /* Workout.graphql */,
 				14F7EEC9252371DC005D7C21 /* InfoPlist.strings */,
@@ -178,6 +145,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				141809612F10FFEF00786581 /* Controllers */,
+				1418096A2F11000000786581 /* GoogleCast */,
 			);
 			name = SampleApp;
 			packageProductDependencies = (
@@ -256,17 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A27CC62DE08E33008B6D9A /* GoogleCastPayload.swift in Sources */,
-				141D79192DE05EE8009B3CBE /* GoogleCastManager+RemoteMediaClientListener.swift in Sources */,
-				141D79162DE05AB5009B3CBE /* GoogleCastManager+SessionManagerListener.swift in Sources */,
-				140848562D662EAD00B65F3F /* MonVideoGoController.swift in Sources */,
-				141D790F2DE05898009B3CBE /* GoogleCastManager.swift in Sources */,
 				14466DCF2D71F14400AB8D90 /* DemoCloudClient.swift in Sources */,
-				140848542D662E8700B65F3F /* MonGoModeController.swift in Sources */,
 				141D791D2DE06337009B3CBE /* Utils.swift in Sources */,
 				14005CB725237524006A911E /* AppDelegate.swift in Sources */,
-				149F582E2D66354C00CAE524 /* ListViewController.swift in Sources */,
-				14F7EE9825237194005D7C21 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
