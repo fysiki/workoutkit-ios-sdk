@@ -40,7 +40,7 @@ open class RemoteManager : ObjectiveC.NSObject {
   open var playerState: FZWorkoutKit.RemoteMediaPlayerState {
     get
   }
-  open var delegate: (any FZWorkoutKit.RemoteManagerDelegate)?
+  weak open var delegate: (any FZWorkoutKit.RemoteManagerDelegate)?
   @objc override dynamic public init()
   @objc deinit
 }
