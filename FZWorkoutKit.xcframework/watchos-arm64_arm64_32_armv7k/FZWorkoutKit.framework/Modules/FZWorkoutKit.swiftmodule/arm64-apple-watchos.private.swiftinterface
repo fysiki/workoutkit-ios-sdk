@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-watchos8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FZWorkoutKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-watchos8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FZWorkoutKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import AVFoundation
 import ClockKit
 import Combine
@@ -24,9 +24,7 @@ public class SessionDelegater : ObjectiveC.NSObject {
   @objc deinit
 }
 extension FZWorkoutKit.SessionDelegater : WatchConnectivity.WCSessionDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func session(_: WatchConnectivity.WCSession, activationDidCompleteWith state: WatchConnectivity.WCSessionActivationState, error: (any Swift.Error)?)
-  #endif
   @objc dynamic public func sessionReachabilityDidChange(_: WatchConnectivity.WCSession)
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveApplicationContext applicationContext: [Swift.String : Any])
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
@@ -34,9 +32,7 @@ extension FZWorkoutKit.SessionDelegater : WatchConnectivity.WCSessionDelegate {
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveMessageData _: Foundation.Data)
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data, replyHandler: @escaping (Foundation.Data) -> Swift.Void)
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didFinish userInfoTransfer: WatchConnectivity.WCSessionUserInfoTransfer, error: (any Swift.Error)?)
-  #endif
 }
 @available(iOS 15.0, watchOS 8.0, *)
 extension Swift.Int {
@@ -50,15 +46,11 @@ extension Foundation.NSNotification.Name {
 @available(iOS 15.0, watchOS 8.0, *)
 extension Swift.Double {
   public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute], attributes: [Foundation.NSAttributedString.Key : Any]? = nil, unitAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSAttributedString
-  #endif
 }
 @available(iOS 15.0, watchOS 8.0, *)
 public enum ExerciseType : Swift.Equatable, Swift.RawRepresentable {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -75,9 +67,7 @@ extension FZWorkoutKit.ExerciseType : Swift.Codable {
 @frozen public enum CalibrationType : Swift.String, Swift.Codable {
   case start
   case end
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   @available(iOS 15.0, watchOS 8.0, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -110,9 +100,7 @@ public enum WorkoutStateMode : Swift.Int, Swift.Codable {
   case finished
   case stopped
   case notStarted
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   @available(iOS 15.0, watchOS 8.0, *)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

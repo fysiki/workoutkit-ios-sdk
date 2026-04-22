@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FZWorkoutKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FZWorkoutKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import AVFAudio
 import AVFoundation
 import AVKit
@@ -27,9 +27,7 @@ import os
 open class RemoteManager : ObjectiveC.NSObject {
   open func startMedia(at time: CoreMedia.CMTime = .zero, with mode: FZWorkoutKit.WorkoutStateMode)
   open func playMedia()
-  #if compiler(>=5.3) && $NonescapableTypes
   open func pauseMedia(promptTitle title: Swift.String? = nil, promptCaption caption: Swift.String? = nil)
-  #endif
   open func seekMedia(to time: CoreMedia.CMTime)
   open func replaceMedia()
   open func sendFinishedMessage()
@@ -52,12 +50,8 @@ public protocol RemoteManagerDelegate : AnyObject {
   func remoteSessionCanStartMedia()
   func remoteSessionCanResumeMedia(at time: CoreMedia.CMTime)
   func remoteSessionOtherMediaPlaying()
-  #if compiler(>=5.3) && $NonescapableTypes
   func remoteSessionDidUpdateMediaStatus(time: CoreMedia.CMTime, hasMedia: Swift.Bool, state: FZWorkoutKit.RemoteMediaPlayerState?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func remoteSessionDidUpdateMetadata(coverUrl: Foundation.URL?)
-  #endif
   func remoteDidTapQuitWorkout()
 }
 @available(iOS 15.0, *)
@@ -71,9 +65,7 @@ public protocol RemoteManagerDelegate : AnyObject {
   @_documentation(visibility: internal) public var description: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   @available(iOS 15.0, *)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -108,12 +100,8 @@ extension FZWorkoutKit.GoVideoController : AVKit.AVPictureInPictureControllerDel
 extension FZWorkoutKit.GoVideoController : FZWorkoutKit.RemoteManagerDelegate {
   @_Concurrency.MainActor @preconcurrency public func remoteSessionDidStart()
   @_Concurrency.MainActor @preconcurrency public func remoteSessionDidEnd(at time: CoreMedia.CMTime)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func remoteSessionDidUpdateMetadata(coverUrl: Foundation.URL?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func remoteSessionDidUpdateMediaStatus(time: CoreMedia.CMTime, hasMedia: Swift.Bool, state: FZWorkoutKit.RemoteMediaPlayerState?)
-  #endif
   @_Concurrency.MainActor @preconcurrency public func remoteSessionDidResume()
   @_Concurrency.MainActor @preconcurrency public func remoteSessionCanStartMedia()
   @_Concurrency.MainActor @preconcurrency public func remoteSessionCanResumeMedia(at _: CoreMedia.CMTime)
@@ -124,23 +112,15 @@ extension FZWorkoutKit.GoVideoController : FZWorkoutKit.RemoteManagerDelegate {
 @_Concurrency.MainActor @preconcurrency final public class AudioSettingsController : UIKit.UIViewController {
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @available(iOS 15.0, *)
 @_Concurrency.MainActor @preconcurrency open class ExerciseController : UIKit.UIViewController {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(identifier: Swift.String, name: Swift.String, cover: Foundation.URL? = nil, video: Foundation.URL, videoBackgroundColor: Swift.Int = 0xFFFFFF, videoPrimaryColor: Swift.Int = 0x000000, executionSteps: [Swift.String] = [], revised: Swift.Bool = false, favorite: Swift.Bool = false, revisionHandler: ((Swift.String) -> Swift.Void)? = nil, favoriteHandler: ((Swift.String, Swift.Bool, @escaping (Swift.Bool) -> Swift.Void) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, unavailable)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
-  #endif
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
     @objc get
   }
@@ -173,13 +153,9 @@ extension FZWorkoutKit.ExerciseController : UIKit.UIScrollViewDelegate {
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(identifier: Swift.String, name: Swift.String, cover: Foundation.URL? = nil, video: Foundation.URL, videoBackgroundColor: Swift.Int = 0xFFFFFF, videoPrimaryColor: Swift.Int = 0x000000, revised: Swift.Bool = false, favorite: Swift.Bool = false, revisionHandler: ((Swift.String) -> Swift.Void)? = nil, favoriteHandler: ((Swift.String, Swift.Bool, @escaping (Swift.Bool) -> Swift.Void) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, unavailable)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
-  #endif
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
@@ -206,19 +182,11 @@ extension FZWorkoutKit.ExerciseController : UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency open func quitWorkout()
   @_Concurrency.MainActor @preconcurrency open func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
   @_Concurrency.MainActor @preconcurrency open func getAllRecommendations() -> Combine.AnyPublisher<Foundation.Data, Swift.Never>
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func buyPremiumContent(from _: UIKit.UIViewController?) -> Combine.AnyPublisher<Foundation.Data, Swift.Never>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, unavailable)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
-  #endif
 }
 @objc @available(iOS 15.0, *)
 @_Concurrency.MainActor @preconcurrency open class GoVideoController : UIKit.UIViewController, FZWorkoutKit.WorkoutKitInterface, FZWorkoutKit.WorkoutKitLogInterface {
@@ -248,13 +216,9 @@ extension FZWorkoutKit.ExerciseController : UIKit.UIScrollViewDelegate {
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(data: Foundation.Data, localStream: Foundation.URL? = nil, token: Swift.String, configuration configData: [Swift.String : Any] = [:]) async throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, unavailable)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
-  #endif
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
   @_documentation(visibility: internal) @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
@@ -263,26 +227,18 @@ extension FZWorkoutKit.ExerciseController : UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency open func saveSession(state: FZWorkoutKit.SaveWorkoutState)
   @objc @_Concurrency.MainActor @preconcurrency open func quitWorkout()
   @_Concurrency.MainActor @preconcurrency open func displayPostWorkout() -> Combine.AnyPublisher<Swift.Void, Swift.Never>
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]? = nil)
-  #endif
 }
 extension FZWorkoutKit.GoVideoController : UIKit.UIToolbarDelegate {
 }
 extension Foundation.Data {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var streamingVideo: FZWorkoutKit.Video? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var streamingMetadata: FZWorkoutKit.VideoMetadata? {
     get
   }
-  #endif
 }
 extension Foundation.NSNotification.Name {
   public static let downloadProgressChanged: Foundation.NSNotification.Name
@@ -304,12 +260,8 @@ public struct VideoMetadata {
   public var cover: Foundation.URL?
   public var coverSize: CoreFoundation.CGSize
   public let timeRange: CoreMedia.CMTimeRange
-  #if compiler(>=5.3) && $NonescapableTypes
   public func relativeProgress(from currentTime: Foundation.TimeInterval?) -> Swift.Double
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func relativeProgress(from currentTime: CoreMedia.CMTime?) -> Swift.Double
-  #endif
 }
 extension FZWorkoutKit.VideoMetadata : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
@@ -372,15 +324,11 @@ final public class AssetManager {
 final public class StreamManager : ObjectiveC.NSObject {
   public static let shared: FZWorkoutKit.StreamManager
   final public func downloadStream(_ video: FZWorkoutKit.Video, metadata: FZWorkoutKit.VideoMetadata, identifier downloadIdentifier: Swift.String, bitrate: Swift.Int, useCellular: Swift.Bool) -> Combine.AnyPublisher<Foundation.Data, Foundation.NSError>
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func downloadStream(_ url: Foundation.URL, title: Swift.String?, subtitle: Swift.String?, assetArtworkData artworkData: Foundation.Data?, identifier downloadIdentifier: Swift.String, bitrate: Swift.Int, useCellular: Swift.Bool, hasVariants isAggregate: Swift.Bool = false) -> Combine.AnyPublisher<Foundation.Data, Foundation.NSError>
-  #endif
   @objc deinit
 }
 extension FZWorkoutKit.StreamManager : AVFoundation.AVAssetDownloadDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func urlSession(_: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
-  #endif
   @objc final public func urlSession(_: Foundation.URLSession, aggregateAssetDownloadTask: AVFoundation.AVAggregateAssetDownloadTask, willDownloadTo location: Foundation.URL)
   @objc final public func urlSession(_: Foundation.URLSession, aggregateAssetDownloadTask: AVFoundation.AVAggregateAssetDownloadTask, didLoad _: CoreMedia.CMTimeRange, totalTimeRangesLoaded loadedTimeRanges: [Foundation.NSValue], timeRangeExpectedToLoad: CoreMedia.CMTimeRange, for mediaSelection: AVFoundation.AVMediaSelection)
   @objc final public func urlSession(_: Foundation.URLSession, assetDownloadTask: AVFoundation.AVAssetDownloadTask, didFinishDownloadingTo location: Foundation.URL)
@@ -408,9 +356,7 @@ public enum Tracking {
     public var description: Swift.String {
       get
     }
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     @available(iOS 15.0, *)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -438,9 +384,7 @@ public enum Tracking {
     public var description: Swift.String {
       get
     }
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     @available(iOS 15.0, *)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -464,9 +408,7 @@ public class WorkoutKitConfig : ObjectiveC.NSObject {
     case musicStyleHipHopRap
     case musicStylePop
     case musicStyleRock
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: ObjectiveC.NSInteger)
-    #endif
     @available(iOS 15.0, *)
     public typealias AllCases = [FZWorkoutKit.WorkoutKitConfig.Setting]
     @available(iOS 15.0, *)
@@ -478,17 +420,11 @@ public class WorkoutKitConfig : ObjectiveC.NSObject {
       get
     }
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func set(_ value: Any?, forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting)
-  #endif
   public class func set(_ value: Swift.Int, forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting)
   public class func set(_ value: Swift.Bool, forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting)
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func object(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Any?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func string(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.String?
-  #endif
   public class func float(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.Float
   public class func double(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.Double
   public class func integer(forKey defaultSetting: FZWorkoutKit.WorkoutKitConfig.Setting) -> Swift.Int
@@ -507,19 +443,13 @@ public protocol WorkoutKitInterface : AnyObject {
 }
 @available(iOS 15.0, *)
 public protocol WorkoutKitLogInterface : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   func log(_ message: Swift.String, context: [Swift.String : Swift.AnyHashable]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func trackEvent(_ name: FZWorkoutKit.Tracking.Event, properties: [FZWorkoutKit.Tracking.Property : Swift.String]?)
-  #endif
 }
 @available(iOS 15.0, *)
 public protocol WorkoutKitRegularInterface : AnyObject {
   func getAllRecommendations() -> Combine.AnyPublisher<Foundation.Data, Swift.Never>
-  #if compiler(>=5.3) && $NonescapableTypes
   func buyPremiumContent(from presenter: UIKit.UIViewController?) -> Combine.AnyPublisher<Foundation.Data, Swift.Never>
-  #endif
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 15.0, *)
 public class SessionDelegater : ObjectiveC.NSObject {
@@ -527,9 +457,7 @@ public class SessionDelegater : ObjectiveC.NSObject {
   @objc deinit
 }
 extension FZWorkoutKit.SessionDelegater : WatchConnectivity.WCSessionDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func session(_: WatchConnectivity.WCSession, activationDidCompleteWith state: WatchConnectivity.WCSessionActivationState, error: (any Swift.Error)?)
-  #endif
   @objc dynamic public func sessionReachabilityDidChange(_: WatchConnectivity.WCSession)
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveApplicationContext applicationContext: [Swift.String : Any])
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveMessage message: [Swift.String : Any])
@@ -537,9 +465,7 @@ extension FZWorkoutKit.SessionDelegater : WatchConnectivity.WCSessionDelegate {
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveMessageData _: Foundation.Data)
   @objc dynamic public func session(_ session: WatchConnectivity.WCSession, didReceiveMessageData messageData: Foundation.Data, replyHandler: @escaping (Foundation.Data) -> Swift.Void)
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didReceiveUserInfo userInfo: [Swift.String : Any] = [:])
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func session(_: WatchConnectivity.WCSession, didFinish userInfoTransfer: WatchConnectivity.WCSessionUserInfoTransfer, error: (any Swift.Error)?)
-  #endif
   @objc dynamic public func sessionDidBecomeInactive(_ session: WatchConnectivity.WCSession)
   @objc dynamic public func sessionDidDeactivate(_ session: WatchConnectivity.WCSession)
   @objc dynamic public func sessionWatchStateDidChange(_ session: WatchConnectivity.WCSession)
@@ -556,15 +482,11 @@ extension Foundation.NSNotification.Name {
 @available(iOS 15.0, watchOS 8.0, *)
 extension Swift.Double {
   public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute]) -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func formattedDuration(_ allowedUnits: Foundation.NSCalendar.Unit = [.hour, .minute], attributes: [Foundation.NSAttributedString.Key : Any]? = nil, unitAttributes: [Foundation.NSAttributedString.Key : Any]? = nil) -> Foundation.NSAttributedString
-  #endif
 }
 @available(iOS 15.0, watchOS 8.0, *)
 public enum ExerciseType : Swift.Equatable, Swift.RawRepresentable {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -581,9 +503,7 @@ extension FZWorkoutKit.ExerciseType : Swift.Codable {
 @frozen public enum CalibrationType : Swift.String, Swift.Codable {
   case start
   case end
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   @available(iOS 15.0, watchOS 8.0, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -616,9 +536,7 @@ public enum WorkoutStateMode : Swift.Int, Swift.Codable {
   case finished
   case stopped
   case notStarted
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   @available(iOS 15.0, watchOS 8.0, *)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

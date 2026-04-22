@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/FZWorkoutKit.framework/Assets.car</key>
 		<data>
-		F9y3ODeKoEvDfD9099IOgoQiX8U=
+		aqDmJKpzNotC/pGrkaDoHS7+i1A=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/BebasNeue.otf</key>
 		<data>
@@ -30,35 +30,35 @@
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/FZWorkoutKit</key>
 		<data>
-		Z6HX1Er5H15VIrpDATWsL9d6Rq4=
+		REsSLCmA6+hC8kRAMp125z4DQNo=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/Headers/FZWorkoutKit-Swift.h</key>
 		<data>
-		+IK9DKaTsEGWMNm03IlumQLO80c=
+		zZP1/nt9/iaq1000RwhyJXTJ/EY=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/Info.plist</key>
 		<data>
-		ShaHyTAiuaODZCIjufsF+9xuGOU=
+		WhM3p+mptB0wsej0MsYSn8UBDWQ=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CwxYI2ahuyiCNedg6eALZgpqknY=
+		DUz4Fs+RXVibVaeQIYw72lb4gFk=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		AZfcajP1xADl728Bg72sGXhyKE8=
+		MxAHE1fDgojEyEHqcjIMzN8mpZc=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		tnQfC3aOckNpEpMLYeOJMQMtO3A=
+		8Te95fTwRUPJ+BiBmfIrYe2iwks=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		AZfcajP1xADl728Bg72sGXhyKE8=
+		MxAHE1fDgojEyEHqcjIMzN8mpZc=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/module.modulemap</key>
 		<data>
-		0UkQUJF6rqSfslB+MLe+XuSx6UI=
+		JLRSCKBuXeiYKOvs80Tx9uAkcX8=
 		</data>
 		<key>ios-arm64/FZWorkoutKit.framework/SlideAnimationAE.json</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tEEDP2B2p7IKWAiSTd1B3yH4vNY=
+			BIpp/jOhzw1peKhsF+NvlgD6HdE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -135,7 +135,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EjM8KifdiSthR/sl9mphwvEpilA=
+			xoJU/SwY3iIaTYFRGfWUrG3lfWI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -180,7 +180,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e8ebnJR3g1U5XOICpFQiMPVpZAg=
+			728ivL3EayNRtG4ipfkfx+avsr8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -225,7 +225,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dC5IIGj5rdvfKrXGNEmhwLUrqeA=
+			PB/qW4PDvWxw43eqF5iVYAqP1Ow=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8x2yGRjCU7YbJSKIZYSWW/JYt44=
+			cShKsTcrJRL5OjrxdvpDnv+sKLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -306,7 +306,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AAWhMUT5QXQS6WrquzDC9tHpAfw=
+			0vZQPRh9W4GrEkOjL6Y+j7LPDaw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -386,7 +386,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pkwXXVtqOMrXG9jDJcewUsSLM+Y=
+			ED5mZqafkbQUOuUsq+2T3jEJhqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -422,7 +422,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LnkuKluCI1OB4IPq5vQkmmN4Wn4=
+			vLPsiprsz2Cx8gUdF2F5OBwLJe0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -474,7 +474,7 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Assets.car</key>
 		<data>
-		yNk5mBiYTwZH5T6neqvfIHFthsA=
+		aqDmJKpzNotC/pGrkaDoHS7+i1A=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/BebasNeue.otf</key>
 		<data>
@@ -498,51 +498,51 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/FZWorkoutKit</key>
 		<data>
-		TVLCIomZzM7gO26R9ZAUI0Da5TU=
+		JMM9A4gou5axH80TM10N+QVuCcc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Headers/FZWorkoutKit-Swift.h</key>
 		<data>
-		oycgDLRg7VZuiD9PbOHg0O/cb+s=
+		z7ZKgGHYdZfNoTqltzZHVOuO5sU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Info.plist</key>
 		<data>
-		OUaSNwfhChw842LUduQQF2YBuSg=
+		hmWldr1NOaZrkJ65yMS6DWZVnrA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+3C/fwIucGMC1O4wA/l6Xw1CvtY=
+		bCNYWI7kgrQZZKOQq3ijf42XMFI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+gt8ciHk++8aN1eK0JP7xmM9IeI=
+		AAqtgb5gU9Gx7AJLP6qGamuV0Gw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		arN3jXo0eeQZi1+sw537g0/MPnY=
+		MfQW0imiSZz9EmgT+pQDnHPl+ro=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+gt8ciHk++8aN1eK0JP7xmM9IeI=
+		AAqtgb5gU9Gx7AJLP6qGamuV0Gw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+3C/fwIucGMC1O4wA/l6Xw1CvtY=
+		bCNYWI7kgrQZZKOQq3ijf42XMFI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0OE0ljy5xO+sUtcSzrfUvKohSQY=
+		WYJ736mtiqnOCHhd6yupxqUe2LQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XRVcpMUQCpF3aJwuAHR64xSaoqg=
+		+zjrfIyRHiNkHH5cpwOHMlvmW64=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0OE0ljy5xO+sUtcSzrfUvKohSQY=
+		WYJ736mtiqnOCHhd6yupxqUe2LQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/module.modulemap</key>
 		<data>
-		0UkQUJF6rqSfslB+MLe+XuSx6UI=
+		JLRSCKBuXeiYKOvs80Tx9uAkcX8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/SlideAnimationAE.json</key>
 		<data>
@@ -554,7 +554,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ygsBfcU3eIsUL15YRu5VM5KZTuY=
+		tgL1PyEivLe99fkE6I+3VpCvtp8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/da.lproj/WorkoutKitWatch.strings</key>
 		<dict>
@@ -578,7 +578,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tEEDP2B2p7IKWAiSTd1B3yH4vNY=
+			BIpp/jOhzw1peKhsF+NvlgD6HdE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -623,7 +623,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EjM8KifdiSthR/sl9mphwvEpilA=
+			xoJU/SwY3iIaTYFRGfWUrG3lfWI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -668,7 +668,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e8ebnJR3g1U5XOICpFQiMPVpZAg=
+			728ivL3EayNRtG4ipfkfx+avsr8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -713,7 +713,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dC5IIGj5rdvfKrXGNEmhwLUrqeA=
+			PB/qW4PDvWxw43eqF5iVYAqP1Ow=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -749,7 +749,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8x2yGRjCU7YbJSKIZYSWW/JYt44=
+			cShKsTcrJRL5OjrxdvpDnv+sKLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -794,7 +794,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AAWhMUT5QXQS6WrquzDC9tHpAfw=
+			0vZQPRh9W4GrEkOjL6Y+j7LPDaw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -874,7 +874,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pkwXXVtqOMrXG9jDJcewUsSLM+Y=
+			ED5mZqafkbQUOuUsq+2T3jEJhqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -910,7 +910,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LnkuKluCI1OB4IPq5vQkmmN4Wn4=
+			vLPsiprsz2Cx8gUdF2F5OBwLJe0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -962,71 +962,71 @@
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Assets.car</key>
 		<data>
-		J7d3OXOFH7l2u0hNOgnJcuoprgo=
+		j0pmIT2mUwVhO/nYEkyHL9hKCZM=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/FZWorkoutKit</key>
 		<data>
-		tmjvPUoVuMT0UBmY3v1Yqea3Ftw=
+		41tMcFrcgOhLnt1qjm34ag9HbbM=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Headers/FZWorkoutKit-Swift.h</key>
 		<data>
-		vPmq4jdLd7M6OrWtw6DQy7EkRwM=
+		T8UU82Bj10k0naufQQ6XX5ETAic=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Info.plist</key>
 		<data>
-		uMrR5erThIS1Hvc+1tHR/rFQDUU=
+		IFc7iqZx+DCWKqB2UeETnpLQgHQ=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<data>
-		oj0FGrvW4rpJ1AByBhQUfooSRZQ=
+		PCLY3ehbAEzX9s9BkldknaxxDw4=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<data>
-		53IEva/o+SdwKAPKCTPov6IxszU=
+		B5t8hqA+FQv4456DsQX00QDkEh8=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<data>
-		MwdNZ8D7JPuafvb/0VcK0ibYE50=
+		wVoNlYZkON/gZeoYt+gNhQBlbZg=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<data>
-		53IEva/o+SdwKAPKCTPov6IxszU=
+		B5t8hqA+FQv4456DsQX00QDkEh8=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<data>
-		e/07zqAbeOcTsX/BJcD81WGmTT0=
+		iVCUaErCGm5JznnL7+I+Ezwnsvg=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<data>
-		9yUUD/chaCRJ2JhikSZO8yhOALc=
+		JtUwkhSLtIy+7gr2rJEIhQ3YBjc=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		nOGd8bKZp15VtH83J17A1DLczZw=
+		w8xOE8bhbfuHOjyX9f99NTE9PLM=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		9yUUD/chaCRJ2JhikSZO8yhOALc=
+		JtUwkhSLtIy+7gr2rJEIhQ3YBjc=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/armv7k-apple-watchos.abi.json</key>
 		<data>
-		e/07zqAbeOcTsX/BJcD81WGmTT0=
+		iVCUaErCGm5JznnL7+I+Ezwnsvg=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/armv7k-apple-watchos.private.swiftinterface</key>
 		<data>
-		qR6+SBQ3PxGZfWsVjzJCBbjl5BY=
+		Q2AT0p1RDQVvs+WJ21G358AEDV8=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/armv7k-apple-watchos.swiftdoc</key>
 		<data>
-		GNWTposWqkJK+oyV9QmltzptkSc=
+		3rHH+fOhAE61UzkEIPR5/YxABrM=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/armv7k-apple-watchos.swiftinterface</key>
 		<data>
-		qR6+SBQ3PxGZfWsVjzJCBbjl5BY=
+		Q2AT0p1RDQVvs+WJ21G358AEDV8=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/module.modulemap</key>
 		<data>
-		0UkQUJF6rqSfslB+MLe+XuSx6UI=
+		JLRSCKBuXeiYKOvs80Tx9uAkcX8=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/da.lproj/WorkoutKitWatch.strings</key>
 		<dict>
@@ -1147,59 +1147,59 @@
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Assets.car</key>
 		<data>
-		J7d3OXOFH7l2u0hNOgnJcuoprgo=
+		j0pmIT2mUwVhO/nYEkyHL9hKCZM=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/FZWorkoutKit</key>
 		<data>
-		7txQPBfZva4k8CWYrrd761AjXgE=
+		yQ1YMoDBuwxL4C6mRp/QYITqFOI=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Headers/FZWorkoutKit-Swift.h</key>
 		<data>
-		V/6YYUIntGp8Uiiz5CTCGYU6uD4=
+		TAUw6cp+8KPLOF0O1PC60DYr1l4=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Info.plist</key>
 		<data>
-		5JBidEbSgwwLBWuzfmLv7QCFEbU=
+		wjWZpgyBqq36UgxAD6J83lZzQaQ=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		B6NKvNlVzlMsL3kF7cfxZ/tc+iU=
+		6MWEHaRZvhVgnWwwDoBa04SiFNY=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		GrQTch4YHZJu0OIt44CUNr877iU=
+		hLbpKkZcuxZzMx+UHqHR1ksBOqQ=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		rDQjVBIDAz9NZy94KPDM78h6b5A=
+		6riSzWpT/jzKXZAsrbFX0qu26YE=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		GrQTch4YHZJu0OIt44CUNr877iU=
+		hLbpKkZcuxZzMx+UHqHR1ksBOqQ=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		B6NKvNlVzlMsL3kF7cfxZ/tc+iU=
+		6MWEHaRZvhVgnWwwDoBa04SiFNY=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		7sbMwiD82Vup0BLOImRBjnlW4K0=
+		1W+q+juOQnQfg2jGM3kjdu/Zs+w=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		eVKftcFXwcuvVoCAC7aXkiZKwHM=
+		Vc3kLuPdxgMtooipfMVmezXcerc=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		7sbMwiD82Vup0BLOImRBjnlW4K0=
+		1W+q+juOQnQfg2jGM3kjdu/Zs+w=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/module.modulemap</key>
 		<data>
-		0UkQUJF6rqSfslB+MLe+XuSx6UI=
+		JLRSCKBuXeiYKOvs80Tx9uAkcX8=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		bTAWpwb4IvQPK99Q5HlTQSzBZa0=
+		fyoO+nMwjeL9XxxPV93bQxE4XHo=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/da.lproj/WorkoutKitWatch.strings</key>
 		<dict>
@@ -1325,7 +1325,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DdUWdn+ZUTYuCyU6sgTO5dswnMx6WG2K0DUbAcZzMIc=
+			1pCY+TippZTu8Epbt8Xmai0ItYtd7D7fpqDgtZTHtRI=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/BebasNeue.otf</key>
@@ -1367,56 +1367,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jethOZcXnNc4+4K81u7o1T384U2sPsmfDz0Wf9at60k=
+			8NeHPs8wjWqrY6ILmu/7Wp1WJH2cOyK+DtfcnJfJyjE=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/Headers/FZWorkoutKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZpI2eUPu3rIZGgZW1gmBIGzGjSWF7c/iQeNh2nHKChs=
+			c2qrsic/f1dWr4LuEBPS7nePgiMQZME5+QlqffJXH6Y=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FGysusnoGoiwMHBzd4HKrpackDpJaEc22Bteh8JE88w=
+			QqwUZcdvKanitSESePcs7ThWPwgo9BQIEIfWcb3Ofx8=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L8M8FYhGULzOEvYAQ8K8VYZz7xMbABR8v2bhUuRJwqA=
+			iaw38a96eE/evaeaKTudltzWbmHb4c84pusZJ3EAkFA=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ykQGMM8SXYRdQS7sj81wKwBOq4LXnHcHyBjZgjmrYGw=
+			MIbe3zfAcFYvTyV3t2JDKeRn3/BipEQRRspSamzsv7Y=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+vay51urVNYFmgNiWIIR8F0Gq/d4qLEf8Wvm4GCgerk=
+			HbME/P0qA70nRtmUiqoffPkQiDNo0M5A7NcjPFzNuqA=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ykQGMM8SXYRdQS7sj81wKwBOq4LXnHcHyBjZgjmrYGw=
+			MIbe3zfAcFYvTyV3t2JDKeRn3/BipEQRRspSamzsv7Y=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VNNicUdHUkBRVrTJLf1AxjFkWKibUXzc5uKOehlYEdk=
+			asRF82061n/ks8l4nPplPFgleSgkfALEtAwTJ7AdxHY=
 			</data>
 		</dict>
 		<key>ios-arm64/FZWorkoutKit.framework/SlideAnimationAE.json</key>
@@ -1455,7 +1455,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b7lrVW6zB2cwPjCfep/3ASxaq/y4R3HQxw92ez3uxxQ=
+			XLbwz2gpMcUW7eXIlj0EbUyYZCJxOIBIG3D8mp3vP2k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1500,7 +1500,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6zJu+HLgQKdgiBQPFcVkTJM8N3kQJbgadAyIphseedg=
+			S64JVPO7WxgFNkgyAtMYx6/SeE724itheTRqFUhaOoE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1545,7 +1545,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			043i+FyZnitYisktqKBR3n1CyKUmCV8TUMA3MNYAYA4=
+			Q30MoArv0U4wRhq9USnHHcVQ4KKq8t9V667H8j+0VbY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1590,7 +1590,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x50tJWHI2j3i/6+i+UFr7l8mwzDJOfVwlTUMsRcmFME=
+			s44ZT5D9V1SVRjpIn65p+n2LFhObxrOjaBBUnrpgrpU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1626,7 +1626,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m2kd6J7Hb5j64AQjMpYH65n9bbjadZYKvoZRTO6M86I=
+			8zCoJ7FMPWmdVly8kJsuHZnwBTe3NiXqu9R59aMXSZw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1671,7 +1671,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AQw9B6k1AyyT258Z/MjBlxzjpoNWW9leYFDh7KODNMM=
+			liktb2s+0LrN98KeU7SW3dLGKwAmjm2cZ9Fo+r17Uyo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1784,7 +1784,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/mrIlM8yAw+dJ/kVIYC0Xv23ex2RtpoBA9fxPXV9B70=
+			/SFs9/DHQ3HzxjracjH8bJzCW41i+6Eq8zwk+3y24es=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1820,7 +1820,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hLGo7msswZHHndhNAa2GqdJFPzLQ08bpUuWdreySlSk=
+			aGkZmZfXnMW9CL68qLUtS576Cw8VHncRJKGxVdL0Eqs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1874,7 +1874,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZFb7k6OHH4PMlbOk1E4OIAO65Etx8kqzuYyq7HMB62U=
+			1pCY+TippZTu8Epbt8Xmai0ItYtd7D7fpqDgtZTHtRI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/BebasNeue.otf</key>
@@ -1916,84 +1916,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PFVmhTb/W8SFmnNKTAzYUG3sks6d8nSeHoyr8FxYTq8=
+			IwNhXiUCQItvOEdAtgXe93sKCF62e0nA8AhBg5Lf9aM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Headers/FZWorkoutKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/SQtAgrnwEQadEBq5WDyfzbIecj4dIoMtz/waSFdtcQ=
+			w0NTu1fbAwrt3ap86kHs3iXsJ6MvUuh+YpGi46xxbA8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oTsPTArHLCL8iITT89QRbnvDzv/XNWx3R5a94sv1QO8=
+			/+pSRXbfRLpZZ8nykYMD1zkm5CS46nBeHNQEXlhpBhk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8PFs6GwL5GozjBnSHsa3/+3LJrOBxWhBj538Gc51gqo=
+			ppDhKV5wBuos8gM8qA30bQPJWtVFJr9S7/eF6PRyNss=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X6uoUSNlf8GNzBm6RKy804uB31O8wUJS6ruZlOMmdVU=
+			qUhOrFkQon09A9+Ts1F7nU8XfypNN4Zd7UdB/IO5L0w=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			51yYWjOHRElUpOAk3AZ5Fh+/3MaalN1ZShTJ9Xj3lOg=
+			pB3xwDqCDxvuhKR03C/tlwQQlqQWQF2p3/9u8oU9VF0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X6uoUSNlf8GNzBm6RKy804uB31O8wUJS6ruZlOMmdVU=
+			qUhOrFkQon09A9+Ts1F7nU8XfypNN4Zd7UdB/IO5L0w=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8PFs6GwL5GozjBnSHsa3/+3LJrOBxWhBj538Gc51gqo=
+			ppDhKV5wBuos8gM8qA30bQPJWtVFJr9S7/eF6PRyNss=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pZivWQR7D6IdapjI8wCCMtVr9WmaAzMwCz1F+iM5/D4=
+			h/dv4/zr5FWY494CGILGlnXQgnP+wfFRBjFT/CCxjho=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iqJfUKGWU7zcwlwbz+GM5WuZyIYxL9dFmu4RNTIema0=
+			/b0jENxWuDHMVx2TEoMsEmawAdwDtOexUmuqLHzy97M=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pZivWQR7D6IdapjI8wCCMtVr9WmaAzMwCz1F+iM5/D4=
+			h/dv4/zr5FWY494CGILGlnXQgnP+wfFRBjFT/CCxjho=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VNNicUdHUkBRVrTJLf1AxjFkWKibUXzc5uKOehlYEdk=
+			asRF82061n/ks8l4nPplPFgleSgkfALEtAwTJ7AdxHY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/SlideAnimationAE.json</key>
@@ -2014,7 +2014,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t1PyLa6IEP0l5/RyNszwnceZKK8nzMm7Mf8MXUKPIWg=
+			3AiwMJd2i8W2RDTdFnbLf9iUHcwqiTapn10uNA/FCQ0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/FZWorkoutKit.framework/da.lproj/WorkoutKitWatch.strings</key>
@@ -2039,7 +2039,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b7lrVW6zB2cwPjCfep/3ASxaq/y4R3HQxw92ez3uxxQ=
+			XLbwz2gpMcUW7eXIlj0EbUyYZCJxOIBIG3D8mp3vP2k=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2084,7 +2084,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6zJu+HLgQKdgiBQPFcVkTJM8N3kQJbgadAyIphseedg=
+			S64JVPO7WxgFNkgyAtMYx6/SeE724itheTRqFUhaOoE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2129,7 +2129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			043i+FyZnitYisktqKBR3n1CyKUmCV8TUMA3MNYAYA4=
+			Q30MoArv0U4wRhq9USnHHcVQ4KKq8t9V667H8j+0VbY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2174,7 +2174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x50tJWHI2j3i/6+i+UFr7l8mwzDJOfVwlTUMsRcmFME=
+			s44ZT5D9V1SVRjpIn65p+n2LFhObxrOjaBBUnrpgrpU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2210,7 +2210,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m2kd6J7Hb5j64AQjMpYH65n9bbjadZYKvoZRTO6M86I=
+			8zCoJ7FMPWmdVly8kJsuHZnwBTe3NiXqu9R59aMXSZw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2255,7 +2255,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AQw9B6k1AyyT258Z/MjBlxzjpoNWW9leYFDh7KODNMM=
+			liktb2s+0LrN98KeU7SW3dLGKwAmjm2cZ9Fo+r17Uyo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2368,7 +2368,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/mrIlM8yAw+dJ/kVIYC0Xv23ex2RtpoBA9fxPXV9B70=
+			/SFs9/DHQ3HzxjracjH8bJzCW41i+6Eq8zwk+3y24es=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2404,7 +2404,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hLGo7msswZHHndhNAa2GqdJFPzLQ08bpUuWdreySlSk=
+			aGkZmZfXnMW9CL68qLUtS576Cw8VHncRJKGxVdL0Eqs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2458,119 +2458,119 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vhVonITGGH2ffk11oJd3BwiY/wBiYMuTjD4xv/so6MI=
+			LCkYgFKuyBsIe7fn1VLNqoYK+cuJGN7apkCZkmb+4pE=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/FZWorkoutKit</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1dYudJ+J+S3h5Y4ndStNk4mKr9Qy0DYFLuWkMK4wyfY=
+			IXtSqqPq72di3qPhSswsoLinZPAZQHgNMRWct7xyU7E=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Headers/FZWorkoutKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			srd3SRXrJRnx6R4QY4uMR8LGJExAofN3hXeC3PVFNpQ=
+			l8qwK/gM0HkiITktcwGWPEu2SYHjAMOgGR7RW6tOuI0=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gDwyJ9U42fydK9ssbQ7CH4nqTFGjigWfHw8q2K2Ecx4=
+			/QEjyfX3XBYvcCzS/EiuLRBPJWwb1B7XndhiX53A0Uw=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXDW1L7ZQXS75grjLOrcHhGIhpyiUyFYH2AJvC1/SLA=
+			cHi1/qxDiu0jxYj041zDzC9wA5SWj+rAV5UOviidXVk=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lqssNC4ZtwAZ0cin2Px0oAX6R+kYzlzKn24drBZJI8Y=
+			RCNf3EpddH6m6ycZdOIJMdXZtzXqhOxE6pKXal+8czo=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Joj+zFPdFknz4kdjCT8X/DC3NxGwCcU2i186PS0+FCY=
+			1mbXL9cqzlmiDtsRNN/yPCLMkVii0x0lOdYggEdjULE=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lqssNC4ZtwAZ0cin2Px0oAX6R+kYzlzKn24drBZJI8Y=
+			RCNf3EpddH6m6ycZdOIJMdXZtzXqhOxE6pKXal+8czo=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64_32-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o+b6x/w1cEqy3XqDxT11YJem09Vsv83OSNkd9efVxkg=
+			+kpqLoKj1MTPbXXtpUmrQsweCBnmVitGhMpmUe5TIU4=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64_32-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kSeFarihVPEYfwGbWG7mb/iQ5SgrFznwuDZUftA3kT4=
+			2GbQPHv5mg8hFzQcWjC7Tceun/Gm1pYsDa/gui/YlTQ=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGi4wTlEgYziJcPVP10FXp6phoYmz3S3wEDDvKOShC4=
+			t93EmNm1id+IfXRkQc01r2dzdR9K5v4ayziLvPwUBE4=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kSeFarihVPEYfwGbWG7mb/iQ5SgrFznwuDZUftA3kT4=
+			2GbQPHv5mg8hFzQcWjC7Tceun/Gm1pYsDa/gui/YlTQ=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/armv7k-apple-watchos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o+b6x/w1cEqy3XqDxT11YJem09Vsv83OSNkd9efVxkg=
+			+kpqLoKj1MTPbXXtpUmrQsweCBnmVitGhMpmUe5TIU4=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/armv7k-apple-watchos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			56lmeaKl0WT6UHZh+mfvT82l8QDcD3NK/7Fx3csuJvA=
+			EGBJfBgIu1yGL/SmDsHXQ++qXQpx5ZGzb2UIr6r5okc=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/armv7k-apple-watchos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8OpAooMRiywv66htt1+Pd8hyl7/LszMlj4T9+EABUrQ=
+			RcTyu4vUO1PJ/LEs7TslVt9hja3/ZumFKghMz9AnOmc=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/armv7k-apple-watchos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			56lmeaKl0WT6UHZh+mfvT82l8QDcD3NK/7Fx3csuJvA=
+			EGBJfBgIu1yGL/SmDsHXQ++qXQpx5ZGzb2UIr6r5okc=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VNNicUdHUkBRVrTJLf1AxjFkWKibUXzc5uKOehlYEdk=
+			asRF82061n/ks8l4nPplPFgleSgkfALEtAwTJ7AdxHY=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/FZWorkoutKit.framework/da.lproj/WorkoutKitWatch.strings</key>
@@ -2694,98 +2694,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vhVonITGGH2ffk11oJd3BwiY/wBiYMuTjD4xv/so6MI=
+			LCkYgFKuyBsIe7fn1VLNqoYK+cuJGN7apkCZkmb+4pE=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/FZWorkoutKit</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nihE9ZqD4eKDBjhmlmi0pw430nylhNA2U44S19xZ5Zw=
+			Kxo2FY6EQqvyCSigzzCP3nsbOBF95a+eJRLvEhiXgvU=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Headers/FZWorkoutKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3UW5/6Bdb3IaoMUuwpL3Z9SLs7J9eDDpC4FOfz6PtcU=
+			Rmszl6f+OwHtFU3fA3/QMOL/OequmtA6yJqamAjXEvw=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JXb9GrKk9d7WChaLvrKFOxAGfAa89Le/U4SutdGw7Vo=
+			jUpk73la3Lq7PxkdbFVqyE98r74km5PHtXHv67JWfsw=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xdv2W+IX6GRf4egK0w4q1uV81ty3lYwPVyalJVsCVfU=
+			rw4QOInbQF6dDm+IsoMHHknnzHp8mFcJ5aXGC4Dxzps=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S17q7GUCU3l6wsKCYeZNmuVfKFH98Jje6h9nFBtPpQw=
+			Dr38zIl+onGiUL8IqAr3RSQKXIuyyEPM9BOonLpYgbs=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fJanof0ALmKwu+d58I+6FM7pBqyDhKqdkUZV1DN9l/M=
+			FvAFVaOQirIlqwl6zFs7+j6on43eNGA6jDPMKUtaES8=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S17q7GUCU3l6wsKCYeZNmuVfKFH98Jje6h9nFBtPpQw=
+			Dr38zIl+onGiUL8IqAr3RSQKXIuyyEPM9BOonLpYgbs=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xdv2W+IX6GRf4egK0w4q1uV81ty3lYwPVyalJVsCVfU=
+			rw4QOInbQF6dDm+IsoMHHknnzHp8mFcJ5aXGC4Dxzps=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QyRRYVs4sXwNH6/Yght0XuyxzHMI5bmSsiHnZ1sv34k=
+			QTuDHpOFDRmZEWqjwqgeNarzMOh1SjDFvDK+iUVYt3c=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gFKkjrwN31xGAaCgkrEp/zoWeLiAlw7S12/x/UNygt8=
+			Kfv532D/zeW7Jtkz65ucJ/vJf0/B18DrxAXuREUtS7A=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QyRRYVs4sXwNH6/Yght0XuyxzHMI5bmSsiHnZ1sv34k=
+			QTuDHpOFDRmZEWqjwqgeNarzMOh1SjDFvDK+iUVYt3c=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VNNicUdHUkBRVrTJLf1AxjFkWKibUXzc5uKOehlYEdk=
+			asRF82061n/ks8l4nPplPFgleSgkfALEtAwTJ7AdxHY=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U/yRo0LjF+mq7RiUOD0yJ+L1WDvYpRpIV0S1/pFun+E=
+			99PKTcw3S1YZ5SJOOOYuLIaTt0kIpYHBDps1fW3L2D8=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/FZWorkoutKit.framework/da.lproj/WorkoutKitWatch.strings</key>
