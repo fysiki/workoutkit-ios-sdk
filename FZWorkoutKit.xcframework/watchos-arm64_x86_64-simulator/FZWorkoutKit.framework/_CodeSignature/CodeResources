@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		j0pmIT2mUwVhO/nYEkyHL9hKCZM=
+		zkBQn2XBsTE/hzDgkXLVsFZuLr8=
 		</data>
 		<key>Headers/FZWorkoutKit-Swift.h</key>
 		<data>
-		TAUw6cp+8KPLOF0O1PC60DYr1l4=
+		BGLl0wWvvLdLW8wJ4NxBnLXgAco=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wjWZpgyBqq36UgxAD6J83lZzQaQ=
+		ZMmSUK4jc5mXUY1o4ShMpjKTaq0=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		hLbpKkZcuxZzMx+UHqHR1ksBOqQ=
+		vvIUPRJAro3583UfhmvNO6MOc38=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		6riSzWpT/jzKXZAsrbFX0qu26YE=
+		XAsJYEBi/69mHsehUG5r4tIDIXM=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		hLbpKkZcuxZzMx+UHqHR1ksBOqQ=
+		vvIUPRJAro3583UfhmvNO6MOc38=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		6AvpXTdyN9BsUU5Kq2nsFN/Uy6k=
+		HpYXL9wQH1Dsjhl6ugN3WqrK14g=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		1W+q+juOQnQfg2jGM3kjdu/Zs+w=
+		ZPX+x4wgh/JZYM/t9tNSl0eS6bQ=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		Vc3kLuPdxgMtooipfMVmezXcerc=
+		q9NA9kpy1mJgyMDpRd+dYOnviR4=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		1W+q+juOQnQfg2jGM3kjdu/Zs+w=
+		ZPX+x4wgh/JZYM/t9tNSl0eS6bQ=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		cIWOWcVT3VxGqR7w03bl3+MbMCs=
+		Swtzcdk/wosYmua44iTuF6yLOkQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -184,14 +184,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LCkYgFKuyBsIe7fn1VLNqoYK+cuJGN7apkCZkmb+4pE=
+			MNqYWUVYrtMdQSRfSdgZzmzCwvD00lEQb546wsbP7+I=
 			</data>
 		</dict>
 		<key>Headers/FZWorkoutKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rmszl6f+OwHtFU3fA3/QMOL/OequmtA6yJqamAjXEvw=
+			1zLf5pkM+LZo4SSes/azX6ax1j6fa7x0fN2x+EP3yjw=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
@@ -205,28 +205,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dr38zIl+onGiUL8IqAr3RSQKXIuyyEPM9BOonLpYgbs=
+			ZflFtwBqp1KFzCAsnRxOEHtKDpVztEXC2Iu4qFY/fcU=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FvAFVaOQirIlqwl6zFs7+j6on43eNGA6jDPMKUtaES8=
+			tDdvpe6RkjGsDz3N0wrleGhKuKb641aPhACPYSg2sUo=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dr38zIl+onGiUL8IqAr3RSQKXIuyyEPM9BOonLpYgbs=
+			ZflFtwBqp1KFzCAsnRxOEHtKDpVztEXC2Iu4qFY/fcU=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/z5q56P8gEWFlOL1RCWZW5G+ZQTkrd/5dr+SR5u4bSs=
+			7IFK03h2IV1fOrJQK+4uca1Y5z5UB4VDuJp992WhVX0=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
@@ -240,28 +240,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QTuDHpOFDRmZEWqjwqgeNarzMOh1SjDFvDK+iUVYt3c=
+			vFTR8Yf98szpMObpHbskFhWjP5nlNVtbX77oHBe64p4=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kfv532D/zeW7Jtkz65ucJ/vJf0/B18DrxAXuREUtS7A=
+			eBLJnQo5zOG2QIArHPUKhVSai7OZvp31AznQgmPBy2I=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QTuDHpOFDRmZEWqjwqgeNarzMOh1SjDFvDK+iUVYt3c=
+			vFTR8Yf98szpMObpHbskFhWjP5nlNVtbX77oHBe64p4=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e0BkAdgZYuYV5diXCsRX+FcLFX1vzrL1w7Nz/06pYmI=
+			T8YyqKdBlDU28r4HpxDj2rtUbgVlUAr5bcRFuVPJ2Jg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
