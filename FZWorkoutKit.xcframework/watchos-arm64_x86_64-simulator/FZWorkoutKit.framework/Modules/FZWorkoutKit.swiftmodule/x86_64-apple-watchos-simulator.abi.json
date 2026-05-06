@@ -1881,13 +1881,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "FZWorkoutKit"
-      },
-      {
         "kind": "TypeDecl",
         "name": "WorkoutStateMode",
         "printedName": "WorkoutStateMode",
@@ -5009,106 +5002,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HKWorkoutActivityType",
-        "printedName": "HKWorkoutActivityType",
-        "declKind": "Enum",
-        "usr": "c:@E@HKWorkoutActivityType",
-        "moduleName": "HealthKit",
-        "intro_watchOS": "2.0",
-        "objc_name": "HKWorkoutActivityType",
-        "declAttributes": [
-          "Available",
-          "SynthesizedProtocol",
-          "ObjC",
-          "SynthesizedProtocol",
-          "Sendable",
-          "Dynamic"
-        ],
-        "enumRawTypeName": "UInt",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt",
-                    "printedName": "Swift.UInt",
-                    "usr": "s:Su"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "AnyHashable",
         "printedName": "AnyHashable",
         "declKind": "Struct",
@@ -5848,105 +5741,105 @@
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "StringLiteral",
-      "offset": 517,
+      "offset": 500,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "StringLiteral",
-      "offset": 738,
+      "offset": 721,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "StringLiteral",
-      "offset": 1184,
+      "offset": 1167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 1303,
+      "offset": 1286,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "BooleanLiteral",
-      "offset": 1543,
+      "offset": 1526,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 1810,
+      "offset": 1793,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 1828,
+      "offset": 1811,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2589,
+      "offset": 2453,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2632,
+      "offset": 2496,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2716,
+      "offset": 2580,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2777,
+      "offset": 2641,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2839,
+      "offset": 2703,
       "length": 7,
       "value": "5"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 2954,
+      "offset": 2818,
       "length": 10,
       "value": "6"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 3093,
+      "offset": 2957,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKitShared\/WorkoutKitShared\/State\/WatchState.swift",
       "kind": "IntegerLiteral",
-      "offset": 3110,
+      "offset": 2974,
       "length": 6,
       "value": "2"
     },

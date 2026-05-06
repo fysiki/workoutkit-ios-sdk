@@ -87,10 +87,6 @@ public struct ChronoState {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension HealthKit.HKWorkoutActivityType : @retroactive Swift.Decodable {
-}
-extension HealthKit.HKWorkoutActivityType : @retroactive Swift.Encodable {
-}
 @available(iOS 15.0, watchOS 8.0, *)
 public enum WorkoutStateMode : Swift.Int, Swift.Codable {
   case launcher
