@@ -5275,46 +5275,7 @@
           {
             "kind": "Function",
             "name": "getAllRecommendations",
-            "printedName": "getAllRecommendations()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyPublisher",
-                "printedName": "Combine.AnyPublisher<Foundation.Data, Swift.Never>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ],
-                "usr": "s:7Combine12AnyPublisherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FZWorkoutKit16GoModeControllerC21getAllRecommendations7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGyF",
-            "mangledName": "$s12FZWorkoutKit16GoModeControllerC21getAllRecommendations7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGyF",
-            "moduleName": "FZWorkoutKit",
-            "isOpen": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "buyPremiumContent",
-            "printedName": "buyPremiumContent(from:)",
+            "printedName": "getAllRecommendations(contentIdentifier:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5339,6 +5300,59 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FZWorkoutKit16GoModeControllerC21getAllRecommendations17contentIdentifier7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGSSSg_tF",
+            "mangledName": "$s12FZWorkoutKit16GoModeControllerC21getAllRecommendations17contentIdentifier7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGSSSg_tF",
+            "moduleName": "FZWorkoutKit",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "buyPremiumContent",
+            "printedName": "buyPremiumContent(from:placement:contentIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<FZWorkoutKit.BoughtContent, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoughtContent",
+                    "printedName": "FZWorkoutKit.BoughtContent",
+                    "usr": "s:12FZWorkoutKit13BoughtContentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "UIKit.UIViewController?",
                 "children": [
                   {
@@ -5349,11 +5363,119 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12FZWorkoutKit16GoModeControllerC17buyPremiumContent4from7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGSo06UIViewE0CSg_tF",
-            "mangledName": "$s12FZWorkoutKit16GoModeControllerC17buyPremiumContent4from7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGSo06UIViewE0CSg_tF",
+            "usr": "s:12FZWorkoutKit16GoModeControllerC17buyPremiumContent4from9placement17contentIdentifier7Combine12AnyPublisherVyAA06BoughtH0Vs5NeverOGSo06UIViewE0CSg_SSSgAStF",
+            "mangledName": "$s12FZWorkoutKit16GoModeControllerC17buyPremiumContent4from9placement17contentIdentifier7Combine12AnyPublisherVyAA06BoughtH0Vs5NeverOGSo06UIViewE0CSg_SSSgAStF",
+            "moduleName": "FZWorkoutKit",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "buyPremiumRecommendation",
+            "printedName": "buyPremiumRecommendation(from:placement:contentIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<FZWorkoutKit.BoughtContent, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoughtContent",
+                    "printedName": "FZWorkoutKit.BoughtContent",
+                    "usr": "s:12FZWorkoutKit13BoughtContentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FZWorkoutKit16GoModeControllerC24buyPremiumRecommendation4from9placement17contentIdentifier7Combine12AnyPublisherVyAA13BoughtContentVs5NeverOGSo06UIViewE0CSg_SSSgAStF",
+            "mangledName": "$s12FZWorkoutKit16GoModeControllerC24buyPremiumRecommendation4from9placement17contentIdentifier7Combine12AnyPublisherVyAA13BoughtContentVs5NeverOGSo06UIViewE0CSg_SSSgAStF",
             "moduleName": "FZWorkoutKit",
             "isOpen": true,
             "declAttributes": [
@@ -7887,6 +8009,124 @@
         "moduleName": "FZWorkoutKit",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BoughtContent",
+        "printedName": "BoughtContent",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(data:unlockOtherContents:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BoughtContent",
+                "printedName": "FZWorkoutKit.BoughtContent",
+                "usr": "s:12FZWorkoutKit13BoughtContentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12FZWorkoutKit13BoughtContentV4data19unlockOtherContentsAC10Foundation4DataV_Sbtcfc",
+            "mangledName": "$s12FZWorkoutKit13BoughtContentV4data19unlockOtherContentsAC10Foundation4DataV_Sbtcfc",
+            "moduleName": "FZWorkoutKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "empty",
+            "printedName": "empty",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BoughtContent",
+                "printedName": "FZWorkoutKit.BoughtContent",
+                "usr": "s:12FZWorkoutKit13BoughtContentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12FZWorkoutKit13BoughtContentV5emptyACvpZ",
+            "mangledName": "$s12FZWorkoutKit13BoughtContentV5emptyACvpZ",
+            "moduleName": "FZWorkoutKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoughtContent",
+                    "printedName": "FZWorkoutKit.BoughtContent",
+                    "usr": "s:12FZWorkoutKit13BoughtContentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12FZWorkoutKit13BoughtContentV5emptyACvgZ",
+                "mangledName": "$s12FZWorkoutKit13BoughtContentV5emptyACvgZ",
+                "moduleName": "FZWorkoutKit",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12FZWorkoutKit13BoughtContentV",
+        "mangledName": "$s12FZWorkoutKit13BoughtContentV",
+        "moduleName": "FZWorkoutKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -15864,46 +16104,7 @@
           {
             "kind": "Function",
             "name": "getAllRecommendations",
-            "printedName": "getAllRecommendations()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyPublisher",
-                "printedName": "Combine.AnyPublisher<Foundation.Data, Swift.Never>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ],
-                "usr": "s:7Combine12AnyPublisherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12FZWorkoutKit07WorkoutB16RegularInterfaceP21getAllRecommendations7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGyF",
-            "mangledName": "$s12FZWorkoutKit07WorkoutB16RegularInterfaceP21getAllRecommendations7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGyF",
-            "moduleName": "FZWorkoutKit",
-            "genericSig": "<τ_0_0 where τ_0_0 : FZWorkoutKit.WorkoutKitRegularInterface>",
-            "sugared_genericSig": "<Self where Self : FZWorkoutKit.WorkoutKitRegularInterface>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "buyPremiumContent",
-            "printedName": "buyPremiumContent(from:)",
+            "printedName": "getAllRecommendations(contentIdentifier:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15928,6 +16129,59 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FZWorkoutKit07WorkoutB16RegularInterfaceP21getAllRecommendations17contentIdentifier7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGSSSg_tF",
+            "mangledName": "$s12FZWorkoutKit07WorkoutB16RegularInterfaceP21getAllRecommendations17contentIdentifier7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGSSSg_tF",
+            "moduleName": "FZWorkoutKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : FZWorkoutKit.WorkoutKitRegularInterface>",
+            "sugared_genericSig": "<Self where Self : FZWorkoutKit.WorkoutKitRegularInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "buyPremiumContent",
+            "printedName": "buyPremiumContent(from:placement:contentIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<FZWorkoutKit.BoughtContent, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoughtContent",
+                    "printedName": "FZWorkoutKit.BoughtContent",
+                    "usr": "s:12FZWorkoutKit13BoughtContentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "UIKit.UIViewController?",
                 "children": [
                   {
@@ -15938,11 +16192,120 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12FZWorkoutKit07WorkoutB16RegularInterfaceP17buyPremiumContent4from7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGSo16UIViewControllerCSg_tF",
-            "mangledName": "$s12FZWorkoutKit07WorkoutB16RegularInterfaceP17buyPremiumContent4from7Combine12AnyPublisherVy10Foundation4DataVs5NeverOGSo16UIViewControllerCSg_tF",
+            "usr": "s:12FZWorkoutKit07WorkoutB16RegularInterfaceP17buyPremiumContent4from9placement17contentIdentifier7Combine12AnyPublisherVyAA06BoughtH0Vs5NeverOGSo16UIViewControllerCSg_SSSgAStF",
+            "mangledName": "$s12FZWorkoutKit07WorkoutB16RegularInterfaceP17buyPremiumContent4from9placement17contentIdentifier7Combine12AnyPublisherVyAA06BoughtH0Vs5NeverOGSo16UIViewControllerCSg_SSSgAStF",
+            "moduleName": "FZWorkoutKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : FZWorkoutKit.WorkoutKitRegularInterface>",
+            "sugared_genericSig": "<Self where Self : FZWorkoutKit.WorkoutKitRegularInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "buyPremiumRecommendation",
+            "printedName": "buyPremiumRecommendation(from:placement:contentIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<FZWorkoutKit.BoughtContent, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoughtContent",
+                    "printedName": "FZWorkoutKit.BoughtContent",
+                    "usr": "s:12FZWorkoutKit13BoughtContentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12FZWorkoutKit07WorkoutB16RegularInterfaceP24buyPremiumRecommendation4from9placement17contentIdentifier7Combine12AnyPublisherVyAA13BoughtContentVs5NeverOGSo16UIViewControllerCSg_SSSgAStF",
+            "mangledName": "$s12FZWorkoutKit07WorkoutB16RegularInterfaceP24buyPremiumRecommendation4from9placement17contentIdentifier7Combine12AnyPublisherVyAA13BoughtContentVs5NeverOGSo16UIViewControllerCSg_SSSgAStF",
             "moduleName": "FZWorkoutKit",
             "genericSig": "<τ_0_0 where τ_0_0 : FZWorkoutKit.WorkoutKitRegularInterface>",
             "sugared_genericSig": "<Self where Self : FZWorkoutKit.WorkoutKitRegularInterface>",
@@ -31157,14 +31520,14 @@
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Controllers\/GoModeController.swift",
       "kind": "FloatLiteral",
-      "offset": 21591,
+      "offset": 21992,
       "length": 5,
       "value": "0.500"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Controllers\/GoModeController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22738,
+      "offset": 23139,
       "length": 4,
       "value": "true"
     },
@@ -31717,28 +32080,28 @@
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Controllers\/PromptController.swift",
       "kind": "BooleanLiteral",
-      "offset": 30317,
+      "offset": 30366,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Controllers\/PromptController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33394,
+      "offset": 33443,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Controllers\/PromptController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33422,
+      "offset": 33471,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Controllers\/PromptController.swift",
       "kind": "IntegerLiteral",
-      "offset": 36432,
+      "offset": 36481,
       "length": 1,
       "value": "0"
     },
@@ -31891,57 +32254,71 @@
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1678,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1696,
+      "offset": 1751,
       "length": 35,
       "value": "\"wk_common_require_premium_caption\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1784,
+      "offset": 1839,
       "length": 34,
       "value": "\"wk_common_require_premium_button\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1877,
+      "offset": 1932,
       "length": 41,
       "value": "\"wk_common_require_premium_unlock_button\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 1962,
+      "offset": 2023,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 2068,
       "length": 7,
       "value": "\"wk_ok\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2015,
+      "offset": 2121,
       "length": 9,
       "value": "\"wk_done\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2067,
+      "offset": 2173,
       "length": 16,
       "value": "\"wk_action_save\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2127,
+      "offset": 2233,
       "length": 25,
       "value": "\"wk_action_start_workout\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/GoModeConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2226,
+      "offset": 2332,
       "length": 5,
       "value": "false"
     },
@@ -32543,14 +32920,14 @@
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/TaskList.swift",
       "kind": "BooleanLiteral",
-      "offset": 23046,
+      "offset": 23604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Decode\/TaskList.swift",
       "kind": "BooleanLiteral",
-      "offset": 26000,
+      "offset": 26558,
       "length": 5,
       "value": "false"
     },
@@ -33507,6 +33884,27 @@
       "value": "132"
     },
     {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/BufferingState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 247,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/BufferingState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 258,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/BufferingState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 273,
+      "length": 7,
+      "value": "2"
+    },
+    {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Equipment.swift",
       "kind": "StringLiteral",
       "offset": 259,
@@ -33617,6 +34015,34 @@
       "offset": 675,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/PlaybackState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/PlaybackState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 255,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/PlaybackState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 272,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/PlaybackState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 288,
+      "length": 6,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
@@ -34076,189 +34502,196 @@
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "IntegerLiteral",
-      "offset": 31526,
+      "offset": 31530,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "Array",
-      "offset": 32494,
+      "offset": 32624,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "Array",
-      "offset": 32544,
+      "offset": 32674,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "BooleanLiteral",
-      "offset": 32589,
+      "offset": 32719,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "BooleanLiteral",
-      "offset": 32635,
+      "offset": 32765,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "BooleanLiteral",
-      "offset": 32677,
+      "offset": 32809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "BooleanLiteral",
-      "offset": 33999,
+      "offset": 32849,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "BooleanLiteral",
-      "offset": 34128,
+      "offset": 34224,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "BooleanLiteral",
-      "offset": 34277,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
-      "kind": "IntegerLiteral",
-      "offset": 34506,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
-      "kind": "Array",
-      "offset": 34670,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
-      "kind": "BooleanLiteral",
-      "offset": 34706,
+      "offset": 34353,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "BooleanLiteral",
-      "offset": 35894,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
-      "kind": "BooleanLiteral",
-      "offset": 36170,
+      "offset": 34502,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "IntegerLiteral",
-      "offset": 36399,
+      "offset": 34731,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "Array",
-      "offset": 36563,
+      "offset": 34895,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "BooleanLiteral",
-      "offset": 36600,
+      "offset": 34931,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
+      "kind": "BooleanLiteral",
+      "offset": 36119,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
+      "kind": "BooleanLiteral",
+      "offset": 36395,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
+      "kind": "IntegerLiteral",
+      "offset": 36624,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
+      "kind": "Array",
+      "offset": 36788,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
+      "kind": "BooleanLiteral",
+      "offset": 36825,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "IntegerLiteral",
-      "offset": 36904,
+      "offset": 37129,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "IntegerLiteral",
-      "offset": 36922,
+      "offset": 37147,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "IntegerLiteral",
-      "offset": 36943,
+      "offset": 37168,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "IntegerLiteral",
-      "offset": 36961,
+      "offset": 37186,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Prompt.swift",
       "kind": "IntegerLiteral",
-      "offset": 36982,
+      "offset": 37207,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Recommendation.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 2181,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Recommendation.swift",
       "kind": "Array",
-      "offset": 2208,
+      "offset": 2210,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Recommendation.swift",
       "kind": "Array",
-      "offset": 2299,
+      "offset": 2301,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Recommendation.swift",
       "kind": "IntegerLiteral",
-      "offset": 2337,
+      "offset": 2339,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Recommendation.swift",
       "kind": "BooleanLiteral",
-      "offset": 2413,
+      "offset": 2417,
       "length": 5,
       "value": "false"
     },
@@ -34408,55 +34841,6 @@
       "offset": 1958,
       "length": 8,
       "value": "0xA9A9A9"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Video+Streaming.swift",
-      "kind": "IntegerLiteral",
-      "offset": 246,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Video+Streaming.swift",
-      "kind": "IntegerLiteral",
-      "offset": 257,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Video+Streaming.swift",
-      "kind": "IntegerLiteral",
-      "offset": 274,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Video+Streaming.swift",
-      "kind": "IntegerLiteral",
-      "offset": 290,
-      "length": 6,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Video+Streaming.swift",
-      "kind": "IntegerLiteral",
-      "offset": 656,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Video+Streaming.swift",
-      "kind": "IntegerLiteral",
-      "offset": 667,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/Video+Streaming.swift",
-      "kind": "IntegerLiteral",
-      "offset": 682,
-      "length": 7,
-      "value": "2"
     },
     {
       "filePath": "\/Users\/benoit\/Developer\/workoutkit-ios\/FZWorkoutKit\/WorkoutKit\/WorkoutKit\/Models\/VideoMetadata.swift",

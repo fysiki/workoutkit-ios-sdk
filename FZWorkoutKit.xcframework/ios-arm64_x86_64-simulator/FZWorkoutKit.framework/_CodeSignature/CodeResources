@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		8NeAEyrU5lBLPfFnUnqZmlows4w=
+		n28Tn/IdgPyBSwiMohcuo/+07NA=
 		</data>
 		<key>BebasNeue.otf</key>
 		<data>
@@ -30,51 +30,51 @@
 		</data>
 		<key>Headers/FZWorkoutKit-Swift.h</key>
 		<data>
-		7x1Kz75hXOgjU31wMHOpnjXyIuw=
+		uf31PEFU89w7cnBIZnzhUtSip5o=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		velm6XfygFj4zy3f+W0+GnR+KEg=
+		mH44NfvqWxZNlnDZ4uj1TErbNOw=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WUH0tYRhv9Q98PkJu4uq/2LmZW8=
+		9fD3HgUm2qnK6Mq+4vAsNFNLsek=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sIpw9jp/GEKsXmmSlLEmIaDfSNs=
+		SAjHmXrNhDRfi4mFT9Ya5fE6qg4=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		VDJyO9Dxp0WHXr1MvaLG1LKHX8g=
+		sBEKdsknRUR1Lo2qkYswpb2YV90=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sIpw9jp/GEKsXmmSlLEmIaDfSNs=
+		SAjHmXrNhDRfi4mFT9Ya5fE6qg4=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fgmfJYJBJu6r08c8vd4FA+rQOTk=
+		+kWoy6N22tVzv3oaQ0/kbQ9EjRg=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WUH0tYRhv9Q98PkJu4uq/2LmZW8=
+		9fD3HgUm2qnK6Mq+4vAsNFNLsek=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Jd9YHs7iBRYxit43ff0rOX4sJP0=
+		DlIKI+kFvMPbS1Kfclhwx2fUKPc=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yfg0PfhX8SaHxyqzwJVsQvK+WVk=
+		9MPMhBZRuaeDHv8psnxDUtNIf5Q=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Jd9YHs7iBRYxit43ff0rOX4sJP0=
+		DlIKI+kFvMPbS1Kfclhwx2fUKPc=
 		</data>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sWifNcNynF4BIlFKLGu6EoNCfZ4=
+		FoFx74wmlAh9cQfuXNHXr7R6fXM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -499,7 +499,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dwh9bg2sJVKz3zvN6ivkesHYMy3GpDTwqRyaMHr1zF4=
+			PtgYaL82yd0PbYcNS0rewhhqanxhZdcDlROH8GiZvLo=
 			</data>
 		</dict>
 		<key>BebasNeue.otf</key>
@@ -541,77 +541,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YvVGTOBg5ughR4+4KcejpqMOyn7QB6tVzbQei8fEsxE=
+			5pw5GDblJgiu7oJX0FY9z7lN0kPurC+HBhgUstXTWCo=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nJeWyRcY+U1CaoS7dHAzu26q3gdhvGa0SNvmi+dTtyU=
+			Rrteo0hTQGAUjrmGAAurV2dcrIUUbcA6euc3hFrO5vc=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sZA92yC/6WFuvxTuo4Ru0oSGqWOkQKt02tSHP/XH3X4=
+			PTlVTT0Pf1Biyh/4nhN/lEh9mM4hB34w3PzXrM2JLd4=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BCKEwqB8WZrrdie+o6eyTEqc7FkDA1+/TswAb+v6sPw=
+			m4YU2AXS9LU5xb5noULkjKjJyPoPMd79KGtwwWYhIAU=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sZA92yC/6WFuvxTuo4Ru0oSGqWOkQKt02tSHP/XH3X4=
+			PTlVTT0Pf1Biyh/4nhN/lEh9mM4hB34w3PzXrM2JLd4=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t6n7Nvo8FlhYnSRXYgj//oDJhHF+iJJ2jFwWhU8Ien0=
+			h5lONU8x0ZArEgGApDeomo24mJ441utJBnNaRReeIew=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nJeWyRcY+U1CaoS7dHAzu26q3gdhvGa0SNvmi+dTtyU=
+			Rrteo0hTQGAUjrmGAAurV2dcrIUUbcA6euc3hFrO5vc=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MFMtPbq/uN3Csh7NacrWmM1ffuyGVCWe8iYalZnjUfw=
+			HqoPZkW9+hpqohEk0VoASpSLVkYr3OweLrWsrxj5q6A=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Q8raADNov/ETK65gHIyPgDZ+rYC6ZQwUmDUm0a//cw=
+			nm62rx+kEJOREVk3A9p8F3Y3r/PA8gSWLflDpGMN3g0=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MFMtPbq/uN3Csh7NacrWmM1ffuyGVCWe8iYalZnjUfw=
+			HqoPZkW9+hpqohEk0VoASpSLVkYr3OweLrWsrxj5q6A=
 			</data>
 		</dict>
 		<key>Modules/FZWorkoutKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eggWeUBxitQ4sRAYn++L2DYvge/nygVxoOt3dEgtCaY=
+			KE5ttL/VdNQfisOrCayIVsGpBmkHDwfe5VuirpqmSv8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
